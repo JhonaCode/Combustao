@@ -1,0 +1,2472 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.6.2)  9 FEB 2026 19:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/jhona/git_repositories/Combustao/document/Reacting-Mixing-Layer-Jhonatan-/rxmxl
+(/home/jhona/git_repositories/Combustao/document/Reacting-Mixing-Layer-Jhonatan-/rxmxl.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+Document Class: elsarticle 2019/02/25, 3.2: Elsevier Ltd
+\@bls=\dimen134
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen135
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
+)
+\c@tnote=\count175
+\c@fnote=\count176
+\c@cnote=\count177
+\c@ead=\count178
+\c@author=\count179
+\@eadauthor=\toks15
+\c@affn=\count180
+\absbox=\box45
+\elsarticlehighlightsbox=\box46
+\elsarticlegrabsbox=\box47
+\keybox=\box48
+\Columnwidth=\dimen138
+\space@left=\dimen139
+\els@boxa=\box49
+\els@boxb=\box50
+\leftMargin=\dimen140
+\@enLab=\toks16
+\@sep=\skip49
+\@@sep=\skip50
+ (./rxmxl.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count181
+)
+\splwrite=\write3
+\openout3 = `rxmxl.spl'.
+
+\appnamewidth=\dimen141
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen142
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count182
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count183
+\leftroot@=\count184
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count185
+\DOTSCASE@=\count186
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
+\dotsspace@=\muskip16
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks18
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks19
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks20
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count194
+\output=\toks22
+\linenoprevgraf=\count195
+\linenumbersep=\dimen151
+\linenumberwidth=\dimen152
+\c@linenumber=\count196
+\c@pagewiselinenumber=\count197
+\c@LN@truepage=\count198
+\c@internallinenumber=\count199
+\c@internallinenumbers=\count266
+\quotelinenumbersep=\dimen153
+\bframerule=\dimen154
+\bframesep=\dimen155
+\bframebox=\box53
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count267
+\calc@Bcount=\count268
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count269
+\calc@Cskip=\skip58
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count270
+\l_MT_multwidth_dim=\dimen158
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen159
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen160
+\l_MT_above_intertext_sep=\dimen161
+\l_MT_below_intertext_sep=\dimen162
+\l_MT_above_shortintertext_sep=\dimen163
+\l_MT_below_shortintertext_sep=\dimen164
+) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box54
+\extrarowheight=\dimen166
+\NC@list=\toks23
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box55
+)
+\everycr=\toks24
+\minrowclearance=\skip62
+)
+\rownum=\count271
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count272
+\uc@combtoks=\toks27
+\uc@combtoksb=\toks28
+\uc@temptokena=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count273
+\U@D=\dimen167
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count274
+)
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language10) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language10) on input line 108.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks35
+LaTeX Info: Redefining \qed on input line 274.
+) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count275
+\l__pdf_internal_box=\box56
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count276
+\g__xparse_grabber_int=\count277
+\l__xparse_m_args_int=\count278
+\l__xparse_v_nesting_int=\count279
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+ (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+)) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip66
+\f@nch@O@elh=\skip67
+\f@nch@O@erh=\skip68
+\f@nch@O@olh=\skip69
+\f@nch@O@orh=\skip70
+\f@nch@O@elf=\skip71
+\f@nch@O@erf=\skip72
+\f@nch@O@olf=\skip73
+\f@nch@O@orf=\skip74
+) (./rxmxl.aux
+
+LaTeX Warning: Label `mass2' multiply defined.
+
+
+LaTeX Warning: Label `mass2' multiply defined.
+
+
+LaTeX Warning: Label `mn1' multiply defined.
+
+
+LaTeX Warning: Label `mass2' multiply defined.
+
+)
+\openout1 = `rxmxl.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count280
+\scratchdimen=\dimen168
+\scratchbox=\box57
+\nofMPsegments=\count281
+\nofMParguments=\count282
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen169
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
+\everyMPtoPDFconversion=\toks37
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+) (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (2.61049pt too wide) has occurred while \output is active
+[] 
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 146.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+<reacting.jpeg, id=11, 455.45157pt x 277.035pt>
+File: reacting.jpeg Graphic file (type jpg)
+<use reacting.jpeg>
+Package pdftex.def Info: reacting.jpeg  used on input line 151.
+(pdftex.def)             Requested size: 390.0pt x 237.22668pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
+
+ []
+
+
+Overfull \hbox (2.61049pt too wide) has occurred while \output is active
+[] 
+ []
+
+[2
+
+ <./reacting.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 172--177
+
+ []
+
+
+Overfull \hbox (22.31497pt too wide) detected at line 184
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^ZY[]\OT1/cmr/m/n/12 ) + [](\OML/cmm/m/it/12 ^^ZY[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 V[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 s[]\OT1/cmr/m/n/12 
+ [] \OML/cmm/m/it/12 i \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3 [] \OML/cmm/m/it/12 m \OT1/cmr/m/n/12 = []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--226
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 236--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--288
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 312--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--335
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 337--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--404
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--464
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 470--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--499
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--499
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--533
+
+ []
+
+
+Overfull \hbox (43.6843pt too wide) detected at line 541
+[] \OT1/cmr/m/n/12 = [] [] + [] [] + [] [] + [] [] + [] [] + [] []
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 541--544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--572
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--572
+
+ []
+
+
+Overfull \hbox (41.07661pt too wide) detected at line 580
+[] \OT1/cmr/m/n/12 = [] [] + [] [] + [] [] + [] [] + [] [] + [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--586
+
+ []
+
+
+Overfull \hbox (10.32707pt too wide) detected at line 595
+[] \OT1/cmr/m/n/12 = [](\OML/cmm/m/it/12 ^^U[]U[]\OT1/cmr/m/n/12 ) + [](\OML/cmm/m/it/12 ^^U[]U[]\OT1/cmr/m/n/12 ) + [](\OML/cmm/m/it/12 ^^V[]U[]\OT1/cmr/m/n/12 ) + [](\OML/cmm/m/it/12 ^^V[]U[]\OT1/cmr/m/n/12 ) + [](\OML/cmm/m/it/12 ^^V[]^^NU[]\OT1/cmr/m/n/12 ) + [](\OML/cmm/m/it/12 ^^V[]U[]\OT1/cmr/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--600
+
+ []
+
+[9]
+Overfull \hbox (104.23857pt too wide) detected at line 608
+[] \OT1/cmr/m/n/12 = [] (\OML/cmm/m/it/12 ^^U[]U[]\OT1/cmr/m/n/12 ) + [] (\OML/cmm/m/it/12 ^^U[]U[]\OT1/cmr/m/n/12 ) + [] (\OML/cmm/m/it/12 ^^V[]U[]\OT1/cmr/m/n/12 ) + [] (\OML/cmm/m/it/12 ^^V[]U[]\OT1/cmr/m/n/12 ) + [][] (\OML/cmm/m/it/12 ^^V[]^^NU[]\OT1/cmr/m/n/12 ) + [] (\OML/cmm/m/it/12 ^^V[]U[]\OT1/cmr/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--611
+
+ []
+
+
+Overfull \hbox (104.23857pt too wide) detected at line 619
+[] \OT1/cmr/m/n/12 = [] + [] + [] + [] + [] + []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--643
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--643
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--643
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 667--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 667--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--699
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--699
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--699
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--731
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--731
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--731
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 739--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 776--779
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 776--779
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--829
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 832--835
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--835
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 840--843
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 840--843
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--881
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--881
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--923
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 948--954
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 948--954
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 962--964
+
+ []
+
+
+Overfull \hbox (23.52321pt too wide) detected at line 1016
+[] \OT1/cmr/m/n/12 + [] + [] = [][] + [][] + [][] + \OML/cmm/m/it/12 ^^V[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 k[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 k[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 :::
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1025
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1025
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1041
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1041
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1041
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1077
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1085
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1091--1094
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1091--1094
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1145
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1258
+
+ []
+
+[17
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1276--1282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1290
+
+ []
+
+
+Overfull \hbox (6.40721pt too wide) detected at line 1296
+[]\OML/cmm/m/it/12 %U[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 %V[] \OT1/cmr/m/n/12 + [][] [] + \OML/cmm/m/it/12 s[]\OT1/cmr/m/n/12 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1296--1299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1296--1299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1305--1308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1305--1308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1317
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1324--1330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1324--1330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1324--1330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1336--1339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1374
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1381--1387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1381--1387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1381--1387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1419
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1419
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1458
+
+ []
+
+
+Overfull \hbox (84.01532pt too wide) detected at line 1469
+[]\OML/cmm/m/it/12 %U[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 c[][]\OT1/cmr/m/n/12 ) + []\OML/cmm/m/it/12 %V[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 c[][]\OT1/cmr/m/n/12 ) = []\OML/cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 + [][] [] + \OML/cmm/m/it/12 Q\OT1/cmr/m/n/12 
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1490
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1492--1498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1492--1498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1492--1498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1500--1503
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1500--1503
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1505--1509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1505--1509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1505--1509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1513--1516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1513--1516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1522--1525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1522--1525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1554--1557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1554--1557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1559--1567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1559--1567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1559--1567
+
+ []
+
+[23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1570--1577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1582--1588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1582--1588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1582--1588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1601--1604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1601--1604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1620--1623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1620--1623
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1646
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1657--1663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1657--1663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1657--1663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1680--1683
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1680--1683
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1703--1706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1703--1706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1714
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1714
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1725--1728
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1725--1728
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1744
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1744
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1759--1762
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1759--1762
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1780--1783
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1780--1783
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1794--1800
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1794--1800
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1794--1800
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1824--1830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1824--1830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1824--1830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1834--1837
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1834--1837
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1850
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1850
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1850
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1841--1850
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1856--1859
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1856--1859
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1867--1870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1867--1870
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1886
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1886
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1899--1902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1899--1902
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1909--1912
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1909--1912
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1946--1949
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1946--1949
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 1955--1958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1955--1958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1976--1979
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1976--1979
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1995--2001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1995--2001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1995--2001
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2009--2012
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2009--2012
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2020--2023
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2020--2023
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 2029--2032
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2029--2032
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2047--2050
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2047--2050
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2072
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2072
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2084--2087
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2084--2087
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2098--2105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2098--2105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2098--2105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2113
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 2115--2121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2115--2121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2115--2121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2125--2128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2145--2148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2145--2148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2152--2155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2152--2155
+
+ []
+
+[31] [32] [33] [34]
+Overfull \hbox (7.23135pt too wide) detected at line 2675
+\OML/cmm/m/it/12 h \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 u \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 + [] \OMS/cmsy/m/n/12 ^^@ [] \OML/cmm/m/it/12 u[]
+ []
+
+[35] (./rxmxl.bbl
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 23.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 1688) in paragraph at lines 15--24
+\T1/cmr/m/n/12 tur-bances of vis-cous fluid flow be-tween par-al-lel walls.  \T1/cmr/m/it/12 Pro-ceed-
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 15--24
+\T1/cmr/m/it/12 ings of the Royal So-ci-ety of Lon-don. Se-ries A, Con-tain-ing Pa-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 15--24
+\T1/cmr/m/it/12 pers of a Math-e-mat-i-cal and Phys-i-cal Char-ac-ter\T1/cmr/m/n/12 , 142(847):621--628,
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 15--24
+\T1/cmr/m/n/12 11 1933.  ISSN 0950-1207.  doi: 10.1098/rspa.1933.0193.  URL
+ []
+
+[36]) [37] (./rxmxl.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6932 strings out of 481239
+ 100652 string characters out of 5920378
+ 552030 words of memory out of 5000000
+ 22061 multiletter control sequences out of 15000+600000
+ 549044 words of font info for 61 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,17n,45p,446b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1728.pfb>
+Output written on rxmxl.pdf (37 pages, 374573 bytes).
+PDF statistics:
+ 208 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
