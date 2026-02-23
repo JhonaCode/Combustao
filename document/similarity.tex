@@ -1,23 +1,39 @@
 %\section{Self-Similarity solution for Reacting Mixing Layer equations}
 %\\
 To find a similarity solutions for a reacting mixing layer equations, firstly we 
-need to use the Howarth-Dorodnitsyn \ref{h-d} transformation to find am 
+need to use the Howarth-Dorodnitsyn transformation to find am 
 incompressible form of the compressibles equations. 
-\\
-\\
+
+
 Definig the stream function for compressible flow as: 
 \\
 \\
 \begin{equation}
-\frac{\partial \Psi}{\partial x}=-\varrho V \qquad
-\frac{\partial \Psi}{\partial y}=\varrho U,
+\frac{\partial \Psi}{\partial \overline{x}}=-\varrho V \qquad
+\frac{\partial \Psi}{\partial \overline{y}}=\varrho U,
 \end{equation} 
 \\
 \\
-The mass conservation equation is identically satisfied by the introduction 
-of  this stream function. Now defining a vertical stretching as:
-\\
-\\
+The mass conservation equation is identically satisfied by 
+the stream function.
+%
+%
+\begin{equation}
+\frac{\partial{(\varrho U)}}{\partial \overline{x}}
++
+\frac{\partial{(\varrho V)}}{\partial \overline{y}}
+=0
+\end{equation}
+
+\begin{equation}
+-\frac{\partial^2 \Psi }{\partial  \overline{x}\partial \overline{y}}
++
+\frac{\partial^2 \Psi }{\partial \overline{x}\partial \overline{y}}
+=0
+\end{equation}
+
+Now defining a vertical stretching as:
+
 \begin{equation}
 x=\overline{x}\qquad
 y=\int_0^{\overline{y}}\varrho d\overline{y}%\qquad 
@@ -29,22 +45,26 @@ y=\int_0^{\overline{y}}\varrho d\overline{y}%\qquad
 and using the chain rule:
 \\
 \\
+
 \begin{equation}
-f(\overline{x},\overline{y})\qquad
-\overline{x}=\overline{x}(x,y)\qquad
-\overline{y}=\overline{y}(x,y)
+f
+=
+f(x,y)=
+f(x(\overline{x},\overline{y}),
+y(\overline{x},\overline{y}))
 \end{equation} 
 \\
-\\
 \begin{equation}
-\frac{\partial f}{\partial \overline{x}}=
+\frac{\partial f}{\partial \overline{x}}
+=
 \frac{\partial f}{\partial x}
-\frac{\partial x}{\partial \overline{x}}+
+\frac{\partial x}{\partial \overline{x}}
++
 \frac{\partial f}{\partial y}
 \frac{\partial y}{\partial \overline{x}}
 \end{equation} 
-\\
-\\
+
+
 \begin{equation}
 \frac{\partial f}{\partial \overline{y}}=
 \frac{\partial f}{\partial x}
@@ -52,18 +72,31 @@ f(\overline{x},\overline{y})\qquad
 \frac{\partial f}{\partial y}
 \frac{\partial y}{\partial \overline{y}}
 \end{equation} 
-\\
-\\
+
+Then,
+
 \begin{equation}
 \frac{\partial f}{\partial \overline{x}}=
 \frac{\partial f}{\partial x}+
 %\frac{\partial x}{\partial \overline{x}}+
 \frac{\partial f}{\partial y}
 \int_0^{\overline{y}}\frac{\partial \varrho }{\partial \overline{x}}dy
+%=
+%\frac{\partial f}{\partial x}+
+%\frac{\partial f}{\partial y}
+%\frac{\partial }{\partial \overline{x}}
+%\int_0^{\overline{y}} \varrho dy
+%=
+%\frac{\partial f}{\partial x}
+%+
+%\frac{\partial f}{\partial y}
+%\frac{\partial y}{\partial \overline{x}}
+,
 \label{fx}
 \end{equation} 
-\\
-\\
+
+and 
+
 \begin{equation}
 \frac{\partial f}{\partial \overline{y}}=
 %\frac{\partial f}{\partial x}
@@ -71,20 +104,38 @@ f(\overline{x},\overline{y})\qquad
 \frac{\partial f}{\partial y}
 %\frac{\partial y}{\partial \overline{y}}
 \varrho
+,
 \label{fy}
 \end{equation} 
 \\
 \\
-so that:
+so that, using the stream function definition, we can defined a new velocity $\hat{U}$ as:
 \\
 \\
 \begin{equation}
-U=\frac{\partial \Psi}{\partial y}=\hat{U},
+\frac{\partial \Psi}{\partial \overline{y}}
+=
+\varrho U
+\end{equation} 
+
+\begin{equation}
+\varrho
+\frac{\partial \Psi}{\partial y}
+=
+\varrho
+U
+\end{equation} 
+
+\begin{equation}
+\frac{\partial \Psi}{\partial y}
+=
+U
+=
+\hat{U}
 \end{equation} 
 \\
-\\
-that have the same form as incompresible flow, 
-in the same way we can defined:
+that have the same form as incompresible flow. 
+In the same way we can defined:
 \\
 \\
 \begin{equation}
@@ -101,7 +152,7 @@ Using the definition of $V$:
 \end{equation} 
 \\
 \\
-with  \ref{fx} we can write: 
+with  the chain rule \ref{fx} we can write: 
 \\
 \\
 \begin{equation}
@@ -118,7 +169,8 @@ with  \ref{fx} we can write:
   \varrho V=
   \left(
        \hat{V}
-       -U
+       -
+       \hat{U}
        \frac{\partial y}{\partial \overline{x}}
   \right)
 \end{equation} 
@@ -127,12 +179,88 @@ with  \ref{fx} we can write:
 \begin{equation}
   \hat{V}=
   \varrho V
-  +U
+  +\hat{U}
   \frac{\partial y}{\partial \overline{x}}
 \label {hatv}
 \end{equation} 
 \\
 \\
+This transformation implies a physical areal equals mass-weighted area. 
+\\
+\\
+Defining, a mass element is 
+\\
+\\
+$dm=\varrho d\overline{x} d\overline{y}$, 
+\\
+\\
+but 
+\\
+\\
+$dx=d\overline{x}$ and 
+\\
+\\
+$dy=\varrho d\overline{y}$,
+\\
+\\
+then 
+\\
+\\
+$dm=dx dy$.
+\\
+\\
+The vertical coordinate is a mass coordinate ($dy=\varrho$d$\overline{y}$, mass per unit horizontal length)
+and density is absorbed  in the geometry of the transformation. 
+\\
+\\
+Matemathically:  by the change of variable theorem:
+\\
+\\
+$dxdy=detJd\overline{x}d\overline{y}=\varrho d\overline{x}d\overline{y}$
+\\
+\\
+with $J$ the Jacobian of the transformation:
+\\
+\\
+\begin{equation}
+J =
+\begin{pmatrix}
+\dfrac{\partial x}{\partial \overline{x}} &
+\dfrac{\partial x}{\partial \overline{y}} \\[8pt]
+\dfrac{\partial y}{\partial \overline{x}} &
+\dfrac{\partial y}{\partial \overline{y}}
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 \\[8pt]
+\displaystyle \int_{0}^{\overline{y}}
+\frac{\partial \varrho}{\partial \overline{x}}(\overline{x},\eta)\, d\eta
+&
+\varrho(\overline{x},\overline{y})
+\end{pmatrix}.
+\end{equation}
+\\\\
+and 
+\\\\
+\begin{equation}
+\det J = \varrho(\overline{x},\overline{y}).
+\end{equation}
+\\\\
+$\overline{y}$ labels equal mass layers. 
+\\\\
+and mass consevation in ($\overline{x}\overline{y}$) 
+implies geometric conservation in the new coordinates ($x,y$), 
+but the volume is not preserved. 
+\\\\
+$dV=\frac{1}{\varrho}dxdy= \frac{1}{\varrho}\text{mass-area}$
+\\\\
+High density  implies 
+small physical volume per mass cell and consequently, 
+Low density 
+large physical volume per mass cell.
+So: Equal mass cells occupy different physical volumes.
+This is exactly where compressibility lives.
+\\\\
 Now we can used the equation \ref{h-d}, \ref{fx}, \ref{fy} and \ref{hatv} in the 
 Mixing layer equations, \ref{mass2} to  
 \ref{g2}, obtain:
@@ -162,7 +290,8 @@ Mixing layer equations, \ref{mass2} to
 \varrho\frac{\partial}{\partial y}
   \left(
        \hat{V}
-       -U
+       -
+       \hat{U}
        \frac{\partial y}{\partial \overline{x}}
   \right)
 =0
@@ -179,7 +308,7 @@ U\frac{\partial \varrho }{\partial y}
 \varrho\frac{\partial \hat{V}}{\partial y}
 -\varrho\frac{\partial }{\partial \overline{y}}
        \left(
-       U\frac{\partial y}{\partial \overline{x}}
+       \hat{U}\frac{\partial y}{\partial \overline{x}}
        \right)
 =0
 \end{equation} 
@@ -193,30 +322,31 @@ U\frac{\partial \varrho }{\partial y}
 \varrho\frac{\partial U}{\partial y}
 \frac{\partial y}{\partial \overline{x}}+
 \varrho\frac{\partial \hat{V}}{\partial \overline{y}}
--\varrho\frac{\partial U}{\partial \overline{y}}
+-\varrho\frac{\partial \hat{U}}{\partial \overline{y}}
        \frac{\partial y}{\partial \overline{x}}
--\varrho U\frac{\partial }{\partial y}
+-\varrho \hat{U}\frac{\partial }{\partial y}
        \left(
        \frac{\partial y}{\partial \overline{x}}
        \right)
 =0
 \end{equation} 
 \\
+As $U=\hat{U}$, the fouth and the sixth terms of the above equation are canceling each other, hence:
 \\
 \begin{equation} 
-U\frac{\partial \varrho }{\partial x}+
-\varrho\frac{\partial U}{\partial x}+
-U\frac{\partial \varrho }{\partial y}
+\hat{U}\frac{\partial \varrho }{\partial x}+
+\varrho\frac{\partial \hat{U}}{\partial x}+
+\hat{U}\frac{\partial \varrho }{\partial y}
 \frac{\partial y}{\partial \overline{x}}+
 \cancel{
-\varrho\frac{\partial U}{\partial y}
-\frac{\partial y}{\partial \overline{x}}}^0+
+\varrho\frac{\partial \hat{U}}{\partial y}
+\frac{\partial y}{\partial \overline{x}}}+
 \varrho\frac{\partial \hat{V}}{\partial y}
 -\cancel{
-         \varrho\frac{\partial U}{\partial \overline{y}}
+         \varrho\frac{\partial \hat{U}}{\partial \overline{y}}
          \frac{\partial y}{\partial \overline{x}}
         }
--\varrho U\frac{\partial }{\partial y}
+-\varrho \hat{U}\frac{\partial }{\partial y}
        \left(
        \frac{\partial y}{\partial \overline{x}}
        \right)
@@ -225,12 +355,12 @@ U\frac{\partial \varrho }{\partial y}
 \\
 \\
 \begin{equation} 
-U\frac{\partial \varrho }{\partial x}+
-\varrho\frac{\partial U}{\partial x}+
-U\frac{\partial \varrho }{\partial y}
+\hat{U}\frac{\partial \varrho }{\partial x}+
+\varrho\frac{\partial \hat{U}}{\partial x}+
+\hat{U}\frac{\partial \varrho }{\partial y}
 \frac{\partial y}{\partial \overline{x}}+
 \varrho\frac{\partial \hat{V}}{\partial y}
--\varrho U\frac{\partial }{\partial y}
+-\varrho \hat{U}\frac{\partial }{\partial y}
        \left(
        \frac{\partial y}{\partial \overline{x}}
        \right)
@@ -242,24 +372,24 @@ the last term of the above equation  can be write as:
 \\
 \\
 \begin{equation} 
-\varrho U\frac{\partial }{\partial y}
+\varrho \hat{U}\frac{\partial }{\partial y}
        \left(
        \frac{\partial y}{\partial \overline{x}}
        \right)
 =
-U\varrho \frac{\partial }{\partial y}
+\hat{U}\varrho \frac{\partial }{\partial y}
 \left(
       \frac{\partial y}{\partial \overline{x}}
 \right)
 =
-U\frac{\partial }{\partial \overline{y}}
+\hat{U}\frac{\partial }{\partial \overline{y}}
 \left(
       \frac{\partial y}{\partial \overline{x}}
 \right)
 =
-U\frac{\partial \varrho}{\partial \overline{x}}
+\hat{U}\frac{\partial \varrho}{\partial \overline{x}}
 =
-U
+\hat{U}
 \left(
 \frac{\partial \varrho}{\partial x}+
 \frac{\partial \varrho}{\partial y}
@@ -272,7 +402,7 @@ hence:
 \\
 \\
 \begin{equation} 
-\varrho\frac{\partial U}{\partial x}+
+\varrho\frac{\partial \hat{U}}{\partial x}+
 \varrho\frac{\partial \hat{V}}{\partial y}
 =0
 \end{equation} 
@@ -294,7 +424,7 @@ Oxidizer conservation
 \begin{equation} 
 \varrho U\frac{\partial \psi_{o}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{o}}{\partial\overline{y}}=
-\frac{1}{Le_o}\frac{\partial}{\partial \overline{y}}\left(\rho D^o\frac{\partial \psi_o}{\partial \overline{y}}\right)+
+\frac{1}{PrLe_o}\frac{\partial}{\partial \overline{y}}\left(\rho D^o\frac{\partial \psi_o}{\partial \overline{y}}\right)+
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -305,7 +435,7 @@ s^{o}\Omega
 \varrho U\frac{\partial \psi_{o}}{\partial y}
 \frac{\partial y}{\partial \overline{x}}+
 \varrho^2 V\frac{\partial \psi_{o}}{\partial y}=
-\frac{\varrho}{Le_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{\varrho}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -321,7 +451,7 @@ s^{o}\Omega
        \frac{1}{\varrho}U\frac{\partial y}{\partial \overline{x}}
 \right)
 =
-\frac{\varrho}{Le_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{\varrho}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -337,7 +467,7 @@ s^{o}\Omega
        \frac{1}{\varrho}U\frac{\partial y}{\partial \overline{x}}
 \right)
 =
-\frac{\varrho}{Le_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{\varrho}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -347,7 +477,7 @@ s^{o}\Omega
 \varrho U\frac{\partial \psi_{o}}{\partial x}+
 \varrho \hat{V}\frac{\partial \psi_{o}}{\partial y}
 =
-\frac{\varrho}{Le_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{\varrho}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -357,7 +487,7 @@ s^{o}\Omega
  \hat{U}\frac{\partial \psi_{o}}{\partial x}+
  \hat{V}\frac{\partial \psi_{o}}{\partial y}
 =
-\frac{1}{Le_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{1}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
 \frac{s^{o}\Omega}{\varrho}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -374,7 +504,7 @@ conservations species, we get:
  \hat{U}\frac{\partial \psi_{F}}{\partial x}+
  \hat{V}\frac{\partial \psi_{F}}{\partial y}
 =
-\frac{1}{Le_F}\frac{\partial}{\partial y}\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)+
+\frac{1}{PrLe_F}\frac{\partial}{\partial y}\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)+
 \frac{s^{F}\Omega}{\varrho}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -433,15 +563,18 @@ conservations species, we get:
 \begin{equation}
 \varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
 \varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})=
-(\gamma-1)M^2\mu\frac{\partial^2 U}{\partial \overline{y}^2}+
+(\gamma-1)M^2\mu
+\left(
+\frac{\partial U}{\partial \overline{y}}
+\right)^2
++
 \frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
 Q\Omega
 \end{equation} 
-\\
-\\
+
+{\color{red}Does not necessary because is not a second order derivative in the viscous term.}
 Using the chain rule to change the second order derivative of $\overline{y}$ in the energy equation. 
-\\
-\\
+
 \begin{equation}
 \frac{\partial^2f}{\partial \overline{y}^2}=
 \frac{\partial}{\partial y}
@@ -451,10 +584,10 @@ Using the chain rule to change the second order derivative of $\overline{y}$ in 
 \right)
 \frac{\partial y}{\partial \overline{y}}
 \end{equation} 
-\\
-\\
+
 \begin{equation}
-\frac{\partial^2f}{\partial \overline{y}^2}=
+\frac{\partial^2f}{\partial \overline{y}^2}
+=
 \frac{\partial ^2 f}{\partial y^2}
 \left(
 \frac{\partial y}{\partial \overline{y}}
@@ -462,17 +595,41 @@ Using the chain rule to change the second order derivative of $\overline{y}$ in 
 \frac{\partial f}{\partial y}
 \frac{\partial ^2 y}{\partial \overline{y}^2}
 \end{equation} 
-\\
-\\
+
+
+
 \begin{equation}
 \frac{\partial^2f}{\partial \overline{y}^2}=
-\varrho^2\frac{\partial ^2 f}{\partial y^2}+
+\frac{\partial ^2 f}{\partial y^2}
+\left(
+\frac{\partial y}{\partial \overline{y}}
+\right)^2
++
+\frac{\partial f}{\partial y}
+\frac{\partial  }{\partial \overline{y}}
+\left(
+\frac{\partial y}{\partial \overline{y}}
+\right)
+\end{equation} 
+
+$
+\dfrac{\partial  }{\partial \overline{y}}
+=\varrho
+\dfrac{\partial  }{\partial y}
+$
+
+\begin{equation}
+\frac{\partial^2f}{\partial \overline{y}^2}=
+\frac{\partial ^2 f}{\partial y^2}
+\varrho^2+
+\frac{\partial f}{\partial y}
 \varrho
 \frac{\partial \varrho}{\partial y}
-\frac{\partial f}{\partial y}
 \end{equation} 
-\\
-\\
+
+
+{\color{red}correction the second derivative that is no present}
+
 \begin{equation}
 \begin{split}
 \varrho U\frac{\partial }{\partial x}(c_p \overline{T})+
@@ -481,10 +638,11 @@ Using the chain rule to change the second order derivative of $\overline{y}$ in 
 \varrho^2 V
 \frac{\partial }{\partial y}(c_p \overline{T})=
 \\
-\varrho^2(\gamma-1)M^2\mu\frac{\partial^2 U}{\partial y^2}+
-\varrho
-\frac{\partial \varrho}{\partial y}
-(\gamma-1)M^2\mu\frac{\partial U}{\partial y}+
+\varrho^2(\gamma-1)M^2\mu
+\left(
+\frac{\partial U}{\partial y}
+\right)^2
++
 \frac{\varrho}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
 Q\Omega
 \end{split}
@@ -503,10 +661,11 @@ Q\Omega
 \right)
 \frac{\partial }{\partial y}(c_p \overline{T})=
 \\
-\varrho^2(\gamma-1)M^2\mu\frac{\partial^2 U}{\partial y^2}+
-\varrho
-\frac{\partial \varrho}{\partial y}
-(\gamma-1)M^2\mu\frac{\partial U}{\partial y}+
+\varrho^2(\gamma-1)M^2\mu
+\left(
+\frac{\partial U}{\partial \overline{y}}
+\right)^2
++
 \frac{\varrho}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
 Q\Omega
 \end{split}
@@ -518,10 +677,11 @@ Q\Omega
 \hat{U}\frac{\partial }{\partial x}(c_p \overline{T})+
 \hat{V}
 \frac{\partial }{\partial y}(c_p \overline{T})=
-\varrho(\gamma-1)M^2\mu\frac{\partial^2 \hat{U}}{\partial y^2}+
-\\
-\frac{\partial \varrho}{\partial y}
-(\gamma-1)M^2\mu\frac{\partial \hat{U}}{\partial y}+
+\varrho(\gamma-1)M^2\mu
+\left(
+\frac{\partial U}{\partial \overline{y}}
+\right)^2
++
 \frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
 \frac{Q\Omega}{\varrho}
 \end{split}
@@ -533,10 +693,10 @@ Q\Omega
 \hat{V}
 \frac{\partial }{\partial y}(c_p \overline{T})=
 (\gamma-1)M^2\mu
-\frac{\partial}{\partial y}
 \left(
-\varrho\frac{\partial \hat{U}}{\partial y}
-\right)+
+\frac{\partial U}{\partial \overline{y}}
+\right)^2
++
 \frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
 \frac{Q\Omega}{\varrho}
 \end{equation} 
@@ -573,7 +733,7 @@ where $C_w$  is a function of the temperature $C_w=C_w(T)$ .
  \hat{U}\frac{\partial \psi_{o}}{\partial x}+
  \hat{V}\frac{\partial \psi_{o}}{\partial y}
 =
-\frac{1}{Le_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{1}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
 \frac{s^{o}\Omega}{\varrho}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -583,7 +743,7 @@ where $C_w$  is a function of the temperature $C_w=C_w(T)$ .
  \hat{U}\frac{\partial \psi_{F}}{\partial x}+
  \hat{V}\frac{\partial \psi_{F}}{\partial y}
 =
-\frac{1}{Le_F}\frac{\partial}{\partial y}\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)+
+\frac{1}{PrLe_F}\frac{\partial}{\partial y}\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)+
 \frac{s^{F}\Omega}{\varrho}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
@@ -601,10 +761,11 @@ where $C_w$  is a function of the temperature $C_w=C_w(T)$ .
 \hat{V}
 \frac{\partial }{\partial y}(c_p \overline{T})=
 (\gamma-1)M^2\mu
-\frac{\partial}{\partial y}
 \left(
-\varrho\frac{\partial \hat{U}}{\partial y}
-\right)+
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
++
 \frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
 \frac{Q\Omega}{\varrho}
 \end{equation} 

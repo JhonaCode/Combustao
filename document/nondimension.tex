@@ -264,7 +264,11 @@ the temperature for a perfect gas, we get:
 %u\frac{\partial p}{\partial x}+
 %v\frac{\partial p}{\partial y}+
 %\frac{\partial u_j}{\partial x_i}\tau_{ij}-
-\mu\frac{\partial^2 u}{\partial y^2}+
+\mu
+\left(
+\frac{\partial u}{\partial y}
+\right)^2
++
 \frac{\partial}{\partial y}\left(k\frac{\partial T}{\partial y}\right)+
 Q\Omega
 \end{equation} 
@@ -281,7 +285,12 @@ Using the non-dimensional variables:
 %u\frac{\partial p}{\partial x}+
 %v\frac{\partial p}{\partial y}+
 %\frac{\partial u_j}{\partial x_i}\tau_{ij}-
-\frac{\mu_{\infty}U_{\infty}^2}{\delta^2}\mu\frac{\partial^2 U}{\partial \overline{y}^2}+
+\frac{\mu_{\infty}U_{\infty}^2}{\delta^2}
+\mu
+\left(
+\frac{\partial U}{\partial \overline{y}}
+\right)^2
++
 \frac{k_{\infty}T_{\infty}}{\delta^2}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
 Q\Omega
 \end{equation} 
@@ -291,7 +300,11 @@ Q\Omega
 %\frac{\partial}{\partial t}(\rho h)+
 \varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
 \varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})=
-(\gamma-1)M^2\mu\frac{\partial^2 U}{\partial \overline{y}^2}+
+(\gamma-1)M^2\mu
+\left(
+\frac{\partial U}{\partial y}
+\right)^2
++
 \frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
 Q\Omega
 \end{equation} 
@@ -359,7 +372,10 @@ s^{F}\Omega.
 %\frac{\partial}{\partial t}(\rho h)+
 \varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
 \varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})=
-(\gamma-1)M^2\mu\frac{\partial^2 U}{\partial \overline{y}^2}+
+(\gamma-1)M^2\mu
+\left(
+\frac{\partial U}{\partial y}
+\right)^2
 \frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
 Q\Omega
 \end{equation} 

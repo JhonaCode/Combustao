@@ -41,8 +41,6 @@ u
 \end{equation}
 
 where the Prantdl number is defined as $Pr=\mu c_p/k$.
-
-
 Since the total enthalpy is defined as 
 
 \begin{equation}
@@ -50,7 +48,162 @@ H=h+\frac{1}{2}u^2
 \end{equation}
 
 the total enthalpy equation using both 
-the energy and momentum equation is  
+the energy and momentum equation. 
+
+Multiplying the momentum equation by $u$ 
+
+\begin{equation}
+    u
+(\rho u)\frac{\partial u}{\partial x}    
++
+u
+(\rho v)\frac{\partial u}{\partial y}    
+=
+-
+u
+\frac{\partial  P}{\partial x}
++
+u
+\frac{\partial  }{\partial y}\left( \mu\frac{\partial  u }{\partial y}\right)
+\end{equation}
+
+\begin{equation}
+\frac{1}{2}  
+\rho u\frac{\partial u^2}{\partial x}    
++
+\frac{1}{2}  
+\rho v\frac{\partial u^2}{\partial y}    
+=
+-
+u
+\frac{\partial  P}{\partial x}
++
+\frac{1}{2}  
+\frac{\partial \mu }{\partial y}\left( \frac{\partial  u^2 }{\partial y}\right)
++
+\mu
+\frac{1}{2}  
+\left(\frac{\partial^2  u^2 }{\partial y^2}\right)
+\end{equation}
+
+\begin{equation}
+\frac{1}{2}  
+\rho u\frac{\partial u^2}{\partial x}    
++
+\frac{1}{2}  
+\rho v\frac{\partial u^2}{\partial y}    
+=
+-
+u
+\frac{\partial  P}{\partial x}
++
+\frac{1}{2}  
+\frac{\partial \mu }{\partial y}\left( \frac{\partial  u^2 }{\partial y}\right)
++
+\mu
+\frac{1}{2}  
+\frac{\partial  }{\partial y}
+\left(\frac{\partial  u^2 }{\partial y}\right)
+\end{equation}
+
+\begin{equation}
+\frac{1}{2}  
+\rho u\frac{\partial u^2}{\partial x}    
++
+\frac{1}{2}  
+\rho v\frac{\partial u^2}{\partial y}    
+=
+-
+u
+\frac{\partial  P}{\partial x}
++
+\frac{1}{2}  
+\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u ^2}{\partial y}\right)
+\end{equation}
+
+and adding it to the energy equation
+
+\begin{equation}
+\frac{1}{2}  
+(\rho u)\frac{\partial u^2}{\partial x}    
++
+(\rho u)\frac{\partial h}{\partial x}    
++
+\frac{1}{2}  
+(\rho v)\frac{\partial u^2}{\partial y}    
++
+(\rho v)\frac{\partial h}{\partial y}    
+=
+\frac{1}{2}  
+\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u^2 }{\partial y}\right)
++
+\frac{\partial  }{\partial y}
+\left( \frac{\mu}{Pr}\frac{\partial  h }{\partial y}\right)
++
+    \mu
+\left(
+    \frac{\partial u }{\partial y}
+\right)^2 
+\end{equation}
+
+\begin{equation}
+(\rho u)\frac{\partial H}{\partial x}    
++
+(\rho v)\frac{\partial H}{\partial y}    
+=
+\frac{\partial  }{\partial y}
+\left[
+\mu
+\left(  
+    \frac{\partial  \frac{1}{2}u^2 }{\partial y}
+    -
+    \frac{1}{Pr}
+    \frac{\partial  \frac{1}{2}u^2 }{\partial y}
+    +
+    \frac{1}{Pr}
+    \frac{\partial  \frac{1}{2}u^2 }{\partial y}
+    +
+    \frac{1}{Pr}
+    \frac{\partial  h }{\partial y}
+\right)
+\right]
++
+    \mu
+\left(
+    \frac{\partial u }{\partial y}
+\right)^2 
+\end{equation}
+
+\begin{equation}
+(\rho u)\frac{\partial H}{\partial x}    
++
+(\rho v)\frac{\partial H}{\partial y}    
+=
+\frac{\partial  }{\partial y}
+\left[
+\frac{\mu}{Pr}
+\left(  
+    \frac{\partial  H}{\partial y}
+\right)
+\right]
++
+\frac{\partial  }{\partial y}
+\left[
+\mu
+u
+\left(  
+    1-
+    \frac{1}{Pr}
+\right)
+    \frac{\partial  u }{\partial y}
+\right]
++
+    \mu
+\left(
+    \frac{\partial u }{\partial y}
+\right)^2 
+\end{equation}
+
 
 \begin{equation}
 (\rho u)\frac{\partial H}{\partial x}    
@@ -773,7 +926,7 @@ Using $T=T/T_1$ and $U=U/a_1$.
 \begin{equation} 
 \frac{\partial}{\partial \overline{x}}(\varrho U)+
 \frac{\partial}{\partial \overline{y}}(\varrho V)=0
-\label{mass2}
+%\label{mass2}
 \end{equation} 
 \\
 \\
@@ -814,7 +967,7 @@ Q\Omega
 \\
 \begin{equation}
 1=\varrho\overline{T}
-\label{g2}
+%\label{g2}
 \end{equation} 
 \\
 
