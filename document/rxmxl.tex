@@ -99,14 +99,24 @@ and using the Stoke's relation:
 \frac{\partial}{\partial x_i}(\rho u_i h)=
 \frac{\partial p}{\partial t}+
 u_i\frac{\partial p}{\partial x_i}+
-\frac{\partial u_j}{\partial x_i}\tau_{ij}-
-\frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)+
+\frac{\partial u_j}{\partial x_i}\tau_{ij}
++
+\frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)
+-
+\frac{\partial}{\partial x_i}
+\sum_i\rho D_i\frac{\partial Y_i}{\partial x_i}
++
 Q\Omega
 \end{equation} 
 \\
+where 
+$\dfrac{\partial}{\partial x_i}
+\sum_i\rho D_i\dfrac{\partial Y_i}{\partial y}$
+is the 
+enthalpy transported by species diffusion.
+\\
 \\
 \textbf{Perfect gas equation:}
-\\
 \\
 \begin{equation} 
 p=\rho T R
@@ -586,7 +596,11 @@ by the body forces in that direction.
 \frac{\partial}{\partial x_i}(\rho u_i h)=
 u_i\frac{\partial p}{\partial x_i}+
 \frac{\partial u_j}{\partial x_i}\tau_{ij}-
-\frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)+
+\frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)
+-
+\frac{\partial}{\partial x_i}
+\sum_i\rho D_i\frac{\partial Y_i}{\partial x_i}+
++
 Q\Omega
 \end{equation} 
 \\
@@ -806,8 +820,15 @@ Hence, the energy equation for steady flow become:
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho u_i h)=
 u_i\frac{\partial p}{\partial x_i}+
-\frac{\partial u_j}{\partial x_i}\tau_{ij}-
-\frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)+
+\frac{\partial u_j}{\partial x_i}\tau_{ij}
++
+\frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)
+-
+\frac{\partial }{\partial x_i}
+\left(
+\sum_i\rho D_i\frac{\partial Y_i}{\partial x_i}+
+\right)
++
 Q\Omega
 \end{equation} 
 \\
@@ -830,6 +851,8 @@ k
 +
 k
 \frac{ T_c}{\delta_c^2}
++
+\frac{\rho_cD_i}{\delta_c^2}
 +...
 \end{equation} 
 %
@@ -857,6 +880,8 @@ k
 k
 \frac{1}{\rho_c U_c h_c}
 \frac{ T_c}{\delta_c^2}
++
+\frac{D_i}{\delta_c^2h_c}
 +...
 \end{equation} 
 %%
@@ -873,12 +898,16 @@ u_i\frac{\partial p}{\partial x_i}
 +
 \mu
 \left(\frac{\partial u}{\partial y}\right)^2
--
-k
++
 \frac{\partial }{\partial y}
 \left(
 k
 \frac{\partial T}{\partial y}
+\right)
+-
+\frac{\partial}{\partial y}
+\left(
+\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
 \right)
 +
 Q\Omega
@@ -906,13 +935,14 @@ u_i\frac{\partial p}{\partial x_i}
 +
 \mu
 \left(\frac{\partial u}{\partial y}\right)^2
--
-k
++
 \frac{\partial }{\partial y}
 \left(
 k
 \frac{\partial T}{\partial y}
 \right)
+-
+\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
 +
 Q\Omega
 \end{equation} 
@@ -928,12 +958,16 @@ u_i\frac{\partial p}{\partial x_i}
 +
 \mu
 \left(\frac{\partial u}{\partial y}\right)^2
--
-k
++
 \frac{\partial }{\partial y}
 \left(
 k
 \frac{\partial T}{\partial y}
+\right)
+-
+\frac{\partial }{\partial y}
+\left(
+\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
 \right)
 +
 Q\Omega
@@ -985,7 +1019,15 @@ u\frac{\partial p}{\partial x}+
 v\frac{\partial p}{\partial y}+
 %\frac{\partial u_j}{\partial x_i}\tau_{ij}-
 \mu\frac{\partial^2 u}{\partial y^2}+
-\frac{\partial}{\partial y}\left(k\frac{\partial T}{\partial y}\right)+
+\frac{\partial}{\partial y}
+\left(
+   k\frac{\partial T}{\partial y}\right)
+-
+\frac{\partial}{\partial y}
+\left(
+\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
+\right)
++
 Q\Omega
 \end{equation} 
 \\
@@ -1037,7 +1079,16 @@ s^{F}\Omega
 %v\frac{\partial p}{\partial y}+
 %\frac{\partial u_j}{\partial x_i}\tau_{ij}-
 \mu\left(\frac{\partial u}{\partial y}\right)^2+
-\frac{\partial}{\partial y}\left(k\frac{\partial T}{\partial y}\right)+
+\frac{\partial}{\partial y}
+\left(
+   k\frac{\partial T}{\partial y}
+   \right)
+-
+\frac{\partial}{\partial y}
+\left(
+\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
+\right)
++
 Q\Omega
 \end{equation} 
 \\

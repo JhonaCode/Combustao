@@ -269,7 +269,10 @@ the temperature for a perfect gas, we get:
 \frac{\partial u}{\partial y}
 \right)^2
 +
-\frac{\partial}{\partial y}\left(k\frac{\partial T}{\partial y}\right)+
+\frac{\partial}{\partial y}\left(k\frac{\partial T}{\partial y}\right)
++
+\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
++
 Q\Omega
 \end{equation} 
 \\
@@ -278,6 +281,7 @@ Using the non-dimensional variables:
 \\
 \\
 \begin{equation}
+\begin{split}
 %\frac{\partial}{\partial t}(\rho h)+
 \frac{\rho_{\infty}U_{\infty}T_{\infty}c_{p\infty}}{L_c}\varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
 \frac{\rho_{\infty}U_{\infty}T_{\infty}c_{p\infty}}{L_c}\varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})=
@@ -291,21 +295,31 @@ Using the non-dimensional variables:
 \frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
-\frac{k_{\infty}T_{\infty}}{\delta^2}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
+%\frac{k_{\infty}T_{\infty}}{\delta^2}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
+%+
+\frac{\rho_{\infty}D^{O\infty}Y^{O\infty}}{\delta}
++
 Q\Omega
+\end{split}
 \end{equation} 
 \\
 \\
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
 \varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
-\varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})=
+\varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})
+\\
+=
 (\gamma-1)M^2\mu
 \left(
 \frac{\partial U}{\partial y}
 \right)^2
 +
-\frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
+\frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
++
+\frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
+\sum_i\rho D_i\frac{\partial Y_i}{\partial \overline{y}}
++
 Q\Omega
 \end{equation} 
 \\

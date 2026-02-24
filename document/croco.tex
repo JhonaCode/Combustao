@@ -78,12 +78,8 @@ u
 u
 \frac{\partial  P}{\partial x}
 +
-\frac{1}{2}  
-\frac{\partial \mu }{\partial y}\left( \frac{\partial  u^2 }{\partial y}\right)
-+
-\mu
-\frac{1}{2}  
-\left(\frac{\partial^2  u^2 }{\partial y^2}\right)
+u
+\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u }{\partial y}\right)
 \end{equation}
 
 \begin{equation}
@@ -97,13 +93,8 @@ u
 u
 \frac{\partial  P}{\partial x}
 +
-\frac{1}{2}  
-\frac{\partial \mu }{\partial y}\left( \frac{\partial  u^2 }{\partial y}\right)
-+
-\mu
-\frac{1}{2}  
-\frac{\partial  }{\partial y}
-\left(\frac{\partial  u^2 }{\partial y}\right)
+u
+\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u }{\partial y}\right)
 \end{equation}
 
 \begin{equation}
@@ -117,13 +108,30 @@ u
 u
 \frac{\partial  P}{\partial x}
 +
-\frac{1}{2}  
-\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u ^2}{\partial y}\right)
+u
+\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u }{\partial y}\right)
+,
 \end{equation}
+
+The last term can be written as
+
+\begin{equation}
+u
+\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u }{\partial y}\right)
+=
+\frac{\partial  }{\partial y}\left( \mu u \frac{\partial  u }{\partial y}\right)
+-
+\mu
+\left(\frac{\partial u }{\partial y}
+\right)^2
+,
+\end{equation}
+
 
 and adding it to the energy equation
 
 \begin{equation}
+\begin{split}
 \frac{1}{2}  
 (\rho u)\frac{\partial u^2}{\partial x}    
 +
@@ -134,16 +142,25 @@ and adding it to the energy equation
 +
 (\rho v)\frac{\partial h}{\partial y}    
 =
-\frac{1}{2}  
-\frac{\partial  }{\partial y}\left( \mu \frac{\partial  u^2 }{\partial y}\right)
+\\
+\frac{\partial  }{\partial y}\left( \mu u \frac{\partial  u }{\partial y}\right)
+-
+\cancel{
+\mu
+\left(\frac{\partial u }{\partial y}
+\right)^2
+}
 +
 \frac{\partial  }{\partial y}
 \left( \frac{\mu}{Pr}\frac{\partial  h }{\partial y}\right)
 +
+\cancel{
     \mu
 \left(
     \frac{\partial u }{\partial y}
 \right)^2 
+}
+\end{split}
 \end{equation}
 
 \begin{equation}
@@ -155,23 +172,45 @@ and adding it to the energy equation
 \left[
 \mu
 \left(  
-    \frac{\partial  \frac{1}{2}u^2 }{\partial y}
-    -
-    \frac{1}{Pr}
-    \frac{\partial  \frac{1}{2}u^2 }{\partial y}
-    +
-    \frac{1}{Pr}
-    \frac{\partial  \frac{1}{2}u^2 }{\partial y}
+    u
+    \frac{\partial  u }{\partial y}
     +
     \frac{1}{Pr}
     \frac{\partial  h }{\partial y}
 \right)
 \right]
+\end{equation}
+
+\begin{equation}
+\frac{\partial h}{\partial y}
+=
+\frac{\partial  H}{\partial y}
+-
+u
+\frac{\partial  u }{\partial y}
+\end{equation}
+
+\begin{equation}
+(\rho u)\frac{\partial H}{\partial x}    
 +
-    \mu
-\left(
-    \frac{\partial u }{\partial y}
-\right)^2 
+(\rho v)\frac{\partial H}{\partial y}    
+=
+\frac{\partial  }{\partial y}
+\left\{
+\mu
+    \left[
+    u
+    \frac{\partial  u }{\partial y}
+    +
+    \frac{1}{Pr}
+    \left(
+    \frac{\partial  H}{\partial y}
+    -
+    u
+    \frac{\partial  u }{\partial y}
+    \right)
+    \right]
+\right\}
 \end{equation}
 
 \begin{equation}
@@ -190,45 +229,26 @@ and adding it to the energy equation
 \frac{\partial  }{\partial y}
 \left[
 \mu
-u
 \left(  
     1-
     \frac{1}{Pr}
 \right)
-    \frac{\partial  u }{\partial y}
+u
+\frac{\partial  u }{\partial y}
 \right]
-+
-    \mu
-\left(
-    \frac{\partial u }{\partial y}
-\right)^2 
 \end{equation}
 
-
-\begin{equation}
-(\rho u)\frac{\partial H}{\partial x}    
-+
-(\rho v)\frac{\partial H}{\partial y}    
-=
-\frac{\partial  }{\partial y}
-\left( \frac{\mu}{Pr}\frac{\partial  H }{\partial y}\right)
-+
-\frac{\partial  }{\partial y}
-\left[
-    \left(
-    1-\frac{1}{Pr}
-    \right)
- \mu u\frac{\partial  u }{\partial y}
- \right]
-\end{equation}
 
 This equation allows a simplest solution  
-$H=h+\frac{1}{2}u^2=$ constant as long as $Pr=1$, which leads to  
+$H=h+\frac{1}{2}u^2=$ constant as long as $Pr=1$ of a adiabatic wall,
+which leads to  
 
 \begin{equation}
-\frac{\partial  H }{\partial y}
+\left.\frac{\partial T}{\partial y}\right|_{w}
 =
-\frac{\partial  h_w }{\partial y}
+\left.\frac{\partial h}{\partial y}\right|_{w}
+=
+\left.\frac{\partial H}{\partial y}\right|_{w}
 =
 0
 \end{equation}
@@ -237,13 +257,21 @@ Representing the not heat transfer at the wall.
 
 $Pr=1$ implies in a perfect balance between viscous 
 dissipation and heat conduction so as keep the 
-the stagnation enthalpy constant in adiabatic boundary layer and also is a good approximation for gases.
+the stagnation enthalpy constant in adiabatic boundary layer 
+and also is a good approximation for gases.
+So velocity and temperature are smoothed by the same mechanism.
+
 
 Another solution can be obtained if 
 the pressure gradient is neglected
 in the boundary layer equation.  
-With this, the momentum equation and the energy equation get very similar,
-it seems as if u and h could be 
+The momentum equation and the total enthalpy equation 
+are identical.  Total enthalpy behaves like a passive scalar.
+This implies a direct functional relationship between 
+$H$ and $u$, $H=H(u)$.
+With this, the momentum equation and the energy equation
+get very similar,
+it seems as if $u$ and $h$ could be 
 interchanged except for the dissipation term. 
 
 
@@ -269,7 +297,9 @@ interchanged except for the dissipation term.
 \right)^2 
 \end{equation}
 
-Then a solution of the form 
+
+
+Then, $h=h(u)$ and $u=u(x,y)$, a solution of the form 
 
 \begin{equation}
 \frac{\partial h }{\partial y}
@@ -290,13 +320,25 @@ Then a solution of the form
 \frac{d h} { du}
 \frac{\partial u }{\partial y}
 \right)
+\end{equation}
+
+\begin{equation}
+\frac{\partial  }{\partial y}
+\left(
+    \frac{\partial h }{\partial y}
+\right)
 =
-\frac{\partial  }{\partial u}
+\frac{\partial  }{\partial y}
 \left(
 \frac{d h} { du}
-\frac{\partial u }{\partial y}
 \right)
 \frac{\partial u }{\partial y}
++
+\frac{d h} { du}
+\frac{\partial  }{\partial y}
+\left(
+\frac{\partial u }{\partial y}
+\right)
 \end{equation}
 
 \begin{equation}
@@ -308,19 +350,36 @@ Then a solution of the form
 \frac{\partial  }{\partial u}
 \left(
 \frac{d h} { du}
-\frac{\partial u }{\partial y}
 \right)
+\frac{\partial u}{\partial y}
 \frac{\partial u }{\partial y}
-=
-\frac{d h} { du}
-\frac{\partial u^2 }{\partial y^2}
 +
-\frac{d ^2 h} { d u^2}
+\frac{d h} { du}
 \left(
-\frac{\partial u }{\partial y}
-\right)^2
+\frac{\partial^2 u }{\partial y^2}
+\right)
 \end{equation}
- 
+
+\begin{equation}
+\frac{\partial  }{\partial y}
+\left(
+    \frac{\partial h }{\partial y}
+\right)
+=
+\frac{d^2 h} { d u^2}
+\left(
+\frac{\partial u}{\partial y}
+\right)^2
++
+\frac{d h} { du}
+\left(
+\frac{\partial^2 u }{\partial y^2}
+\right)
+\end{equation}
+
+Then, in the momemtum and energy equation, neglecting the pressure grandient
+and assuming $Pr=1$,  
+
 \begin{equation}
 (\rho u)\frac{\partial u}{\partial x}    
 +
@@ -329,26 +388,6 @@ Then a solution of the form
 \frac{\partial  }{\partial y}\left( \mu\frac{\partial  u }{\partial y}\right)
 \end{equation}
 
-\begin{equation}
-(\rho u)\frac{\partial h}{\partial x}    
-+
-(\rho v)
-\frac{d h} { du}
-\frac{\partial u }{\partial y}
-=
-\frac{\partial  }{\partial y}
-\left( \frac{\mu}{Pr}
-\frac{d h} { du}
-\frac{\partial u }{\partial y}
-\right)
-+
-\mu
-\left(
-    \frac{\partial u }{\partial y}
-\right)^2 
-\end{equation}
-
-Assuming $Pr=1$
 
 \begin{equation}
 (\rho u)\frac{\partial h}{\partial x}    
@@ -367,6 +406,8 @@ Assuming $Pr=1$
     \frac{\partial u }{\partial y}
 \right)^2 
 \end{equation}
+
+Opening the energy dissipation term
 
 \begin{equation}
 (\rho u)\frac{\partial h}{\partial x}    
@@ -389,6 +430,8 @@ Assuming $Pr=1$
 \right)^2 
 \end{equation}
 
+And using the relation between $h$ and $u$ in the first term of the right hand side,
+
 \begin{equation}
 (\rho u)\frac{\partial h}{\partial x}    
 +
@@ -397,7 +440,7 @@ Assuming $Pr=1$
 =
 \mu
 \frac{d h} { du}
-\frac{\partial u^2 }{\partial y^2}
+\frac{\partial^2 u }{\partial y^2}
 +
 \mu
 \frac{d ^2 h} { d u^2}
@@ -424,7 +467,7 @@ Assuming $Pr=1$
  -
 \mu
 \frac{d h} { du}
-\frac{\partial u^2 }{\partial y^2}
+\frac{\partial^2 u }{\partial y^2}
 -
 \frac{d h} { du}
 \frac{\partial  u}{\partial y}
@@ -539,9 +582,8 @@ Similarly for the lower stream
 \label{h2}
 \end{equation}
 
-This is two unknown and two 
+There are two unknowns and two 
 equations.  
-
 For the equation \ref{h1}
 
 \begin{equation}
@@ -817,66 +859,53 @@ the relation $h=c_pT$
     (u-u_2)
 \end{equation}
 
-The last term and the temperature are   dimensional  and depend 
-on the non dimensional 
-parameters.
-
-Using $T=T/T_1$ and $U=U/U_1$.  
+A non-dimensional form can be obtained using 
+$\overline{T}=T/T_\infty=T/T_1$ and $U=u/U_\infty$, 
+$T_2=T_{-\infty}$.  
 
 \begin{equation}
-    T
-    T_1
+    \overline{T}
+    T_\infty
     =
-    T_1
+    T_\infty
     \frac{(u-u_2)}{(u_1-u_2)}
     + 
-    T_2
+    T_{-\infty}
     \frac{(u_1-u)}{(u_1-u_2)}
     +
     \frac{1}{2}
-    \frac{U_1^2}{c_p}
-    (u_1-u)
-    (u-u_2)
+    \frac{U_\infty^2}{c_p}
+    (u_\infty-u)
+    (u-u_{-\infty})
 \end{equation}
 
 \begin{equation}
     T
     =
-    \frac{(u-u_2)}{(u_1-u_2)}
+    \frac{(u-u_{-\infty})}{(u_{\infty}-u_{-\infty})}
     + 
-    \frac{T_2}{T_1}
-    \frac{(u_1-u)}{(u_1-u_2)}
+    \frac{T_{-\infty}}{T_{\infty}}
+    \frac{(u_{\infty}-u)}{(u_{\infty}-u_{-\infty})}
     +
     \frac{1}{2}
-    \frac{U_1^2}{T_1c_p}
-    (u_1-u)
-    (u-u_2)
+    \frac{U_\infty^2}{T_{\infty}c_p}
+    (u_{\infty}-u)
+    (u-u_{-\infty})
 \end{equation}
 
 \begin{equation}
     T
     =
-    \frac{(u-u_2)}{(u_1-u_2)}
+    \frac{(u-u_{-\infty})}{(u_{\infty}-u_{-\infty})}
     + 
-    \frac{T_2}{T_1}
-    \frac{(u_1-u)}{(u_1-u_2)}
+    \frac{T_{-\infty}}{T_{\infty}}
+    \frac{(u_{\infty}-u)}{(u_{\infty}-u_{-\infty})}
     +
     \frac{1}{2}
-    \frac{U_1^2\gamma_1 R}{\gamma_1RT_1c_p} (u_1-u)
-    (u-u_2)
-\end{equation}
-
-\begin{equation}
-    T
-    =
-    \frac{(u-u_2)}{(u_1-u_2)}
-    + 
-    \frac{T_2}{T_1}
-    \frac{(u_1-u)}{(u_1-u_2)}
-    +
-    \frac{1}{2}
-    \frac{M^2\gamma_1 R}{c_p} (u_1-u)
-    (u-u_2)
+    \frac{\gamma R}{c_p}
+    \frac{U_\infty^2}{\gamma R T_{\infty}}
+    (u_{\infty}-u)
+    (u-u_{-\infty})
 \end{equation}
 
 \begin{equation}
@@ -889,22 +918,22 @@ Using $T=T/T_1$ and $U=U/U_1$.
     \frac{\gamma-1}{\gamma}
 \end{equation}
 
-$\beta_t=T_2/T_1$
+$\beta_t=T_{-\infty}/T_{\infty}$
 
 \begin{equation}
     T
     =
-    \frac{(u-u_2)}{(u_1-u_2)}
+    \frac{(u-u_{-\infty})}{(u_{\infty}-u_{-\infty})}
     + 
     \beta_t
-    \frac{(u_1-u)}{(u_1-u_2)}
+    \frac{(u_{\infty}-u)}{(u_{\infty}-u_{-\infty})}
     +
     \frac{1}{2}
-    M^2(\gamma_1-1) (u_1-u)
-    (u-u_2)
+    M^2(\gamma-1) (u_{\infty}-u)
+    (u-u_{-\infty})
 \end{equation}
 
-Using $T=T/T_1$ and $U=U/a_1$.  
+Using $T=T/T_\infty$ and $U=U/a_\infty$.  
 
 \begin{equation}
     T
@@ -918,56 +947,112 @@ Using $T=T/T_1$ and $U=U/a_1$.
     (u_1-u)
     (u-u_2)
 \end{equation}
+    
 
-
-
-\textbf{Non-dimensional Reacting Mixing layer equation:}
-\\
-\begin{equation} 
-\frac{\partial}{\partial \overline{x}}(\varrho U)+
-\frac{\partial}{\partial \overline{y}}(\varrho V)=0
-%\label{mass2}
-\end{equation} 
-\\
-\\
-\begin{equation} 
-\varrho U\frac{\partial \psi_{o}}{\partial\overline{x}}+
-\varrho V\frac{\partial \psi_{o}}{\partial\overline{y}}=
-\frac{1}{Le_o}\frac{\partial}{\partial \overline{y}}\left(\rho D^o\frac{\partial \psi_o}{\partial \overline{y}}\right)+
-s^{o}\Omega
-%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
-\end{equation} 
-\\
-\\
-\begin{equation} 
-\varrho U\frac{\partial \psi_{F}}{\partial\overline{x}}+
-\varrho V\frac{\partial \psi_{F}}{\partial\overline{y}}=
-\frac{1}{Le_F}\frac{\partial}{\partial \overline{y}}\left(\rho D^F\frac{\partial \psi_F}{\partial \overline{y}}\right)+
-s^{F}\Omega.
-%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
-\end{equation} 
-\\
-\\
-\begin{equation} 
-\varrho U\frac{\partial U}{\partial \overline{x}}+
-\varrho V\frac{\partial U}{\partial \overline{y}}=
-\frac{\partial}{\partial \overline{y}}\left(\mu\frac{\partial U}{\partial  \overline{y}}\right)
-\end{equation} 
-\\
-\\
-\begin{equation}
-%\frac{\partial}{\partial t}(\rho h)+
-\varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
-\varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})=
-(\gamma-1)M^2\mu\frac{\partial^2 U}{\partial \overline{y}^2}+
-\frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
-Q\Omega
-\end{equation} 
-\\
-\\
-\begin{equation}
-1=\varrho\overline{T}
-%\label{g2}
-\end{equation} 
-\\
-
+%using T1 and T2
+%using T1 and T2
+%using T1 and T2
+%
+%The last term and the temperature are   dimensional  and depend 
+%on the non dimensional 
+%parameters.
+%
+%Using $T=T/T_1$ and $U=U/U_1$.  
+%
+%\begin{equation}
+%    T
+%    T_1
+%    =
+%    T_1
+%    \frac{(u-u_2)}{(u_1-u_2)}
+%    + 
+%    T_2
+%    \frac{(u_1-u)}{(u_1-u_2)}
+%    +
+%    \frac{1}{2}
+%    \frac{U_1^2}{c_p}
+%    (u_1-u)
+%    (u-u_2)
+%\end{equation}
+%
+%\begin{equation}
+%    T
+%    =
+%    \frac{(u-u_2)}{(u_1-u_2)}
+%    + 
+%    \frac{T_2}{T_1}
+%    \frac{(u_1-u)}{(u_1-u_2)}
+%    +
+%    \frac{1}{2}
+%    \frac{U_1^2}{T_1c_p}
+%    (u_1-u)
+%    (u-u_2)
+%\end{equation}
+%
+%\begin{equation}
+%    T
+%    =
+%    \frac{(u-u_2)}{(u_1-u_2)}
+%    + 
+%    \frac{T_2}{T_1}
+%    \frac{(u_1-u)}{(u_1-u_2)}
+%    +
+%    \frac{1}{2}
+%    \frac{U_1^2\gamma_1 R}{\gamma_1RT_1c_p} (u_1-u)
+%    (u-u_2)
+%\end{equation}
+%
+%\begin{equation}
+%    T
+%    =
+%    \frac{(u-u_2)}{(u_1-u_2)}
+%    + 
+%    \frac{T_2}{T_1}
+%    \frac{(u_1-u)}{(u_1-u_2)}
+%    +
+%    \frac{1}{2}
+%    \frac{M^2\gamma_1 R}{c_p} (u_1-u)
+%    (u-u_2)
+%\end{equation}
+%
+%\begin{equation}
+%    \frac{R}{c_p}
+%    =
+%    \frac{c_p-c_v}{c_p}
+%    =
+%    1-\frac{1}{\gamma}
+%    =
+%    \frac{\gamma-1}{\gamma}
+%\end{equation}
+%
+%$\beta_t=T_2/T_1$
+%
+%\begin{equation}
+%    T
+%    =
+%    \frac{(u-u_2)}{(u_1-u_2)}
+%    + 
+%    \beta_t
+%    \frac{(u_1-u)}{(u_1-u_2)}
+%    +
+%    \frac{1}{2}
+%    M^2(\gamma_1-1) (u_1-u)
+%    (u-u_2)
+%\end{equation}
+%
+%Using $T=T/T_1$ and $U=U/a_1$.  
+%
+%\begin{equation}
+%    T
+%    =
+%    \frac{(u-u_2)}{(u_1-u_2)}
+%    + 
+%    \beta_t
+%    \frac{(u_1-u)}{(u_1-u_2)}
+%    +
+%    \frac{\gamma-1}{2}
+%    (u_1-u)
+%    (u-u_2)
+%\end{equation}
+%
+%
