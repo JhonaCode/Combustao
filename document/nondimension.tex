@@ -271,7 +271,10 @@ the temperature for a perfect gas, we get:
 +
 \frac{\partial}{\partial y}\left(k\frac{\partial T}{\partial y}\right)
 +
-\sum_i\rho D_i\frac{\partial Y_i}{\partial y}
+\frac{\partial }{\partial y}
+\left(
+\sum_i\rho h_iD_i\frac{\partial Y_i}{\partial y}
+\right)
 +
 Q\Omega
 \end{equation} 
@@ -295,16 +298,37 @@ Using the non-dimensional variables:
 \frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
+\\
 %\frac{k_{\infty}T_{\infty}}{\delta^2}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
 %+
-\frac{\rho_{\infty}D^{O\infty}Y^{O\infty}}{\delta}
+\frac{\rho_{\infty}T_{\infty}c_{p\infty}D^{n\infty}Y^{n\infty}}{\delta^2}
+\frac{\partial }{\partial \overline{y}}
+\left(
+\sum_i\rho h_i D_i\frac{\partial Y_i}{\partial \overline{y}}
+\right)
 +
 Q\Omega
 \end{split}
 \end{equation} 
 \\
+\begin{equation}
+\frac{\rho_{\infty}D^{n\infty}Y^{n\infty}T_{\infty}c_{p\infty}}{L_c^2}
+\frac{L_c}{\rho_{\infty}U_{\infty}T_{\infty}c_{p\infty}}
+=
+\frac{D^{n\infty}}{\alpha}
+\frac{\alpha}{\nu}
+\frac{\nu Y^{n\infty}}{U_{\infty}L_c}
+=
+\frac{D^{n\infty}}{\alpha}
+\frac{\alpha}{\nu}
+\frac{\mu }{\rho U_{\infty}L_c}
+Y^{n\infty}
+=
+\frac{1}{Le_nPrRe}Y^{n\infty}
+\end{equation} 
 \\
 \begin{equation}
+\begin{split}
 %\frac{\partial}{\partial t}(\rho h)+
 \varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
 \varrho V\frac{\partial }{\partial \overline{y}}(c_p \overline{T})
@@ -312,15 +336,20 @@ Q\Omega
 =
 (\gamma-1)M^2\mu
 \left(
-\frac{\partial U}{\partial y}
+\frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
 \frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
 +
 \frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
-\sum_i\rho D_i\frac{\partial Y_i}{\partial \overline{y}}
++
+\frac{\partial }{\partial \overline{y}}
+\left(
+\sum_i\rho h_i D_i\frac{\partial Y_i}{\partial \overline{y}}
+\right)
 +
 Q\Omega
+\end{split}
 \end{equation} 
 \\
 \\

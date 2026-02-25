@@ -104,15 +104,18 @@ u_i\frac{\partial p}{\partial x_i}+
 \frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)
 -
 \frac{\partial}{\partial x_i}
-\sum_i\rho D_i\frac{\partial Y_i}{\partial x_i}
+\left(
+\sum_i\rho h_iD_i\frac{\partial Y_i}{\partial x_i}
+\right)
 +
 Q\Omega
 \end{equation} 
 \\
 where 
 $\dfrac{\partial}{\partial x_i}
-\sum_i\rho D_i\dfrac{\partial Y_i}{\partial y}$
-is the 
+\left(
+\sum_i\rho D_i\dfrac{\partial Y_i}{\partial x_i}
+\right)$ is the 
 enthalpy transported by species diffusion.
 \\
 \\
@@ -599,7 +602,9 @@ u_i\frac{\partial p}{\partial x_i}+
 \frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)
 -
 \frac{\partial}{\partial x_i}
-\sum_i\rho D_i\frac{\partial Y_i}{\partial x_i}+
+\left(
+\sum_i\rho h_iD_i\frac{\partial Y_i}{\partial x_i}
+\right)
 +
 Q\Omega
 \end{equation} 
@@ -826,7 +831,7 @@ u_i\frac{\partial p}{\partial x_i}+
 -
 \frac{\partial }{\partial x_i}
 \left(
-\sum_i\rho D_i\frac{\partial Y_i}{\partial x_i}+
+\sum_i\rho h_iD_i\frac{\partial Y_i}{\partial x_i}+
 \right)
 +
 Q\Omega
