@@ -568,7 +568,14 @@ conservations species, we get:
 \frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
-\frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)+
+\frac{1}{Pr}\frac{\partial}{\partial \overline{y}}\left(k\frac{\partial \overline{T}}{\partial \overline{y}}\right)
+-
+\frac{Y_{i\infty}}{Pr}
+\frac{\partial }{\partial \overline{y}}
+\left(
+\sum_i\frac{\varrho}{Le_i}\overline{h}_i D_i\frac{\partial \psi_i}{\partial \overline{y}}
+\right)
++
 Q\Omega
 \end{equation} 
 
@@ -643,7 +650,14 @@ $
 \frac{\partial U}{\partial y}
 \right)^2
 +
-\frac{\varrho}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
+\frac{\varrho}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y_{i\infty}\varrho}{Pr}
+\frac{\partial }{\partial y}
+\left(
+\sum_i\frac{\varrho^2}{Le_i}\overline{h}_i D_i\frac{\partial \psi_i}{\partial y}
+\right)
++
 Q\Omega
 \end{split}
 \end{equation} 
@@ -666,7 +680,14 @@ Q\Omega
 \frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
-\frac{\varrho}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
+\frac{\varrho}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y_{i\infty}\varrho}{Pr}
+\frac{\partial }{\partial y}
+\left(
+\sum_i\frac{\varrho^2}{Le_i}\overline{h}_i D_i\frac{\partial \psi_i}{\partial y}
+\right)
++
 Q\Omega
 \end{split}
 \end{equation} 
@@ -682,7 +703,15 @@ Q\Omega
 \frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
-\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
+\\
+\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y_{i\infty}}{Pr}
+\frac{\partial }{\partial y}
+\left(
+\sum_i\frac{\varrho^2}{Le_i}\overline{h}_i D_i\frac{\partial \psi_i}{\partial y}
+\right)
++
 \frac{Q\Omega}{\varrho}
 \end{split}
 \end{equation} 
@@ -692,12 +721,20 @@ Q\Omega
 \hat{U}\frac{\partial }{\partial x}(c_p \overline{T})+
 \hat{V}
 \frac{\partial }{\partial y}(c_p \overline{T})=
+\varrho
 (\gamma-1)M^2\mu
 \left(
 \frac{\partial U}{\partial \overline{y}}
 \right)^2
 +
-\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
+\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y_{i\infty}}{Pr}
+\frac{\partial }{\partial y}
+\left(
+\sum_i\frac{\varrho^2}{Le_i}\overline{h}_i D_i\frac{\partial \psi_i}{\partial y}
+\right)
++
 \frac{Q\Omega}{\varrho}
 \end{equation} 
 \\
@@ -752,7 +789,7 @@ where $C_w$  is a function of the temperature $C_w=C_w(T)$ .
 \begin{equation} 
  \hat{U}\frac{\partial \hat{U}}{\partial x}+
  \hat{V}\frac{\partial \hat{U}}{\partial y}=
-\frac{\partial}{\partial y}\left(C_w(T)\frac{\partial \hat{U}}{\partial  y}\right)
+\frac{\partial}{\partial y}\left(\mu\varrho\frac{\partial \hat{U}}{\partial  y}\right)
 \end{equation} 
 \\
 \\
@@ -760,12 +797,20 @@ where $C_w$  is a function of the temperature $C_w=C_w(T)$ .
 \hat{U}\frac{\partial }{\partial x}(c_p \overline{T})+
 \hat{V}
 \frac{\partial }{\partial y}(c_p \overline{T})=
+\varrho
 (\gamma-1)M^2\mu
 \left(
 \frac{\partial \hat{U}}{\partial y}
 \right)
 ^2
 +
-\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)+
+\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y_{i\infty}}{Pr}
+\frac{\partial }{\partial y}
+\left(
+\sum_i\frac{\varrho^2}{Le_i}\overline{h}_i D_i\frac{\partial \psi_i}{\partial y}
+\right)
++
 \frac{Q\Omega}{\varrho}
 \end{equation} 

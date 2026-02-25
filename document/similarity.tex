@@ -35,66 +35,301 @@ momentum equation in the $x$ direction:
 \begin{equation} 
  \hat{U}\frac{\partial \hat{U}}{\partial x}+
  \hat{V}\frac{\partial \hat{U}}{\partial y}=
-\frac{\partial}{\partial y}\left(C_w(T)\frac{\partial \hat{U}}{\partial  y}\right)
+\frac{\partial}{\partial y}\left(\mu\varrho\frac{\partial \hat{U}}{\partial  y}\right)
 \end{equation} 
   
 and energy equation 
   
 \begin{equation}
+\begin{split}
 \hat{U}\frac{\partial }{\partial x}(c_p \overline{T})+
 \hat{V}
 \frac{\partial }{\partial y}(c_p \overline{T})=
+\varrho
 (\gamma-1)M^2\mu
 \left(
 \frac{\partial \hat{U}}{\partial y}
 \right)
 ^2
 +
+\\
 \frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y^{i\infty}}{Pr}
+\frac{\partial}{\partial y}
+       \left(
+              \frac{1}{Le_i}
+              \sum_i\varrho^2 D_i\overline{h}_i\frac{\partial \psi_i}{\partial y}
+       \right)
 +
 \frac{Q\Omega}{\varrho}
+\end{split}
 \end{equation} 
+
+with $c_p=\sum_i \psi_i c_{p,i}$.
 
 The energy equation can be rewritten in terms of the total enthalpy, 
 
 \begin{equation}
-H=c_p \overline{T}+\frac{1}{2}\hat{U}^2. 
+H=\overline{h}+\frac{1}{2}\hat{U}^2
+=c_p \overline{T}+\frac{1}{2}\hat{U}^2. 
 \end{equation}
 
-Multiplying the momentum equation by $\hat{U}$ and adding to the energy
+Multiplying the momentum equation by $\hat{U}$ 
+
+\begin{equation} 
+\hat{U}
+ \hat{U}\frac{\partial \hat{U}}{\partial x}
+ +
+\hat{U}
+ \hat{V}\frac{\partial \hat{U}}{\partial y}
+ =
+\hat{U}
+\frac{\partial}{\partial y}\left(\mu\varrho\frac{\partial \hat{U}}{\partial  y}\right)
+\end{equation} 
+
+and adding to the energy
 equation, we obtain
 
+\begin{equation} 
+\begin{split}
+\hat{U}
+ \hat{U}\frac{\partial \hat{U}}{\partial x}
+ +
+\hat{U}
+ \hat{V}\frac{\partial \hat{U}}{\partial y}
++
+\hat{U}\frac{\partial }{\partial x}(c_p \overline{T})
++
+\hat{V}
+\frac{\partial }{\partial y}(c_p \overline{T})
+ =
+ \\
+\hat{U}
+\frac{\partial}{\partial y}\left(\mu\varrho\frac{\partial \hat{U}}{\partial  y}\right)
++
+\varrho
+(\gamma-1)M^2\mu
+\left(
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
++
+\\
+\frac{1}{Pr}\frac{\partial}{\partial y}\left(k\varrho\frac{\partial \overline{T}}{\partial y}\right)
+-
+\frac{Y^{i\infty}}{Pr}
+\frac{\partial}{\partial y}
+       \left(
+              \frac{1}{Le_i}
+              \sum_i\varrho^2 D_i\overline{h}_i\frac{\partial \psi_i}{\partial y}
+       \right)
++
+\frac{Q\Omega}{\varrho}
+\end{split}
+\end{equation}       
+
+\begin{equation} 
+\begin{split}
+\hat{U}
+ \hat{U}\frac{\partial \hat{U}}{\partial x}
+ +
+\hat{U}
+ \hat{V}\frac{\partial \hat{U}}{\partial y}
++
+\hat{U}\frac{\partial }{\partial x}(c_p \overline{T})
++
+\hat{V}
+\frac{\partial }{\partial y}(c_p \overline{T})
+ =
+ \\
+\frac{\partial}{\partial y}\left(\mu \varrho\hat{U}\frac{\partial \hat{U}}{\partial  y}\right)
+-
+\mu 
+\varrho
+\left(
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
++
+\varrho
+(\gamma-1)M^2\mu
+\left(
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
++
+\\
+\frac{1}{Pr}\frac{\partial}{\partial y}
+\left(kc_p\varrho\frac{\partial \overline{h}}{\partial y}\right)
+-
+\frac{Y^{i\infty}}{Pr}
+\frac{\partial}{\partial y}
+       \left(
+              \frac{1}{Le_i}
+              \sum_i\varrho^2 D_i\overline{h}_i\frac{\partial \psi_i}{\partial y}
+       \right)
++
+\frac{Q\Omega}{\varrho}
+\end{split}
+\end{equation}       
+
+Note that  
+
 \begin{equation}
+\overline{h}=\sum_{i} \psi_i \overline{h}_i
+\end{equation}
+
+then, 
+
+\begin{equation}
+\frac{\partial \overline{h}}{\partial y}
+=
+\sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
++
+\sum_{i} 
+\frac{\partial \psi_i}{\partial y} \overline{h}_i
+.
+\end{equation}
+
+Therefore,
+
+\begin{equation} 
+\begin{split}
 (\rho u)\frac{\partial H}{\partial x}    
 +
 (\rho v)\frac{\partial H}{\partial y}    
 =
-\frac{\partial  }{\partial y}
-\left[
-\frac{\mu}{Pr}
-\left(  
-    \frac{\partial  H}{\partial y}
+ \\
+\frac{\partial}{\partial y}
+\left(
+       \mu  \varrho\hat{U}\frac{\partial \hat{U}}{\partial  y}
+ \right)
+-
+\mu 
+\varrho
+\left(
+1-
+(\gamma-1)M^2
 \right)
-\right]
-+
-\frac{\partial  }{\partial y}
-\left[
-\mu
-\left(  
-    1-
-    \frac{1}{Pr}
+\left(
+\frac{\partial \hat{U}}{\partial y}
 \right)
-\hat{U}
-\frac{\partial  \hat{U} }{\partial y}
+^2
+\\
+\frac{1}{Pr}
+\frac{\partial}{\partial y}
+\left[
+       k\varrho c_p
+       \left(
+       \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
+       +
+       \sum_{i} 
+       \frac{\partial \psi_i}{\partial y} \overline{h}_i
+       \right)
 \right]
-+
-\sum_i\varrho D_ih_i\frac{\partial Y_i}{\partial y}
+-
+\frac{Y^{i\infty}}{Pr}
+\frac{\partial}{\partial y}
+       \left(
+              \frac{1}{Le_i}
+              \sum_i\varrho^2 D_i\overline{h}_i\frac{\partial \psi_i}{\partial y}
+       \right)
 +
 \frac{Q\Omega}{\varrho}
-\end{equation}
+\end{split}
+\end{equation}       
 
-Defining the enthalpy as 
+\begin{equation} 
+\begin{split}
+(\rho u)\frac{\partial H}{\partial x}    
++
+(\rho v)\frac{\partial H}{\partial y}    
+=
+ \\
+\frac{\partial}{\partial y}\left(\mu \varrho\hat{U}\frac{\partial \hat{U}}{\partial  y}\right)
+-
+\mu 
+\varrho
+\left(
+1-
+(\gamma-1)M^2
+\right)
+\left(
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
+\\
+\frac{1}{Pr}
+\frac{\partial}{\partial y}
+\left[
+       k\varrho c_p
+       \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
+\right]
++
+\frac{1}{Pr}
+\frac{\partial}{\partial y}
+\left[
+       k\varrho c_p
+       \sum_{i} 
+       \frac{\partial \psi_i}{\partial y} \overline{h}_i
+\right]
+-
+\frac{Y^{i\infty}}{Pr}
+\frac{\partial}{\partial y}
+\left(\sum_i\frac{1}{Le_i}\varrho^2 D_i\frac{\partial \psi_i}{\partial y}\overline{h}_i\right)
++
+\frac{Q\Omega}{\varrho}
+\end{split}
+\end{equation}       
 
-\begin{equation}
-h=\sum_{i} Y_i h_i
-\end{equation}
+\begin{equation} 
+\begin{split}
+(\rho u)\frac{\partial H}{\partial x}    
++
+(\rho v)\frac{\partial H}{\partial y}    
+=
+ \\
+\frac{\partial}{\partial y}\left(\mu \varrho\hat{U}\frac{\partial \hat{U}}{\partial  y}\right)
+-
+\mu 
+\varrho
+\left(
+1-
+(\gamma-1)M^2
+\right)
+\left(
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
+\\
+\frac{1}{Pr}
+\frac{\partial}{\partial y}
+\left[
+       k\varrho c_p
+       \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
+\right]
++
+\frac{1}{Pr}
+\left\{
+\frac{\partial}{\partial y}
+\left[
+kc_p
+\varrho
+\left(
+       \sum_{i} 
+       \left(
+       1
+       -
+       \frac{1}{Le_i}
+       \frac{Y^{i\infty}
+       \varrho D_i}{kc_p}
+       \right)
+       \frac{\partial \psi_i}{\partial y} \overline{h}_i
+\right)
+\right]
+\right\}
++
+\frac{Q\Omega}{\varrho}
+\end{split}
+\end{equation}       
