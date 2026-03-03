@@ -7,14 +7,17 @@ Begins with the non-divergent boundary layer form of the compressible equations,
 ,
 \end{equation} 
 
-for two  species, the oxidizer (O) and 
+for two  species, the oxidizer (O)  
 
 \begin{equation} 
  \hat{U}\frac{\partial \psi_{o}}{\partial x}+
  \hat{V}\frac{\partial \psi_{o}}{\partial y}
 =
-\frac{1}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
-\frac{s^{o}\Omega}{\varrho}
+\frac{1}{PrLe_o}\frac{\partial}{\partial y}
+\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)
+-
+n
+\frac{\Omega}{\varrho}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 ,
 \end{equation} 
@@ -25,12 +28,33 @@ the fuel (F),
  \hat{U}\frac{\partial \psi_{F}}{\partial x}+
  \hat{V}\frac{\partial \psi_{F}}{\partial y}
 =
-\frac{1}{PrLe_F}\frac{\partial}{\partial y}\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)+
-\frac{s^{F}\Omega}{\varrho}
+\frac{1}{PrLe_F}\frac{\partial}{\partial y}
+\left(
+       \varrho^2 D^F\frac{\partial \psi_F}{\partial y}
+\right)
+- 
+\frac{\Omega}{\varrho}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
 
-momentum equation in the $x$ direction:
+and the product of the reaction  
+
+\begin{equation} 
+ \hat{U}\frac{\partial \psi_{P}}{\partial x}+
+ \hat{V}\frac{\partial \psi_{P}}{\partial y}
+=
+\frac{1}{PrLe_P}\frac{\partial}{\partial y}
+\left(
+       \varrho^2 D^P\frac{\partial \psi_P}{\partial y}
+\right)
++ 
+(1+n)
+\frac{\Omega}{\varrho}
+%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
+.
+\end{equation} 
+
+The momentum equation in the $x$ direction:
   
 \begin{equation} 
  \hat{U}\frac{\partial \hat{U}}{\partial x}+
@@ -383,7 +407,7 @@ equations. Definning the passive scalars:
 %Z=\frac{\psi_F-\psi_O+\psi_{O\infty}}{\psi_{F\infty}+\psi_{O\infty}}
 Z_1=
 \psi_F
-+
+-
 \frac{\psi_O}{n}
 \end{equation}          
 
@@ -423,21 +447,30 @@ Then, the species equation in term of passive scalars $z_i$ can be writen as  :
 
 \begin{equation} 
 \begin{split} 
+ \hat{U}\frac{\partial \psi_{F}}{\partial x}
+ +
+ \hat{V}\frac{\partial \psi_{F}}{\partial y}
+ -
  \frac{1}{n}
- \hat{U}\frac{\partial \psi_{o}}{\partial x}+
+ \hat{U}\frac{\partial \psi_{o}}{\partial x}
+ -
  \frac{1}{n}
  \hat{V}\frac{\partial \psi_{o}}{\partial y}
- +
- \hat{U}\frac{\partial \psi_{F}}{\partial x}+
- \hat{V}\frac{\partial \psi_{F}}{\partial y}
 =
 \\
+\frac{1}{PrLe_F}\frac{\partial}{\partial y}
+\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)
++
+\frac{s^{F}\Omega}{\varrho}
+-
 \frac{1}{n}
-\frac{1}{PrLe_o}\frac{\partial}{\partial y}\left(\varrho^2 D^o\frac{\partial \psi_o}{\partial y}\right)+
+\frac{1}{PrLe_o}\frac{\partial}{\partial y}
+\left(
+       \varrho^2 D^o\frac{\partial \psi_o}{\partial y}
+\right)
+-
 \frac{s^{o}\Omega}{\varrho}
 +
-\frac{1}{PrLe_F}\frac{\partial}{\partial y}\left(\varrho^2 D^F\frac{\partial \psi_F}{\partial y}\right)+
-\frac{s^{F}\Omega}{\varrho}
 ,
 \end{split} 
 \end{equation} 
@@ -453,18 +486,93 @@ Then, the species equation in term of passive scalars $z_i$ can be writen as  :
        \varrho^2
        D^o
        \left(
-       \frac{1}{n}
-       \frac{\partial \psi_o}{\partial y}
-       +
        \frac{D^F}{D^O}
        \frac{\partial \psi_F}{\partial y}
+       -
+       \frac{1}{n}
+       \frac{\partial \psi_o}{\partial y}
        \right)
 \right)
 +
 \frac{s^{F}\Omega}{\varrho}
-+
+-
 \frac{1}{n}
 \frac{s^{o}\Omega}{\varrho}
 ,
+\end{split} 
+\end{equation} 
+
+Assuming that $D^F=D^O=D$ 
+and $Le_O=Le_F=Le$
+
+\begin{equation} 
+\begin{split} 
+ \hat{U}\frac{\partial Z_1}{\partial x}+
+ \hat{V}\frac{\partial Z_1}{\partial y}
+=
+\frac{1}{PrLe}\frac{\partial}{\partial y}
+\left(
+       \varrho^2
+       D
+       \frac{\partial Z_1 }{\partial y}
+\right)
++
+\frac{\Omega}{\varrho}
+-
+\frac{1}{n}
+n
+\frac{\Omega}{\varrho}
+,
+\end{split} 
+\end{equation} 
+
+\begin{equation} 
+\begin{split} 
+ \hat{U}\frac{\partial Z_1}{\partial x}+
+ \hat{V}\frac{\partial Z_1}{\partial y}
+=
+\frac{1}{PrLe}\frac{\partial}{\partial y}
+\left(
+       \varrho^2
+       D
+       \frac{\partial Z_1 }{\partial y}
+\right)
+,
+\end{split} 
+\end{equation} 
+
+Similarly for $Z_2$:
+
+\begin{equation} 
+\begin{split} 
+ \hat{U}\frac{\partial Z_2}{\partial x}+
+ \hat{V}\frac{\partial Z_2}{\partial y}
+=
+\frac{1}{PrLe}\frac{\partial}{\partial y}
+\left(
+       \varrho^2
+       D
+       \frac{\partial Z_2 }{\partial y}
+\right)
+,
+\end{split} 
+\end{equation} 
+
+with  $D^P=D$ 
+and $Le_P=Le$. 
+Finally with $Z_3$
+
+\begin{equation} 
+\begin{split} 
+ \hat{U}\frac{\partial Z_3}{\partial x}+
+ \hat{V}\frac{\partial Z_3}{\partial y}
+=
+\frac{1}{PrLe}\frac{\partial}{\partial y}
+\left(
+       \varrho^2
+       D
+       \frac{\partial Z_3 }{\partial y}
+\right)
+.
 \end{split} 
 \end{equation} 
