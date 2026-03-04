@@ -96,9 +96,12 @@ and using the Stoke's relation:
 \\
 \begin{equation} 
 \frac{\partial}{\partial t}(\rho h)+
-\frac{\partial}{\partial x_i}(\rho u_i h)=
-\frac{\partial p}{\partial t}+
-u_i\frac{\partial p}{\partial x_i}+
+\frac{\partial}{\partial x_i}(\rho u_i h)
+=
+\frac{\partial p}{\partial t}
++
+u_i\frac{\partial p}{\partial x_i}
++
 \frac{\partial u_j}{\partial x_i}\tau_{ij}
 +
 \frac{\partial}{\partial x_i}\left(k\frac{\partial T}{\partial x_i}\right)
@@ -108,8 +111,13 @@ u_i\frac{\partial p}{\partial x_i}+
 \sum_i\rho h_iD_i\frac{\partial Y_i}{\partial x_i}
 \right)
 +
+{\color{red}
 Q\Omega
+}
 \end{equation} 
+%note this no external heat product of reaction, q is due to 
+%formatioin entalphy, already include in h, you need to 
+%separate to view q
 \\
 where 
 $\dfrac{\partial}{\partial x_i}

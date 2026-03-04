@@ -89,7 +89,7 @@ The momemtum streamwise equation
 .
 \end{equation} 
 
-The entalphy form of the energy equation:
+The entalphy $h=e+p/\rho$ form of the energy equation:
 
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
@@ -98,35 +98,151 @@ The entalphy form of the energy equation:
 \mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
 \frac{\partial}{\partial y^*}
 \left(
-   k^*\frac{\partial T^*}{\partial y^*}\right)
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
 -
 \frac{\partial}{\partial y^*}
 \left(
         \sum_i
-        c_{pi}
+        h_{si}
         \rho 
-        h_i
         D_i
-        \frac{\partial T^*}{\partial y^*}
+        \frac{\partial Y_i^*}{\partial y^*}
 \right)
-+
-Q_{rxn}
-\dot{\omega}
 \end{equation} 
 
-where $h=\sum Y_ih_i(T)$
-is the sensible enthalpy 
-and 
+
+where $h_{si}$ is the sensible enthalpy 
+for the specie $i$ in a multicomponent misture.  
+For multiples species $h_s=\sum Y_ih_{si}(T)$
+with  
 
 \begin{equation} 
-h_i
+h_{si}^*
 =
 \int_{T_0^*}^{T^*}
 c_{pi}^*dT^*
 \end{equation} 
 
-which is the sum 
-of the sensible enthalpy of the species. 
+and the formation enthalpy of the misture  
+can be defined 
+
+\begin{equation} 
+   h_{f}^\circ
+   =
+   \sum
+   h_{fi}^{\circ*}
+   .
+\end{equation} 
+
+Enthalpy can divide explicitly in two parts 
+
+\begin{equation} 
+    h^*=h_s^*+h_f^{\circ*}
+\end{equation} 
+
+for multiple species 
+
+\begin{equation} 
+    h^*=
+    \sum_i
+    \int_{T_0^*}^{T^*}
+    c_{pi}^*dT^
+    +
+    \sum_i h_{fi}^{*\circ}
+\end{equation} 
+
+
+Taking the material derivative
+
+\begin{equation} 
+\begin{split}
+    \frac{D h^*}{D t^*}
+    =
+    \frac{D h_s^*}{D t^*}
+    +
+    \frac{D h_f^{\circ *}}{D t^*}
+    =
+    \frac{D }{D t^*}
+    \sum_i Y_i^* h_{si}^*(T^*)
+    +
+    \frac{D }{D t^*}
+    \sum_i Y_i^* h_{fi}^{\circ*}
+    =
+    \\
+    \sum_i  
+    \frac{D Y_i^*}{D t^*}
+    h_{si}^*(T^*)
+    +
+    \sum_i  
+    \frac{D h_{si}^*(T^*)}{D t^*}
+    Y_i
+    +
+    \sum_i  
+    \frac{D Y_i^*}{D t^*}
+    h_{fi}^{\circ*}
+    +
+    \cancelto{0}{
+    \sum_i  
+    \frac{D h_{fi}^{\circ*}}{D t^*}
+    Y_i
+    }
+    =
+    \\
+    \frac{D }{D t^*}
+    \sum_i Y_i^* h_{si}^*(T^*)
+    +
+    \sum_i  
+    \frac{D Y_i^*}{D t^*}
+    h_{fi}^{\circ*}
+\end{split} 
+\end{equation} 
+
+In this case special case $\dfrac{D}{D t^*}=u^*\dfrac{\partial }{\partial x^*}+v^*\dfrac{\partial }{\partial y^*}$ and 
+the last term vanish once the formation enthalpy is constant for each specie. 
+The term $\dfrac{D Y_i^*}{D t^*}$ is the formation rate of the specie $i$, normally 
+write as $\dot{\omega}_i^*$.
+
+%The species equation can multiply by $h_{si}$ and  summed: 
+%
+%\begin{equation}
+%    \rho^*
+%    \sum_i  
+%    h_{si}^*
+%    \frac{D Y_i^*}{D t^*}
+%    =
+%    \sum_i  
+%    \frac{\partial }{\partial y^*}
+%    \left(
+%        \rho^*D_i^*
+%        \frac{\partial Y_i^* }{\partial y^*}
+%    \right)
+%\end{equation}
+
+So,  with the above sepation the  energy enthalpy equation gets :
+
+\begin{equation}
+\frac{D h_{s}^*(T^*)}{D t^*}
+=
+\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}
+        \rho 
+        D_i
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+-
+\sum_i  
+\dot{\omega}_i
+h_{fi}^{\circ*}
+\end{equation} 
 
 The heat realease of the chemical reaction  
 can be writen as: 
@@ -136,235 +252,80 @@ can be writen as:
     \dot{\omega}
     =
     \sum_i h_{fi}^{*\circ}
-    \dot{w}_i
+    \dot{\omega}_i
 \end{equation} 
 
 where the formation enthalphy  $h_{fi}^{*\circ}$ 
 of the specie $i$ is
 the enthalphy change when 1 mole of a compound 
-is formed from its element in their stanadar state. 
+is formed from its elements in their standart state. 
 
-Multiply each species equation by $h_{it}=h_{i}(T)+h_{fi}^{\circ}$
-and sum over all species, is obtaind the heat release 
-of the chemical reaction 
+For the boundary layer equation the energy equation 
+for the reacting misture is  
 
-\begin{equation} 
-    \sum h_{it}\dot{w}_i=Q_{rnx}\dot{w}
+\begin{equation}
+\rho^* u^* \frac{\partial h_s^*}{\partial x^*}+
+\rho^* v^* \frac{\partial h_s^*}{\partial y^*}
+=
+\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+-
+\sum_i  
+\dot{\omega}_i
+h_{fi}^{\circ*}
 \end{equation} 
 
-and using the enthalpy of formation
-
+% Reaction rate sign convention
 \begin{equation} 
-    \sum h_{it}\dot{w}_i= 
-    h_i
-    \dot{w}_i
-    +
-    \Delta h_{fi}^{*\circ}
-    \dot{w}_i
-    =
-    \int_{T_0^*}^{T^*}
-    c_{pi}^*dT^*\dot{w}_i
-    +
-    \Delta h_{fi}^{*\circ}
-    \dot{w}_i
+\dot{\omega}_i^* > 0 \quad \text{means species } i \text{ is produced}
 \end{equation} 
 
-the heat of reaction is 
+Products of an exothermic reaction usually have lower formation enthalpy
 
+% Standard reaction enthalpy
 \begin{equation} 
-    Q_{rx}
-    =
-    \sum_i h_{fi}^{*\circ}
-    \dot{w}_i
+\Delta H^{\circ*}_{\text{reaction}}
+=
+\sum_{\text{products}} h_{fi}^{\circ*}
+-
+\sum_{\text{reactants}} h_{fi}^{\circ*}
+< 0
+\quad \text{(exothermic reaction)}
 \end{equation} 
 
-and the first term is sensible enthalpy
-carried by species as they are created or destroyed.
-When a species disappears and another appears,
-they already carry thermal energy because the 
-mixture has temperature T.
-
-This is already include in the sensible enthalpy equation, left
-hand side.
-
-For the sensible enthalpy
+then the term: 
 
 \begin{equation} 
-    \rho
-    \frac{D h}{D t}
-    =
-    \rho
-    \frac{D }{D t}
-    \sum_i Y_i h_i(T)
-    =
-    \rho
-    \sum_i  
-    \frac{D Y_i}{D t}
-    h_i(T)
-    +
-    \rho
-    \sum_i  
-    \frac{D h_i(T)}{D t}
-    Y_i
+% Source term in sensible enthalpy equation
+\sum_i h_{fi}^{\circ}\dot{\omega}_i < 0
 \end{equation} 
 
-where $h_i=\int_{T_0}^TC_{pi}(T)dT$. 
-Now  is posible to use the species equation 
-for the term $\frac{D Y_i}{D t}$
+if reaction is exothermic. Therefore in the enthalply equation :
 
 \begin{equation} 
-    \frac{D h}{D t}
-    =
-    \sum_i  
-    h_i(T)
-    \dot{\omega}
-    +
-    \sum_i
-    \frac{\partial }{\partial y}
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-    \right)
-    h_i(T)
-    +
-    \rho
-    \sum_i  
-    \frac{D h_i(T)}{D t}
-    Y_i
+- \left( \sum_i h_{fi}^{\circ}\dot{\omega}_i \right) > 0
 \end{equation} 
 
-and use the definition of 
-
-$h_i=\int_{T_0}^TC_{pi}(T)dT$. 
-
-as $h_i=h_i(T)$
-
+Meaning that positive heat release term
 \begin{equation} 
-    \frac{D h_i}{D t}
-    =
-    \frac{d h_i}{d T}
-    \frac{D T}{Dt}
-    =
-    C_{pi}(T)
-    \frac{D T}{Dt}
+\text{Exothermic reaction} \;\Rightarrow\;
+\text{positive contribution to the energy equation}
+.
 \end{equation} 
 
-then:
-
-\begin{equation} 
-    \frac{D h}{D t}
-    =
-    \sum_i  
-    h_i(T)
-    \dot{\omega}
-    +
-    \sum_i
-    \frac{\partial }{\partial y}
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-    \right)
-    h_i(T)
-    +
-    \rho
-    \sum
-    C_{pi}
-    \frac{D T}{D t}
-    Y_i
-\end{equation} 
-
-which using the fact that 
-
-\begin{equation} 
-    \frac{\partial }{\partial y}
-    \sum_i
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-            h_i(T)
-    \right)
-    -
-    \sum_i
-    \frac{\partial h_i(T)}{\partial y}
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-    \right)
-    =
-    \sum_i
-    \frac{\partial }{\partial y}
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-    \right)
-    h_i(T)
-\end{equation} 
-
-\begin{equation} 
-    \frac{D h}{D t}
-    =
-    \sum_i  
-    h_i(T)
-    \dot{\omega}
-    +
-    \frac{\partial }{\partial y}
-    \sum_i
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-            h_i(T)
-    \right)
-    -
-    \sum_i
-    \frac{\partial h_i(T)}{\partial y}
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-    \right)
-    +
-    \rho
-    \sum
-    C_{pi}
-    \frac{D T}{D t}
-    Y_i
-\end{equation} 
-
-Now the enthalpy of the species is couple with the 
-heat condution 
-
-\begin{equation} 
-    \frac{D h}{D t}
-    =
-    \sum_i  
-    h_i(T)
-    \dot{\omega}
-    +
-    \frac{\partial }{\partial y}
-    \sum_i
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-            h_i(T)
-    \right)
-    -
-    \sum_i
-    C_{pi}
-    \frac{\partial T}{\partial y}
-    \left(
-            \rho D_i
-            \frac{\partial Y_i }{\partial y}
-    \right)
-    +
-    \rho
-    \sum
-    C_{pi}
-    \frac{D T}{D t}
-    Y_i
-\end{equation} 
-
-
-
-and the ideal gas law 
+Finally, complete the system with the ideal gas law 
 
 \begin{equation} 
 p^*=\rho^*R^*T^*
