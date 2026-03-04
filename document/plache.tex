@@ -1,0 +1,374 @@
+The bidimensional steady compressible boundary layer equation for with zero
+streamwise pressure gradient and non-body forces for a one step chemical
+reaction can be writem for  conservation of mass as   
+
+\begin{equation} 
+\frac{\partial \rho^* u^* }{\partial x^*}+
+\frac{\partial \rho^* v^* }{\partial y^*}+
+=0
+\end{equation}
+
+Considering a single step chemical reaction,
+
+\begin{equation}
+\nu_F F + \nu_O O \rightarrow \nu_P P
+\end{equation}
+
+where $\nu_F$ and $\nu_O$
+are the stiochiometric coeficients, for the 
+fuel and oxidizer, respectively. 
+Considering $\nu_F=1$ and $\nu_O=n$, indicating that 
+$n$ moles of oxidizer are
+required to burn one mole of fuel, producing $\nu_p=(1+n)$ moles of product,
+
+\begin{equation}
+F + n O \rightarrow (1+n)P
+\end{equation}
+
+where $n$ is the stiochiometric 
+mass ration between the fuel and oxidizer, which can be expressed as
+
+\begin{equation}
+n=\frac{W_F}{W_O}\frac{\nu_O}{\nu_F}
+.
+\end{equation}
+
+Where $W_F$ and $W_O$ are the molecular 
+weights of the fuel and oxidizer, respectively.
+
+Then the oxidizer mass consevation equation is 
+
+\begin{equation} 
+\rho^* u^*\frac{\partial Y_{O}^*}{\partial x^*}+
+\rho^* v^*\frac{\partial Y_{O}^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left(\rho^* D_{O}^{*}\frac{\partial Y_O^{*}}{\partial y^{*}}\right)
+-
+\frac{\dot{\omega}}{n}
+%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
+,
+\end{equation} 
+
+the fuel mass conservation
+
+\begin{equation} 
+\rho^* u^*\frac{\partial Y_{F}^*}{\partial x^*}+
+\rho^* v^*\frac{\partial Y_{F}^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left(\rho^* D_{F}^{*}\frac{\partial Y_F^{*}}{\partial y^{*}}\right)
+-
+\dot{\omega}
+%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
+\end{equation} 
+
+and the product conservation 
+
+\begin{equation} 
+\rho^* u^*\frac{\partial Y_{P}^*}{\partial x^*}+
+\rho^* v^*\frac{\partial Y_{P}^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left(\rho^* D_{P}^{*}\frac{\partial Y_P^{*}}{\partial y^{*}}\right)
++
+(n+1)
+\dot{\omega}
+%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
+.
+\end{equation} 
+
+The momemtum streamwise equation 
+
+
+\begin{equation} 
+\rho u^*\frac{\partial u^*}{\partial x^*}+
+\rho v^*\frac{\partial u^*}{\partial y^*}=-
+\frac{\partial}{\partial y^*}
+\left(\mu^*\frac{\partial u^*}{\partial y^*}\right)
+.
+\end{equation} 
+
+The entalphy form of the energy equation:
+
+\begin{equation}
+%\frac{\partial}{\partial t}(\rho h)+
+\rho^* u^* \frac{\partial h^*}{\partial x^*}+
+\rho^* v^* \frac{\partial h^*}{\partial y^*}=
+\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\frac{\partial}{\partial y^*}
+\left(
+   k^*\frac{\partial T^*}{\partial y^*}\right)
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        c_{pi}
+        \rho 
+        h_i
+        D_i
+        \frac{\partial T^*}{\partial y^*}
+\right)
++
+Q_{rxn}
+\dot{\omega}
+\end{equation} 
+
+where $h=\sum Y_ih_i(T)$
+is the sensible enthalpy 
+and 
+
+\begin{equation} 
+h_i
+=
+\int_{T_0^*}^{T^*}
+c_{pi}^*dT^*
+\end{equation} 
+
+which is the sum 
+of the sensible enthalpy of the species. 
+
+The heat realease of the chemical reaction  
+can be writen as: 
+
+\begin{equation} 
+    Q_{rxn}
+    \dot{\omega}
+    =
+    \sum_i h_{fi}^{*\circ}
+    \dot{w}_i
+\end{equation} 
+
+where the formation enthalphy  $h_{fi}^{*\circ}$ 
+of the specie $i$ is
+the enthalphy change when 1 mole of a compound 
+is formed from its element in their stanadar state. 
+
+Multiply each species equation by $h_{it}=h_{i}(T)+h_{fi}^{\circ}$
+and sum over all species, is obtaind the heat release 
+of the chemical reaction 
+
+\begin{equation} 
+    \sum h_{it}\dot{w}_i=Q_{rnx}\dot{w}
+\end{equation} 
+
+and using the enthalpy of formation
+
+\begin{equation} 
+    \sum h_{it}\dot{w}_i= 
+    h_i
+    \dot{w}_i
+    +
+    \Delta h_{fi}^{*\circ}
+    \dot{w}_i
+    =
+    \int_{T_0^*}^{T^*}
+    c_{pi}^*dT^*\dot{w}_i
+    +
+    \Delta h_{fi}^{*\circ}
+    \dot{w}_i
+\end{equation} 
+
+the heat of reaction is 
+
+\begin{equation} 
+    Q_{rx}
+    =
+    \sum_i h_{fi}^{*\circ}
+    \dot{w}_i
+\end{equation} 
+
+and the first term is sensible enthalpy
+carried by species as they are created or destroyed.
+When a species disappears and another appears,
+they already carry thermal energy because the 
+mixture has temperature T.
+
+This is already include in the sensible enthalpy equation, left
+hand side.
+
+For the sensible enthalpy
+
+\begin{equation} 
+    \rho
+    \frac{D h}{D t}
+    =
+    \rho
+    \frac{D }{D t}
+    \sum_i Y_i h_i(T)
+    =
+    \rho
+    \sum_i  
+    \frac{D Y_i}{D t}
+    h_i(T)
+    +
+    \rho
+    \sum_i  
+    \frac{D h_i(T)}{D t}
+    Y_i
+\end{equation} 
+
+where $h_i=\int_{T_0}^TC_{pi}(T)dT$. 
+Now  is posible to use the species equation 
+for the term $\frac{D Y_i}{D t}$
+
+\begin{equation} 
+    \frac{D h}{D t}
+    =
+    \sum_i  
+    h_i(T)
+    \dot{\omega}
+    +
+    \sum_i
+    \frac{\partial }{\partial y}
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+    \right)
+    h_i(T)
+    +
+    \rho
+    \sum_i  
+    \frac{D h_i(T)}{D t}
+    Y_i
+\end{equation} 
+
+and use the definition of 
+
+$h_i=\int_{T_0}^TC_{pi}(T)dT$. 
+
+as $h_i=h_i(T)$
+
+\begin{equation} 
+    \frac{D h_i}{D t}
+    =
+    \frac{d h_i}{d T}
+    \frac{D T}{Dt}
+    =
+    C_{pi}(T)
+    \frac{D T}{Dt}
+\end{equation} 
+
+then:
+
+\begin{equation} 
+    \frac{D h}{D t}
+    =
+    \sum_i  
+    h_i(T)
+    \dot{\omega}
+    +
+    \sum_i
+    \frac{\partial }{\partial y}
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+    \right)
+    h_i(T)
+    +
+    \rho
+    \sum
+    C_{pi}
+    \frac{D T}{D t}
+    Y_i
+\end{equation} 
+
+which using the fact that 
+
+\begin{equation} 
+    \frac{\partial }{\partial y}
+    \sum_i
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+            h_i(T)
+    \right)
+    -
+    \sum_i
+    \frac{\partial h_i(T)}{\partial y}
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+    \right)
+    =
+    \sum_i
+    \frac{\partial }{\partial y}
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+    \right)
+    h_i(T)
+\end{equation} 
+
+\begin{equation} 
+    \frac{D h}{D t}
+    =
+    \sum_i  
+    h_i(T)
+    \dot{\omega}
+    +
+    \frac{\partial }{\partial y}
+    \sum_i
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+            h_i(T)
+    \right)
+    -
+    \sum_i
+    \frac{\partial h_i(T)}{\partial y}
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+    \right)
+    +
+    \rho
+    \sum
+    C_{pi}
+    \frac{D T}{D t}
+    Y_i
+\end{equation} 
+
+Now the enthalpy of the species is couple with the 
+heat condution 
+
+\begin{equation} 
+    \frac{D h}{D t}
+    =
+    \sum_i  
+    h_i(T)
+    \dot{\omega}
+    +
+    \frac{\partial }{\partial y}
+    \sum_i
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+            h_i(T)
+    \right)
+    -
+    \sum_i
+    C_{pi}
+    \frac{\partial T}{\partial y}
+    \left(
+            \rho D_i
+            \frac{\partial Y_i }{\partial y}
+    \right)
+    +
+    \rho
+    \sum
+    C_{pi}
+    \frac{D T}{D t}
+    Y_i
+\end{equation} 
+
+
+
+and the ideal gas law 
+
+\begin{equation} 
+p^*=\rho^*R^*T^*
+\end{equation} 
+
+
+

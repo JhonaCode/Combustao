@@ -1,4 +1,4 @@
-Begins with the non-divergent boundary layer form of the compressible equations, 
+Begins with the non-divergent boundary layer form of the compressible equations,
 
 \begin{equation} 
 \frac{\partial \hat{U}}{\partial x}+
@@ -185,7 +185,7 @@ equation, we obtain
 +
 \\
 \frac{1}{Pr}\frac{\partial}{\partial y}
-\left(kc_p\varrho\frac{\partial \overline{h}}{\partial y}\right)
+\left(\frac{k}{c_p}\varrho\frac{\partial \overline{h}}{\partial y}\right)
 -
 \frac{Y^{i\infty}}{Pr}
 \frac{\partial}{\partial y}
@@ -244,7 +244,8 @@ Therefore,
 \frac{1}{Pr}
 \frac{\partial}{\partial y}
 \left[
-       k\varrho c_p
+       \frac{k}{c_p}
+       \varrho
        \left(
        \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
        +
@@ -287,14 +288,16 @@ Therefore,
 \frac{1}{Pr}
 \frac{\partial}{\partial y}
 \left[
-       k\varrho c_p
+       \varrho
+       \frac{k}{c_p}
        \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
 \right]
 +
 \frac{1}{Pr}
 \frac{\partial}{\partial y}
 \left[
-       k\varrho c_p
+       \varrho
+       \frac{k}{c_p}
        \sum_{i} 
        \frac{\partial \psi_i}{\partial y} \overline{h}_i
 \right]
@@ -330,7 +333,8 @@ Therefore,
 \frac{1}{Pr}
 \frac{\partial}{\partial y}
 \left[
-       k\varrho c_p
+       \varrho
+       \frac{k}{c_p}
        \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
 \right]
 +
@@ -338,7 +342,8 @@ Therefore,
 \left\{
 \frac{\partial}{\partial y}
 \left[
-kc_p
+\varrho
+\frac{k}{c_p}
 \varrho
 \left(
        \sum_{i} 
@@ -346,8 +351,8 @@ kc_p
        1
        -
        \frac{1}{Le_i}
-       \frac{Y^{i\infty}
-       \varrho D_i}{kc_p}
+       \frac{Y^{i\infty}c_p
+       \varrho D_i}{kp}
        \right)
        \frac{\partial \psi_i}{\partial y} \overline{h}_i
 \right)
@@ -558,9 +563,9 @@ Similarly for $Z_2$:
 \end{split} 
 \end{equation} 
 
-with  $D^P=D$ 
-and $Le_P=Le$. 
-Finally with $Z_3$
+with  $D^P=D$  and $Le_P=Le$. 
+
+Finally for $Z_3$
 
 \begin{equation} 
 \begin{split} 
@@ -576,3 +581,135 @@ Finally with $Z_3$
 .
 \end{split} 
 \end{equation} 
+
+The total entalphy equation can be writen as 
+
+\begin{equation} 
+\begin{split}
+(\rho u)\frac{\partial H}{\partial x}    
++
+(\rho v)\frac{\partial H}{\partial y}    
+=
+ \\
+\frac{\partial}{\partial y}\left(\mu \varrho\hat{U}\frac{\partial \hat{U}}{\partial  y}\right)
+-
+\mu 
+\varrho
+\left(
+1-
+(\gamma-1)M^2
+\right)
+\left(
+\frac{\partial \hat{U}}{\partial y}
+\right)
+^2
+\\
+\frac{1}{Pr}
+\frac{\partial}{\partial y}
+\left[
+       \frac{k}{c_p}
+       \varrho 
+       \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
+\right]
++
+\frac{1}{Pr}
+\left\{
+\frac{\partial}{\partial y}
+\left[
+\frac{k}{c_p}
+\varrho
+\left(
+       \sum_{i} 
+       \left(
+       1
+       -
+       \frac{1}{Le_i}
+       \frac{Y^{i\infty}c_p
+       \varrho D_i}{k}
+       \right)
+       \frac{\partial \psi_i}{\partial y} \overline{h}_i
+\right)
+\right]
+\right\}
++
+\frac{Q\Omega}{\varrho}
+\end{split}
+\end{equation}       
+
+If $D=D_i$ and $c_p$=$c_{pi}$
+the non-dimensional form change
+because there is not necessity 
+to define non dimensional number 
+for this variables. Then  
+
+\begin{equation}
+\frac{1}{Pr}
+\left[
+\varrho
+\left(
+       \sum_{i} 
+       \left(
+       1
+       -
+       \frac{1}{Le_i}
+       Y^{i\infty}
+       \varrho 
+       \right)
+       \frac{\partial \psi_i}{\partial y} \overline{h}_i
+\right)
+\right]
+\end{equation}       
+
+with
+
+\begin{equation}
+Pr=\frac{\mu}{c_pk}
+,
+\qquad
+Le=\frac{\alpha}{D}
+=
+\frac{k}{\varrho cp D}
+\qquad
+\end{equation}
+
+Assuming that 
+       
+\begin{equation}
+       Le
+       =
+       \frac{Y^{i\infty}}
+       {\varrho}
+\end{equation}       
+
+and 
+
+\begin{equation}
+       M^2=\frac{1}{\gamma-1}
+\end{equation}       
+
+The energy equation become
+
+\begin{equation} 
+\begin{split}
+(\rho u)\frac{\partial H}{\partial x}    
++
+(\rho v)\frac{\partial H}{\partial y}    
+=
+\\
+\frac{\partial}{\partial y}
+\left(
+       \mu \varrho\hat{U}
+       \frac{\partial \hat{U}}{\partial  y}
+       \right)
++
+\frac{1}{Pr}
+\frac{\partial}{\partial y}
+\left[
+       \frac{k}{c_p}
+       \varrho 
+       \sum_{i} \psi_i \frac{\partial \overline{h}_i}{\partial y}
+\right]
++
+\frac{Q\Omega}{\varrho}
+\end{split}
+\end{equation}       
