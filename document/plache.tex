@@ -325,6 +325,136 @@ Meaning that positive heat release term
 .
 \end{equation} 
 
+A equation for total enthapy can be 
+obtained using its definition 
+
+\begin{equation} 
+    H=h_s+\frac{1}{2}u^{*2}
+\end{equation} 
+
+Multiply the momemtum equation by $u^{2*}$ 
+and adding to the energy entalphy equation 
+
+\begin{equation}
+\begin{split}
+\rho^* u^* \frac{\partial h_s^*}{\partial x^*}
++
+u^*
+\rho u^*\frac{\partial u^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial h_s^*}{\partial y^*}
++
+u^*
+\rho v^*\frac{\partial u^*}{\partial y^*}
+=
+\\
+\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+-
+\sum_i  
+\dot{\omega}_i
+h_{fi}^{\circ*}
++
+u^*
+\frac{\partial}{\partial y^*}
+\left(\mu^*\frac{\partial u^*}{\partial y^*}\right)
+\end{split}
+\end{equation} 
+
+\begin{equation}
+\begin{split}
+\rho^* u^* \frac{\partial H^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial H^*}{\partial y^*}
+=
+\\
+\frac{\partial}{\partial y^*}
+\left(
+    \frac{1}{2}
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
+-
+\cancelto{0}{
+\frac{1}{2}
+\mu
+\frac{\partial u^*}{\partial y^*}
+\frac{\partial u^*}{\partial y^*}
+}
++
+\cancelto{0}{
+\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}
+}
++
+\\
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+-
+\sum_i  
+\dot{\omega}_i
+h_{fi}^{\circ*}
+\end{split}
+\end{equation} 
+
+\begin{equation}
+\begin{split}
+\rho^* u^* \frac{\partial H^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial H^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left(
+    \frac{1}{2}
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+\\
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+-
+\sum_i  
+\dot{\omega}_i
+h_{fi}^{\circ*}
+\end{split}
+\end{equation} 
+
 Finally, complete the system with the ideal gas law 
 
 \begin{equation} 
