@@ -45,7 +45,7 @@ Then the oxidizer mass consevation equation is
 \frac{\partial}{\partial y^*}
 \left(\rho^* D_{O}^{*}\frac{\partial Y_O^{*}}{\partial y^{*}}\right)
 -
-\frac{\dot{\omega}}{n}
+\dot{\omega}_O
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 ,
 \end{equation} 
@@ -59,7 +59,7 @@ the fuel mass conservation
 \frac{\partial}{\partial y^*}
 \left(\rho^* D_{F}^{*}\frac{\partial Y_F^{*}}{\partial y^{*}}\right)
 -
-\dot{\omega}
+\dot{\omega}_F
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
 
@@ -72,14 +72,23 @@ and the product conservation
 \frac{\partial}{\partial y^*}
 \left(\rho^* D_{P}^{*}\frac{\partial Y_P^{*}}{\partial y^{*}}\right)
 +
-(n+1)
-\dot{\omega}
-%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
+\dot{\omega}_p
 .
 \end{equation} 
 
-The momemtum streamwise equation 
+All species production rates depend on one global reaction rate
 
+\begin{equation}
+    \dot{\omega}_i=W_i n \dot{\Omega}
+\end{equation}
+
+Where, for the species mass conservation in the chemical reaction  
+
+\begin{equation}
+\sum_i\dot{\omega}_i=0
+\end{equation}
+
+The momemtum streamwise equation 
 
 \begin{equation} 
 \rho u^*\frac{\partial u^*}{\partial x^*}+
@@ -94,8 +103,13 @@ The entalphy $h=e+p/\rho$ form of the energy equation:
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
 \rho^* u^* \frac{\partial h^*}{\partial x^*}+
-\rho^* v^* \frac{\partial h^*}{\partial y^*}=
-\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\rho^* v^* \frac{\partial h^*}{\partial y^*}
+=
+\mu^*
+\left(
+\frac{\partial u^*}{\partial y^*}
+\right)^2
++
 \frac{\partial}{\partial y^*}
 \left(
     k^*\frac{\partial T^*}{\partial y^*}
@@ -219,12 +233,16 @@ write as $\dot{\omega}_i^*$.
 %    \right)
 %\end{equation}
 
-So,  with the above sepation the  energy enthalpy equation gets :
+So, with the above sepation the  energy enthalpy equation gets :
 
 \begin{equation}
 \frac{D h_{s}^*(T^*)}{D t^*}
 =
-\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\mu^*
+\left(
+\frac{\partial u^*}{\partial y^*}
+\right)^2
++
 \frac{\partial}{\partial y^*}
 \left(
     k^*\frac{\partial T^*}{\partial y^*}
@@ -329,7 +347,7 @@ A equation for total enthapy can be
 obtained using its definition 
 
 \begin{equation} 
-    H=h_s+\frac{1}{2}u^{*2}
+    H^{*}=h_s^{*}+h_f^{\circ*}+\frac{1}{2}u^{*2}
 \end{equation} 
 
 Multiply the momemtum equation by $u^{2*}$ 
@@ -348,7 +366,11 @@ u^*
 \rho v^*\frac{\partial u^*}{\partial y^*}
 =
 \\
-\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}+
+\mu^*
+\left(
+\frac{\partial u^*}{\partial y^*}
+\right)^2
++
 \frac{\partial}{\partial y^*}
 \left(
     k^*\frac{\partial T^*}{\partial y^*}
@@ -373,30 +395,38 @@ u^*
 \end{split}
 \end{equation} 
 
+
 \begin{equation}
 \begin{split}
-\rho^* u^* \frac{\partial H^*}{\partial x^*}
+\rho^* u^* \frac{\partial h_s^*}{\partial x^*}
 +
-\rho^* v^* \frac{\partial H^*}{\partial y^*}
+u^*
+\rho u^*\frac{\partial u^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial h_s^*}{\partial y^*}
++
+u^*
+\rho v^*\frac{\partial u^*}{\partial y^*}
 =
 \\
 \frac{\partial}{\partial y^*}
 \left(
-    \frac{1}{2}
     \mu
     u^*
     \frac{\partial u^*}{\partial y^*}
 \right)
 -
-\cancelto{0}{
-\frac{1}{2}
+\cancel{
 \mu
 \frac{\partial u^*}{\partial y^*}
 \frac{\partial u^*}{\partial y^*}
 }
 +
-\cancelto{0}{
-\mu^*\frac{\partial^2 u^*}{\partial (y^*)^2}
+\cancel{
+\mu^*
+\left(
+\frac{\partial u^*}{\partial y^*}
+\right)^2
 }
 +
 \\
@@ -420,21 +450,88 @@ h_{fi}^{\circ*}
 \end{split}
 \end{equation} 
 
+The species equation multiply by $h_{fi}^{\circ}$ and summed 
+for all species 
+
+\begin{equation}
+    \rho^*
+    \sum_i  
+    h_{fi}^{\circ*}
+    \frac{D Y_i^*}{D t^*}
+    =
+    \sum_i  
+    h_{fi}^{\circ*}
+    \frac{\partial }{\partial y^*}
+    \left(
+        \rho^*D_i^*
+        \frac{\partial Y_i^* }{\partial y^*}
+    \right)
+    +
+    \sum_i
+    h_{fi}^{\circ*}
+    \dot{\omega}_i^{*}
+\end{equation}
+
+\begin{equation}
+    \rho^*
+    \sum_i  
+    \frac{D }{D t^*}
+    \left(
+        h_{fi}^{\circ*}
+        Y_i^*
+    \right)
+    -
+    -
+    \cancel{
+    \rho^*
+    \sum_i  
+    Y_i^*
+    \frac{D h_{fi}^{\circ*}}{D t^*}
+    }
+    =
+    \sum_i  
+    h_{fi}^{\circ*}
+    \frac{\partial }{\partial y^*}
+    \left(
+        \rho^*D_i^*
+        \frac{\partial Y_i^* }{\partial y^*}
+    \right)
+    +
+    \sum_i
+    h_{fi}^{\circ*}
+    \dot{\omega}_i^{*}
+\end{equation}
+
+is added 
+
 \begin{equation}
 \begin{split}
-\rho^* u^* \frac{\partial H^*}{\partial x^*}
+\rho^* u^* \frac{\partial h_s^*}{\partial x^*}
 +
-\rho^* v^* \frac{\partial H^*}{\partial y^*}
+u^*
+\rho u^*\frac{\partial u^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial h_s^*}{\partial y^*}
++
+u^*
+\rho v^*\frac{\partial u^*}{\partial y^*}
++
+\rho^*
+\sum_i  
+\frac{D }{D t^*}
+\left(
+    h_{fi}^{\circ*}
+    Y_i^*
+\right)
 =
+\\
 \frac{\partial}{\partial y^*}
 \left(
-    \frac{1}{2}
     \mu
     u^*
     \frac{\partial u^*}{\partial y^*}
 \right)
 +
-\\
 \frac{\partial}{\partial y^*}
 \left(
     k^*\frac{\partial T^*}{\partial y^*}
@@ -449,9 +546,294 @@ h_{fi}^{\circ*}
         \frac{\partial Y_i^*}{\partial y^*}
 \right)
 -
+\cancel{
 \sum_i  
 \dot{\omega}_i
 h_{fi}^{\circ*}
+}
+\\
++
+\sum_i  
+h_{fi}^{\circ*}
+\frac{\partial }{\partial y^*}
+\left(
+    \rho^*D_i^*
+    \frac{\partial Y_i^* }{\partial y^*}
+\right)
++
+\cancel{
+\sum_i
+h_{fi}^{\circ*}
+\dot{\omega}_i^{*}
+}
+\end{split}
+\end{equation} 
+
+\begin{equation}
+\begin{split}
+\rho^* u^* \frac{\partial h_s^*}{\partial x^*}
++
+u^*
+\rho u^*\frac{\partial u^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial h_s^*}{\partial y^*}
++
+u^*
+\rho v^*\frac{\partial u^*}{\partial y^*}
++
+\rho^*
+\frac{D h_{f}^{\circ*}}{D t^*}
+=
+\\
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+-
+\\
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
++
+\sum_i  
+h_{fi}^{\circ*}
+\frac{\partial }{\partial y^*}
+\left(
+    \rho^*D_i^*
+    \frac{\partial Y_i^* }{\partial y^*}
+\right)
+\end{split}
+\end{equation} 
+
+
+\begin{equation}
+\begin{split}
+\rho^* u^* \frac{\partial H^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial H^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+\\
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
++
+\sum_i  
+h_{fi}^{\circ*}
+\frac{\partial }{\partial y^*}
+\left(
+    \rho^*D_i^*
+    \frac{\partial Y_i^* }{\partial y^*}
+\right)
+\end{split}
+\end{equation} 
+
+Therefore, the total enthalpy equation form 
+of the energy equation is given by :
+
+\begin{equation}
+\begin{split}
+\rho^* u^* \frac{\partial H^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial H^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial T^*}{\partial y^*}
+\right)
+\\
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{i}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+\end{split}
+\end{equation} 
+
+Now a special form of the total enthalpy equation can 
+be optained assuming that the specific heat at 
+constant pressure is constant 
+
+\begin{equation} 
+    h_s^*
+    =
+    \int_{T_0^*}^{T^*}
+    c_p^*(T^*)
+    dT^*
+    =
+    c_p^*
+    T^*
+\end{equation} 
+
+and the thermal difussion and viscous work can be 
+unified  
+
+\begin{equation*} 
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+c_p^*
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial h_s^*}{\partial y^*}
+\right)
+=
+c_p^*
+\frac{\partial}{\partial y^*}
+\left(
+    \frac{\mu}{c_p^*}
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+    +
+    k^*
+    \frac{\partial h_s^*}{\partial y^*}
+\right)
+=
+c_p^*
+\frac{\partial}{\partial y^*}
+\left(
+    \frac{\mu}{c_p^*}
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+    +
+    k^*
+    \frac{d h_s^*}{d T}
+    \frac{\partial T} {\partial y^*}
+\right)
+\end{equation*} 
+
+\begin{equation*} 
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+c_p^*
+\frac{\partial}{\partial y^*}
+\left(
+    k^*\frac{\partial h_s^*}{\partial y^*}
+\right)
+=
+c_p^*
+\frac{\partial}{\partial y^*}
+\left(
+    \frac{\mu}{c_p^*}
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+    +
+    k^*
+    \frac{\partial h_s^*}{\partial y^*}
+    +
+    u^*
+    k^*
+    \frac{\partial u^*}{\partial y^*}
+    -
+    u^*
+    k^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
+\end{equation*} 
+
+\begin{equation*} 
+c_p^*
+\frac{\partial}{\partial y^*}
+\left[
+    k^*
+    \frac{\partial H^*}{\partial y^*}
+    +
+    \left(
+    \frac{\mu^*}{c_p^*}
+    -
+    k^*
+    \right)
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right]
+=
+\frac{\partial}{\partial y^*}
+\left[
+    k^*
+    c_p^*
+    \frac{\partial H^*}{\partial y^*}
+    +
+    \mu^*
+    \left(
+    1
+    -
+    \frac{k^*c_p^*}{\mu^*}
+    \right)
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right]
+\end{equation*} 
+%%% the formatioin enthalpy is contant and can in in the derivative to form H
+
+Similarly for the enthalpy diffusion of species:
+
+\begin{equation} 
+\begin{split}
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{i}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+=
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{i}(T^*)
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
 \end{split}
 \end{equation} 
 
