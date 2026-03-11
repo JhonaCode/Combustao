@@ -1,0 +1,202 @@
+The dimensional consevation equation 
+for compressible reacting mixing layer are 
+non-dimensionalized using  the characteristics 
+properties of the hight velocity stream (sub\_indice $1$) 
+and the vorticity thickness $\delta^*$. 
+
+\begin{equation} 
+\begin{split} 
+    t=\frac{t^*}{t_1=\dfrac{\delta^*}{u_1^*}},
+    \quad
+    x=\frac{x^*}{\delta^*},
+    \quad
+    y=\frac{y^*}{\delta^*},
+    \quad
+    u=\frac{u^*}{u_1^*},
+    \quad
+    v=\frac{v^*}{u_1^*},
+    \\
+    \rho=\frac{\rho^*}{\rho_1^*},
+    \quad
+    p=\frac{p^*}{\rho_1^*u_1^2},
+    \quad
+    H=\frac{H}{H_{1}^*}, 
+    \quad
+    T=\frac{T}{T_{1}^*}, 
+    \qquad
+    Y_i=Y^{*}_{i1}%\frac{Y^{F*}}{Y^{F*}_1}, 
+    .
+\end{split} 
+\end{equation}
+
+Using the fact that 
+
+\begin{equation}
+\end{equation} 
+\\
+\begin{equation}
+\frac{\mu}{\mu_{*}} =
+\frac{k}{k_{*}} =
+\frac{c_v}{c_{v*}} =
+\frac{c_p}{c_{p*}} =
+\frac{D^F}{D^{F*}}= 
+\frac{D^0}{D^{O*}}= 
+\frac{R}{R_*}= 
+\overline{T}^n,
+\end{equation} 
+
+Then the non-dimensional quantities are defined as:  
+
+\begin{equation} 
+\frac{\partial \rho u }{\partial x}+
+\frac{\partial \rho v }{\partial y}
+=0
+,
+\end{equation}
+
+
+\begin{equation} 
+\rho u\frac{\partial Y_{i}}{\partial x}+
+\rho v\frac{\partial Y_{i}}{\partial y}
+=
+\frac{\partial}{\partial y}
+%\frac{Di}{\alpha}
+%
+%\frac{Di}{\alpha}
+%\frac{c_p^* \rho^*}{k^*}
+%\frac{\nu^*}{\nu*}
+%
+%\frac{Di}{\alpha}
+%\frac{c_p^* \mu^*}{k^*}
+%
+\frac{1}{Le_i}
+\frac{1}{Pr}
+\left(\rho \frac{\partial Y_i}{\partial y}\right)
+-
+\dot{\omega}_i
+%\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
+,
+\end{equation} 
+
+where $i=(O,F,P)$ represent the oxidizer, fuel and products of the 
+reaction, respectively. 
+
+
+\begin{equation} 
+\rho u\frac{\partial u}{\partial x}+
+\rho v\frac{\partial u}{\partial y}=-
+\frac{\partial}{\partial y}
+\left(\mu\frac{\partial u}{\partial y}\right)
+.
+\end{equation} 
+
+Remember that 
+$Re=\dfrac{\rho^*u_1^*\delta^*}{\mu^*}=1$, is the approximation of boundary 
+layer equation for the reacting mixing layer.
+
+
+\begin{equation*} 
+\begin{split} 
+\rho u \frac{\partial H}{\partial x}
++
+\rho v \frac{\partial H}{\partial y}
+=
+\\
+\frac{\partial}{\partial y}
+\left\{
+    \frac{ \mu}{Pr} 
+    \left[
+        \frac{\partial H}{\partial y}
+        \left(
+        Pr
+        -
+        1
+        \right)
+        u
+        \frac{\partial u}{\partial y}
+    \right]
+\right\}
+-
+\frac{ \mu}{Pr} 
+\frac{\partial}{\partial y}
+    \left[
+        \sum_i
+        h_{si}
+        \left(
+            \frac{1}{Le_i} 
+        \right)
+        \frac{\partial Y}{\partial y}
+    \right]
+    ,
+\end{split} 
+\end{equation*} 
+
+and finally  
+
+\begin{equation} 
+%p^*=\rho^*R^*T^*
+%p\rho_1*u_1^2=\rho^*_1 R^* T_1^*\rho T
+%p u_1^2=\frac{\gamma}{\gamma}R^*T_1^*\rho T
+p=\frac{1}{\gamma M^2} \rho T
+.
+\end{equation} 
+
+Where $M=u_1^2/a_1^2$ is the Mach number 
+and  $a_1$ 
+is the sound speed on the fast stream of the mixing layer. 
+
+Assuming that $Pr=Le_i=1$, 
+
+\begin{equation} 
+\frac{\partial \rho u }{\partial x}+
+\frac{\partial \rho v }{\partial y}
+=0
+,
+\end{equation}
+
+
+\begin{equation} 
+\rho u\frac{\partial Y_{i}}{\partial x}+
+\rho v\frac{\partial Y_{i}}{\partial y}
+=
+\frac{\partial}{\partial y}
+\left(\rho \frac{\partial Y_i}{\partial y}\right)
+-
+\dot{\omega}_i
+,
+\end{equation} 
+
+\begin{equation} 
+\rho u\frac{\partial u}{\partial x}+
+\rho v\frac{\partial u}{\partial y}=-
+\frac{\partial}{\partial y}
+\left(\mu\frac{\partial u}{\partial y}\right)
+,
+\end{equation} 
+
+\begin{equation*} 
+\begin{split} 
+\rho u \frac{\partial H}{\partial x}
++
+\rho v \frac{\partial H}{\partial y}
+=
+\mu
+\frac{\partial}{\partial y}
+    \left[
+        \sum_{i=1}^N
+        h_{si}
+        \frac{\partial Y}{\partial y}
+    \right]
+    ,
+\end{split} 
+\end{equation*} 
+
+and 
+
+\begin{equation} 
+%p^*=\rho^*R^*T^*
+%p\rho_1*u_1^2=\rho^*_1 R^* T_1^*\rho T
+%p u_1^2=\frac{\gamma}{\gamma}R^*T_1^*\rho T
+p=\frac{1}{\gamma M^2} \rho T
+.
+\end{equation} 

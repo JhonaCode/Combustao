@@ -480,8 +480,7 @@ for all species
         h_{fi}^{\circ*}
         Y_i^*
     \right)
-    -
-    -
+    - 
     \cancel{
     \rho^*
     \sum_i  
@@ -708,6 +707,7 @@ and the thermal difussion and viscous work can be
 unified  
 
 \begin{equation*} 
+\begin{split} 
 \frac{\partial}{\partial y^*}
 \left(
     \mu
@@ -715,37 +715,25 @@ unified
     \frac{\partial u^*}{\partial y^*}
 \right)
 +
-c_p^*
+\frac{1}{c_p^*}
 \frac{\partial}{\partial y^*}
 \left(
     k^*\frac{\partial h_s^*}{\partial y^*}
 \right)
-=
-c_p^*
+-
 \frac{\partial}{\partial y^*}
 \left(
-    \frac{\mu}{c_p^*}
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-    +
-    k^*
-    \frac{\partial h_s^*}{\partial y^*}
+        \sum_i
+        h_{si}^*
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
 \right)
-=
-c_p^*
-\frac{\partial}{\partial y^*}
-\left(
-    \frac{\mu}{c_p^*}
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-    +
-    k^*
-    \frac{d h_s^*}{d T}
-    \frac{\partial T} {\partial y^*}
-\right)
+\end{split} 
 \end{equation*} 
 
 \begin{equation*} 
+\begin{split} 
 \frac{\partial}{\partial y^*}
 \left(
     \mu
@@ -753,95 +741,400 @@ c_p^*
     \frac{\partial u^*}{\partial y^*}
 \right)
 +
-c_p^*
+\frac{1}{c_p^*}
+\frac{\partial}{\partial y^*}
+\left[
+    k^*
+    \left(
+        \sum_i
+        \frac{\partial Y_i}{\partial y^*}
+        h_i
+        +
+        \sum_i
+        Y_i
+        \frac{\partial h_{si} }{\partial y^*}
+    \right)
+\right]
+-
 \frac{\partial}{\partial y^*}
 \left(
-    k^*\frac{\partial h_s^*}{\partial y^*}
+        \sum_i
+        h_{si}^*
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
 \right)
-=
-c_p^*
-\frac{\partial}{\partial y^*}
-\left(
-    \frac{\mu}{c_p^*}
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-    +
-    k^*
-    \frac{\partial h_s^*}{\partial y^*}
-    +
-    u^*
-    k^*
-    \frac{\partial u^*}{\partial y^*}
-    -
-    u^*
-    k^*
-    \frac{\partial u^*}{\partial y^*}
-\right)
+\end{split} 
 \end{equation*} 
 
+The derivate of the Total enphalpy is 
+
 \begin{equation*} 
-c_p^*
+\frac{\partial H^*}{\partial y^*}
+=
+\frac{\partial h_{s}^*}{\partial y^*}
++
+u^*
+\frac{\partial u^*}{\partial y^*}
+=
+\frac{\partial }{\partial y^*}
+\left(
+    \sum_ih_iY_i
+\right)
++
+u^*
+\frac{\partial u^*}{\partial y^*}
+=
+\sum_i
+\frac{\partial Y_i}{\partial y^*}
+h_{si}
++
+\sum_i
+Y_i
+\frac{\partial h_{si} }{\partial y^*}
++
+u^*
+\frac{\partial u^*}{\partial y^*}
+\end{equation*} 
+
+Then 
+
+\begin{equation*} 
+\frac{\partial H^*}{\partial y^*}
+-
+u^*
+\frac{\partial u^*}{\partial y^*}
+=
+\sum_i
+Y_i^*
+\frac{\partial h_{si}^* }{\partial y^*}
++
+\sum_i
+\frac{\partial Y_i^*}{\partial y^*}
+h_{si}^*
+\end{equation*} 
+
+
+\begin{equation*} 
+\begin{split} 
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+\frac{1}{c_p^*}
+\frac{\partial}{\partial y^*}
+\left[
+    k^*
+    \left(
+        \frac{\partial H^*}{\partial y^*}
+        -
+        u^*
+        \frac{\partial u^*}{\partial y^*}
+    \right)
+\right]
+\\
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}^*
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+\end{split} 
+\end{equation*} 
+
+Joined the velocity gradient term  
+
+\begin{equation*} 
+\begin{split} 
+\frac{1}{c_p^*}
 \frac{\partial}{\partial y^*}
 \left[
     k^*
     \frac{\partial H^*}{\partial y^*}
     +
     \left(
-    \frac{\mu^*}{c_p^*}
-    -
-    k^*
+        \frac{\mu^*{c_p^*}}{k^*}
+        -
+        1 
     \right)
     u^*
     \frac{\partial u^*}{\partial y^*}
 \right]
-=
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}^*
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+\end{split} 
+\end{equation*} 
+
+An interenting term  apper in the velociy gradient.  
+Remember that \\$Pr=\mu^*c_p^*/k^*$. If $Pr=1$ 
+the heat diffusivity and the momemtum diffussivity are 
+the same, and this term vanish form the energy equation. 
+
+Similarly another interesting term apper. 
+Begining with the total enthalpy equation: 
+
+\begin{equation*} 
+\begin{split} 
+\frac{\partial}{\partial y^*}
+\left(
+    \mu
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+\right)
++
+\frac{1}{c_p^*}
 \frac{\partial}{\partial y^*}
 \left[
     k^*
-    c_p^*
-    \frac{\partial H^*}{\partial y^*}
-    +
-    \mu^*
     \left(
+        \sum_i
+        \frac{\partial Y_i}{\partial y^*}
+        h_i
+        +
+        \sum_i
+        Y_i
+        \frac{\partial h_{si} }{\partial y^*}
+    \right)
+\right]
+-
+\frac{\partial}{\partial y^*}
+\left(
+        \sum_i
+        h_{si}^*
+        \rho^* 
+        D_i^*
+        \frac{\partial Y_i^*}{\partial y^*}
+\right)
+\end{split} 
+\end{equation*} 
+
+Separing the gradient of the heat conduction in term of 
+sensible  enthalpy of species, join with the  difussion of energy by species   
+and put the work of viscous diffution 
+
+\begin{equation*} 
+\begin{split} 
+\frac{1}{c_p^*} \frac{\partial}{\partial y^*}
+\left[
+    k^*
+    \left(
+    \sum_i
+    Y_i
+    \frac{\partial h_{si} }{\partial y^*}
+    +
+    \frac{\mu c_p^*}{k^*}   
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+    \right)
+\right]
+-
+\frac{\partial}{\partial y^*}
+    \left[
+        \sum_i
+        h_{si}^*
+        \left(
+            \frac{k^*}{c_p^*} 
+            -
+            \rho^* 
+            D_i^*
+        \right)
+        \frac{\partial Y^*_i}{\partial y^*}
+    \right]
+\end{split} 
+\end{equation*} 
+
+The derivate of the Total enphalpy is 
+
+\begin{equation*} 
+\frac{\partial H^*}{\partial y^*}
+-
+\sum_i
+\frac{\partial Y_i}{\partial y^*}
+h_{si}
+-
+u^*
+\frac{\partial u^*}{\partial y^*}
+=
+\sum_i
+Y_i
+\frac{\partial h_{si} }{\partial y^*}
+\end{equation*} 
+
+Therefore
+
+\begin{equation*} 
+\begin{split} 
+\frac{1}{c_p^*} \frac{\partial}{\partial y^*}
+\left[
+    k^*
+    \left(
+    \frac{\partial H^*}{\partial y^*}
+    -
+    \sum_i
+    \frac{\partial Y_i}{\partial y^*}
+    h_{si}
+    +
+    \left(
+    \frac{\mu c_p^*}{k^*}   
+    -
     1
-    -
-    \frac{k^*c_p^*}{\mu^*}
     \right)
     u^*
     \frac{\partial u^*}{\partial y^*}
+    \right)
 \right]
+-
+\frac{\partial}{\partial y^*}
+    \left[
+        \sum_i
+        h_{si}^*
+        \left(
+            \frac{k^*}{c_p^*} 
+            -
+            \rho^* 
+            D_i^*
+        \right)
+        \frac{\partial Y^*_i}{\partial y^*}
+    \right]
+\end{split} 
 \end{equation*} 
-%%% the formatioin enthalpy is contant and can in in the derivative to form H
 
-Similarly for the enthalpy diffusion of species:
+Defining 
+$Le_i=k^*/(D_i^*c_p^* \rho^*)$
+
+\begin{equation*} 
+\begin{split} 
+\frac{\partial}{\partial y^*}
+\left[
+    \frac{ k^*}{c_p^*} 
+    \left(
+    \frac{\partial H^*}{\partial y^*}
+    -
+    \sum_i
+    \frac{\partial Y_i}{\partial y^*}
+    h_{si}
+    +
+    \left(
+    Pr
+    -
+    1
+    \right)
+    u^*
+    \frac{\partial u^*}{\partial y^*}
+    \right)
+\right]
+-
+\frac{k^*}{c_p^*} 
+\frac{\partial}{\partial y^*}
+    \left[
+        \sum_i
+        h_{si}^*
+        \left(
+            1
+            -
+            \frac{1}{Le_1} 
+        \right)
+        \frac{\partial Y^*_i}{\partial y^*}
+    \right]
+\end{split} 
+\end{equation*} 
+
+If $Le_i=1$ and $Pr=1$, the total enthalpy equation can be simplified 
 
 \begin{equation} 
-\begin{split}
-\frac{\partial}{\partial y^*}
-\left(
-        \sum_i
-        h_{i}(T^*)
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
+\begin{split} 
+\rho^* u^* \frac{\partial H^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial H^*}{\partial y^*}
 =
 \frac{\partial}{\partial y^*}
-\left(
+\left[
+    \frac{ k^*}{c_p^*} 
+    \left(
+        \frac{\partial H^*}{\partial y^*}
+        -
         \sum_i
-        h_{i}(T^*)
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
-\end{split}
+        \frac{\partial Y_i}{\partial y^*}
+        h_{si}
+    \right)
+\right]
+\end{split} 
 \end{equation} 
 
-Finally, complete the system with the ideal gas law 
+
+Finally, to complete the system the ideal gas law 
+is used  
 
 \begin{equation} 
 p^*=\rho^*R^*T^*
 \end{equation} 
 
 
+%%%%
+%book
+%
+%\begin{equation*} 
+%\begin{split} 
+%\frac{\partial}{\partial y^*}
+%\left[
+%    \frac{\mu*}{Pr}
+%    \left(
+%        \frac{\partial H^*}{\partial y^*}
+%        +
+%        (Pr-1)
+%        u^*
+%        \frac{\partial u^*}{\partial y^*}
+%    \right)
+%\right]
+%\\
+%+
+%\frac{\partial}{\partial y^*}
+%\left(
+%        \sum_i^N
+%        (Le^{-1}-1)
+%        h_{si}^*
+%        \frac{\partial Y_i^*}{\partial y^*}
+%\right)
+%\end{split} 
+%\end{equation*} 
+%
+%\begin{equation*} 
+%\begin{split} 
+%\frac{\partial}{\partial y^*}
+%\left[
+%    \frac{\mu*k^*}{c_p^*\mu^*}
+%    \left(
+%        \frac{\partial H^*}{\partial y^*}
+%        +
+%        (\frac{k^*}{c_p^*\mu^*}
+%        -1
+%        )
+%        u^*
+%        \frac{\partial u^*}{\partial y^*}
+%    \right)
+%\right]
+%\\
+%+
+%\frac{\partial}{\partial y^*}
+%\left(
+%        \sum_i^N
+%        \frac{(\rho^*D_i^*c_p^*-1)}{k^*}
+%        h_{si}^*
+%        \frac{\partial Y_i^*}{\partial y^*}
+%\right)
+%\end{split} 
+%\end{equation*} 
 
