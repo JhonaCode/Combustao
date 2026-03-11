@@ -650,16 +650,53 @@ $Z=(Z_1,Z_2,Z_3)$.
 Zeldovich proposed using the $Z$ variable, 
 which is a linear combination of the
 mass fractions of the fuel and oxidizer, to eliminnate 
-the reaction rate . Definning the passive scalars:
+the reaction rate . 
+Consider a single step chemical reaction of the type $\nu_F F+\nu_OO \rightarrow \nu_P P$
+where  
 
 \begin{equation}
-%Z=\frac{Y_F-Y_O+Y_{O\infty}}{Y_{F\infty}+Y_{O\infty}}
+\dot{\omega}_F=-W_F\nu_F\dot{\Omega}
+,
+\quad              
+\dot{\omega}_O=-W_O\nu_O\dot{\Omega}
+,
+\quad              
+\dot{\omega}_P= W_P\nu_P\dot{\Omega}
+.
+\end{equation}
+
+Normalized the coeficcient by $\nu_F$: 
+$F+\dfrac{\nu_O}{\nu_F}O \rightarrow \dfrac{\nu_P}{\nu_F} P$. 
+
+To transform into mass form multiplie by 
+their respectively molecular way, once  $m_i=W_i\nu_i$,   
+$F+\dfrac{W_O\nu_O}{W_F\nu_F}O \rightarrow \dfrac{W_P\nu_P}{W_F\nu_F} P$. 
+
+Now  
+
+\begin{equation}
+    \frac{\dot{\omega_F}}{\dot{\omega_O}}
+    =
+    \frac{W_F\nu_F\dot{\Omega}}{W_O\nu_O\dot{\Omega}}
+    =
+    \frac{1}{n} 
+\end{equation}
+
+with $n=(W_O\nu_O)/W_F\nu_F$.
+So,  
+\begin{equation}
+    \dot{\omega_F}=\frac{1}{n}{\dot{\omega_O}}
+\end{equation}
+
+Then, the single step chemical reaction gets  $F + n O \rightarrow (n+1)P$. 
+Definning the passive scalars
+
+\begin{equation}
 Z_1=
 Y_F
 -
 \frac{Y_O}{n}
 \end{equation}          
-
 
 which is a linear combination of the fuel and oxidizer mass fractions, 
 meaning that for stiochiometric conditions, 
@@ -691,7 +728,7 @@ Then:
 \frac{\dot{\omega}_F}{\rho}
 +
 \frac{\dot{\omega}_O}{n\rho}
-,
+.
 \end{equation} 
 
 \begin{equation} 
@@ -713,31 +750,14 @@ Then:
 ,
 \end{equation} 
 
-Remember that:
+with 
 
 \begin{equation}
-    \dot{\omega_i}
-    =W_i{\nu}_i\dot{\Omega}
+    \dot{\omega_F}=\frac{1}{n}{\dot{\omega_O}}
+    ,
 \end{equation}
 
-Then 
-
-\begin{equation}
-    \frac{\dot{\omega_F}}{\dot{\omega_O}}
-    =
-    \frac{W_F\nu_F\dot{\Omega}}{W_O\nu_O\dot{\Omega}}
-    =
-    n 
-\end{equation}
-
-with $n=W_F\nu_F/(W_O\nu_O)$ 
-
-So,  
-\begin{equation}
-    \dot{\omega_F}=n{\dot{\omega_O}}
-\end{equation}
-
-and the $Z_1$ equation gets 
+the $Z_1$ equation gets 
 
 \begin{equation} 
 \frac{\partial \psi}{\partial \eta}
@@ -750,7 +770,7 @@ and the $Z_1$ equation gets
 \left(
     \rho^2 \frac{\partial Z_1}{\partial \eta}
 \right)
-,
+.
 \end{equation} 
 
 Similarly, another passive scalar can be defined as
@@ -766,16 +786,82 @@ Y_F
 which is a linear combination of the fuel and product mass fractions,
 measuring how far the mixture is from the pure fuel. 
 $Z_2=0$ only for a pure oxidizer flow. 
+The consevation equation for $Z_2$ has the same form that $Z_1$:  
+
+\begin{equation} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial Z_2}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial Z_2}{\partial \eta}
+=
+\frac{\partial}{\partial \eta}
+\left(
+    \rho^2 \frac{\partial Z_2}{\partial \eta}
+\right)
+.
+\end{equation} 
+
+This is due that: $F+n O \rightarrow (n+1)P$
+
+\begin{equation}
+    \frac{\dot{\omega_F}}{\dot{\omega_P}}
+    =
+    \frac{W_F\nu_F\dot{\Omega}}{W_P\nu_P\dot{\Omega}}
+    =
+    \frac{1}{(n+1)}
+\end{equation}
+
+with $(n+1)=(W_P\nu_P)/W_F\nu_F$ 
+
+So,  
+\begin{equation}
+    \dot{\omega_F}=\frac{1}{(n+1)}{\dot{\omega_P}}
+\end{equation}
  
 For the oxidizer, another passive scalar can be defined as
 
 \begin{equation}
 Z_3=
-Y_O
+\frac{Y_O}{n}
 +
-\frac{Y_P}{n}
+\frac{Y_P}{n+1}
 \end{equation}          
 
 which is a linear combination of the oxidizer and product mass fractions,
 measuring how far the mixture is from the pure oxidizer. 
 $Z_3=0$ only for a pure fuel flow. 
+
+In the same way: 
+
+\begin{equation}
+    \frac{\dot{\omega_O}}{\dot{\omega_P}}
+    =
+    \frac{W_O\nu_O\dot{\Omega}}{W_P\nu_P\dot{\Omega}}
+    =
+    \frac{n}{(n+1)} 
+\end{equation}
+
+with $n_p=n/n+1=W_P\nu_P/(W_O\nu_O)$ 
+
+So,  
+\begin{equation}
+    \dot{\omega_P}=\frac{1}{n_p}{\dot{\omega_O}}
+    =\frac{n+1}{n}{\dot{\omega_O}}
+\end{equation}
+
+The consevation equation hold the same form as the previouly defined: 
+
+\begin{equation} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial Z_3}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial Z_3}{\partial \eta}
+=
+\frac{\partial}{\partial \eta}
+\left(
+    \rho^2 \frac{\partial Z_3}{\partial \eta}
+\right)
+.
+\end{equation} 
