@@ -499,7 +499,7 @@ allows to obtain:
 v\frac{\partial Y_{i}}{\partial \eta}
 =
 \frac{\partial}{\partial y}
-\left(\rho \frac{\partial Y_i}{\partial y}\right)
+\left(\mu \frac{\partial Y_i}{\partial y}\right)
 -
 \dot{\omega}_i
 ,
@@ -515,7 +515,7 @@ v\frac{\partial Y_{i}}{\partial \eta}
 \frac{\partial Y_{i}}{\partial y}
 =
 \frac{\partial}{\partial y}
-\left(\rho \frac{\partial Y_i}{\partial y}\right)
+\left(\mu \frac{\partial Y_i}{\partial y}\right)
 -
 \dot{\omega}_i
 ,
@@ -529,7 +529,7 @@ V
 \frac{\partial Y_{i}}{\partial \eta}
 =
 \frac{\partial}{\partial \eta}
-\left(\rho^2 \frac{\partial Y_i}{\partial \eta}\right)
+\left(\mu\rho \frac{\partial Y_i}{\partial \eta}\right)
 -
 \frac{\dot{\omega}_i}{\rho}
 ,
@@ -557,13 +557,11 @@ U
 V 
 \frac{\partial H}{\partial \eta}
 =
-\mu
 \frac{\partial}{\partial \eta}
     \left[
-        \rho
-        \sum_{i=1}^N
-        h_{si}
-        \frac{\partial Y}{\partial \eta}
+    \mu
+    \rho
+    \frac{\partial H}{\partial \eta}
     \right]
     ,
 \end{split} 
@@ -592,9 +590,10 @@ V
 -\frac{\partial \psi}{\partial \epsilon}
 \end{equation} 
 
-\newpage
+%\newpage
 
 the consevation equations become
+:
 
 \begin{equation} 
 \frac{\partial \psi}{\partial \eta}
@@ -604,7 +603,7 @@ the consevation equations become
 \frac{\partial Y_{i}}{\partial \eta}
 =
 \frac{\partial}{\partial \eta}
-\left(\rho^2 \frac{\partial Y_i}{\partial \eta}\right)
+\left(\mu\rho \frac{\partial Y_i}{\partial \eta}\right)
 -
 \frac{\dot{\omega}_i}{\rho}
 ,
@@ -632,20 +631,18 @@ the consevation equations become
 \frac{\partial \psi}{\partial \epsilon}
 \frac{\partial H}{\partial \epsilon}
 =
-\mu
 \frac{\partial}{\partial \eta}
-    \left[
-        \rho
-        \sum_{i=1}^N
-        h_{si}
-        \frac{\partial Y}{\partial \eta}
-    \right]
+    \left(
+    \mu
+    \rho
+    \frac{\partial H}{\partial \eta}
+    \right)
     ,
 \end{split} 
 \end{equation*} 
 
-The species equation collapse  in 
-a single equation for a passive scalar  
+The species equation can be writtem in terms  of 
+passive scalar  
 $Z=(Z_1,Z_2,Z_3)$. 
 Zeldovich proposed using the $Z$ variable, 
 which is a linear combination of the
@@ -720,10 +717,10 @@ Then:
 \frac{\partial Y_{O}}{\partial \eta}
 =
 \frac{\partial}{\partial \eta}
-\left(\rho^2 \frac{\partial Y_F}{\partial \eta}\right)
+\left(\mu\rho \frac{\partial Y_F}{\partial \eta}\right)
 -
 \frac{\partial}{\partial \eta}
-\left(\rho^2 \frac{\partial Y_O}{\partial \eta}\right)
+\left(\mu\rho \frac{\partial Y_O}{\partial \eta}\right)
 -
 \frac{\dot{\omega}_F}{\rho}
 +
@@ -739,7 +736,7 @@ Then:
 \frac{\partial Z_1}{\partial \eta}
 =
 \frac{\partial}{\partial \eta}
-\left(\rho^2 \frac{\partial Z_1}{\partial \eta}\right)
+\left(\mu\rho \frac{\partial Z_1}{\partial \eta}\right)
 -
 \frac{1}{\rho}
 \left(
@@ -768,7 +765,7 @@ the $Z_1$ equation gets
 =
 \frac{\partial}{\partial \eta}
 \left(
-    \rho^2 \frac{\partial Z_1}{\partial \eta}
+    \mu\rho  \frac{\partial Z_1}{\partial \eta}
 \right)
 .
 \end{equation} 
@@ -797,7 +794,7 @@ The consevation equation for $Z_2$ has the same form that $Z_1$:
 =
 \frac{\partial}{\partial \eta}
 \left(
-    \rho^2 \frac{\partial Z_2}{\partial \eta}
+     \mu\rho  \frac{\partial Z_2}{\partial \eta}
 \right)
 .
 \end{equation} 
@@ -861,7 +858,110 @@ The consevation equation hold the same form as the previouly defined:
 =
 \frac{\partial}{\partial \eta}
 \left(
-    \rho^2 \frac{\partial Z_3}{\partial \eta}
+     \mu\rho  \frac{\partial Z_3}{\partial \eta}
 \right)
+.
+\end{equation} 
+
+\begin{equation}
+Pr
+=
+\frac{\mu c_p}{k}
+=\frac{\mu \rho c_p}{k\rho}
+\end{equation} 
+
+
+The the complete system of equations for a compressible 
+reacting mixing layer is: 
+
+\begin{equation} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial Z_{i}}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial Z_{i}}{\partial \eta}
+=
+\frac{\partial}{\partial \eta}
+\left(\mu\rho  \frac{\partial Z_i}{\partial \eta}\right)
+\end{equation} 
+
+
+\begin{equation} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial U}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial U}{\partial y}
+=-
+\frac{\partial}{\partial y}
+\left(\mu\rho\frac{\partial u}{\partial \eta}\right)
+,
+\end{equation} 
+
+
+\begin{equation*} 
+\begin{split} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial H}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial H}{\partial \epsilon}
+=
+\frac{\partial}{\partial \eta}
+    \left(
+    \mu
+    \rho
+        \frac{\partial H}{\partial \eta}
+    \right)
+    ,
+\end{split} 
+\end{equation*} 
+
+The gas ideal equation are not necessary,  
+the pressure is decople for the system. 
+
+Other change of variable  can be applied
+in orther to simplified the system, 
+defining: 
+
+\begin{equation*} 
+    \epsilon
+    =
+    \epsilon
+    ,
+    \qquad
+\nu
+=
+\frac{\eta}{\sqrt{2\epsilon}}
+\end{equation*} 
+
+
+and using the chain rule, a function
+
+
+\begin{equation}
+\frac{\partial f}{\partial \epsilon}
+=
+\frac{\partial f}{\partial \epsilon}
+\frac{\partial \epsilon}{\partial \epsilon}
++
+\frac{\partial f}{\partial \nu}
+\frac{\partial \nu}{\partial \epsilon}
+=
+\frac{\partial f}{\partial \epsilon}
++
+\frac{\partial f}{\partial \nu}
+\frac{\partial \nu}{\partial \epsilon}
+\end{equation} 
+
+and 
+
+\begin{equation}
+\frac{\partial f}{\partial \eta}=
+\frac{\partial f}{\partial \epsilon}
+\frac{\partial \epsilon}{\partial \eta}
++
+\frac{\partial f}{\partial \nu}
+\frac{\partial \nu}{\partial \eta}
 .
 \end{equation} 

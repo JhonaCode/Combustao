@@ -88,6 +88,23 @@ Where, for the species mass conservation in the chemical reaction
 \sum_i\dot{\omega}_i=0
 \end{equation}
 
+The species equation are expressed in terms of viscosity 
+using  the fact:
+
+\begin{equation}
+    \rho^*D_i^{*}
+    =
+    \rho^*\alpha^{*}\frac{D_i^{*}}{\alpha^{*}}
+    =
+    \rho^*\frac{c_p^*\rho^*}{k^*}\frac{1}{Le_i}
+    =
+    \mu^*\frac{c_p^*\mu^*}{k^*}\frac{1}{Le_i}
+    =
+    \mu^*
+    \frac{1}{Le_i}
+    \frac{1}{Pr}
+\end{equation}
+
 The momemtum streamwise equation 
 
 \begin{equation} 
@@ -350,7 +367,7 @@ obtained using its definition
     H^{*}=h_s^{*}+h_f^{\circ*}+\frac{1}{2}u^{*2}
 \end{equation} 
 
-Multiply the momemtum equation by $u^{2*}$ 
+Multiply the momemtum equation by $u^{*}$ 
 and adding to the energy entalphy equation 
 
 \begin{equation}
@@ -1074,6 +1091,42 @@ If $Le_i=1$ and $Pr=1$, the total enthalpy equation can be simplified
 \end{split} 
 \end{equation} 
 
+An important simplification is obtained 
+assuming that  \\ $c_p=c_{pi}=constant$ which is the 
+same that have equal thermal enthalpy for each specie.
+Then, 
+
+\begin{equation} 
+\begin{split} 
+\rho^* u^* \frac{\partial H^*}{\partial x^*}
++
+\rho^* v^* \frac{\partial H^*}{\partial y^*}
+=
+\frac{\partial}{\partial y^*}
+\left[
+    \frac{ k^*}{c_p^*} 
+    \left(
+        \frac{\partial H^*}{\partial y^*}
+   \right)
+\right]
+=
+\frac{\partial}{\partial y^*}
+\left[
+    \frac{ \mu}{Pr} 
+    \left(
+        \frac{\partial H^*}{\partial y^*}
+   \right)
+\right]
+=
+\frac{\partial}{\partial y^*}
+\left[
+    \mu 
+    \left(
+        \frac{\partial H^*}{\partial y^*}
+   \right)
+\right]
+\end{split} 
+\end{equation} 
 
 Finally, to complete the system the ideal gas law 
 is used  

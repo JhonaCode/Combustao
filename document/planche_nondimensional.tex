@@ -2,13 +2,15 @@ The dimensional consevation equation
 for compressible reacting mixing layer are 
 non-dimensionalized using  the characteristics 
 properties of the hight velocity stream (sub\_indice $1$) 
-and the vorticity thickness $\delta^*$. 
+the vorticity thickness $\delta^*$ and the caracteristic lenght, $L^*$ 
+such that $\delta^{*2}/L^{*2}=Re$ for boundary layer equation. 
+So $L=\delta^*/\sqrt{Re}$
 
 \begin{equation} 
 \begin{split} 
     t=\frac{t^*}{t_1=\dfrac{\delta^*}{u_1^*}},
     \quad
-    x=\frac{x^*}{\delta^*},
+    x=\frac{x^*}{L^*}=\frac{x^*\sqrt{Re}}{\delta^*},
     \quad
     y=\frac{y^*}{\delta^*},
     \quad
@@ -45,7 +47,7 @@ Using the fact that
 \overline{T}^n,
 \end{equation} 
 
-Then the non-dimensional quantities are defined as:  
+Then, the non-dimensional quantities are defined as:  
 
 \begin{equation} 
 \frac{\partial \rho u }{\partial x}+
@@ -59,19 +61,16 @@ Then the non-dimensional quantities are defined as:
 \rho u\frac{\partial Y_{i}}{\partial x}+
 \rho v\frac{\partial Y_{i}}{\partial y}
 =
-\frac{\partial}{\partial y}
-%\frac{Di}{\alpha}
+%\frac{\mu^*}{\delta^{*2}}
+%\frac{1}{\rho^* u^* L^*}
+%\frac{1}{Pr}
 %
-%\frac{Di}{\alpha}
-%\frac{c_p^* \rho^*}{k^*}
-%\frac{\nu^*}{\nu*}
-%
-%\frac{Di}{\alpha}
-%\frac{c_p^* \mu^*}{k^*}
-%
-\frac{1}{Le_i}
+%%
 \frac{1}{Pr}
-\left(\rho \frac{\partial Y_i}{\partial y}\right)
+\frac{\partial}{\partial y}
+\left(
+    \frac{\mu}{Le_i}
+    \frac{\partial Y_i}{\partial y}\right)
 -
 \dot{\omega}_i
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
@@ -90,46 +89,51 @@ reaction, respectively.
 .
 \end{equation} 
 
-Remember that 
-$Re=\dfrac{\rho^*u_1^*\delta^*}{\mu^*}=1$, is the approximation of boundary 
-layer equation for the reacting mixing layer.
+%Remember that 
+%$Re=\dfrac{\rho^*u_1^*\delta^*}{\mu^*}=1$, is the approximation of boundary 
+%layer equation for the reacting mixing layer.
+For the total enthalpy equation:
 
-
-\begin{equation*} 
+\begin{equation} 
 \begin{split} 
-\rho u \frac{\partial H}{\partial x}
-+
-\rho v \frac{\partial H}{\partial y}
+\rho u\frac{\partial H}{\partial x}+
+\rho v\frac{\partial H}{\partial y}
 =
-\\
-\frac{\partial}{\partial y}
-\left\{
-    \frac{ \mu}{Pr} 
-    \left[
-        \frac{\partial H}{\partial y}
-        \left(
-        Pr
-        -
-        1
-        \right)
-        u
-        \frac{\partial u}{\partial y}
-    \right]
-\right\}
+\frac{\partial}{\partial y^*}
+\left[
+    \frac{\mu}{Pr} 
+    \left(
+    \frac{\partial H}{\partial y}
+    -
+    \sum_i
+    \frac{\partial Y_i^*}{\partial y}
+    h_{si}
+    +
+    \left(
+    Pr
+    -
+    1
+    \right)
+    u
+    \frac{\partial u}{\partial y}
+    \right)
+\right]
 -
-\frac{ \mu}{Pr} 
+\\
+\frac{\mu}{Pr} 
 \frac{\partial}{\partial y}
     \left[
         \sum_i
         h_{si}
         \left(
-            \frac{1}{Le_i} 
+            1
+            -
+            \frac{1}{Le_1} 
         \right)
-        \frac{\partial Y}{\partial y}
+        \frac{\partial Y^*_i}{\partial y}
     \right]
-    ,
 \end{split} 
-\end{equation*} 
+\end{equation} 
 
 and finally  
 
@@ -144,6 +148,18 @@ p=\frac{1}{\gamma M^2} \rho T
 Where $M=u_1^2/a_1^2$ is the Mach number 
 and  $a_1$ 
 is the sound speed on the fast stream of the mixing layer. 
+With the nondimensional number definitions :
+\begin{equation} 
+Le
+=
+\frac{k}{\rho c_p D_i}
+,
+\qquad
+Pr
+=
+\frac{\mu c_p}{k}
+.
+\end{equation} 
 
 Assuming that $Pr=Le_i=1$, 
 
@@ -160,7 +176,7 @@ Assuming that $Pr=Le_i=1$,
 \rho v\frac{\partial Y_{i}}{\partial y}
 =
 \frac{\partial}{\partial y}
-\left(\rho \frac{\partial Y_i}{\partial y}\right)
+\left(\mu \frac{\partial Y_i}{\partial y}\right)
 -
 \dot{\omega}_i
 ,
@@ -174,18 +190,18 @@ Assuming that $Pr=Le_i=1$,
 ,
 \end{equation} 
 
+and $c_p=c_{pi}=contant$
+
 \begin{equation*} 
 \begin{split} 
 \rho u \frac{\partial H}{\partial x}
 +
 \rho v \frac{\partial H}{\partial y}
 =
-\mu
 \frac{\partial}{\partial y}
     \left[
-        \sum_{i=1}^N
-        h_{si}
-        \frac{\partial Y}{\partial y}
+        \mu
+        \frac{\partial H}{\partial y}
     \right]
     ,
 \end{split} 
@@ -200,3 +216,5 @@ and
 p=\frac{1}{\gamma M^2} \rho T
 .
 \end{equation} 
+
+
