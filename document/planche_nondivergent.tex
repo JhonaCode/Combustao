@@ -871,7 +871,7 @@ Pr
 \end{equation} 
 
 
-The the complete system of equations for a compressible 
+The complete system of equations for a compressible 
 reacting mixing layer is: 
 
 \begin{equation} 
@@ -925,43 +925,323 @@ in orther to simplified the system,
 defining: 
 
 \begin{equation*} 
-    \epsilon
-    =
-    \epsilon
+    (\epsilon,\eta)
+    \rightarrow
+    (\chi,\gamma)
     ,
     \qquad
-\nu
-=
-\frac{\eta}{\sqrt{2\epsilon}}
+    \text{with}
+    \qquad
+    \chi=\epsilon
+    ,
+    \qquad
+    \gamma
+    =
+    \frac{\eta}{\sqrt{2\epsilon}}
+    ,
+    \qquad
+    \epsilon=\epsilon(\chi,\gamma), 
+    \qquad
+    \eta=\eta(\chi,\gamma), 
 \end{equation*} 
 
+Now 
 
-and using the chain rule, a function
+\begin{equation*}
+    f=f(\epsilon(\chi,\gamma),\eta(\chi,\gamma)=f(\chi,\gamma)
+\end{equation*} 
 
+and using the chain rule for  the derivates of the function $f$, 
 
 \begin{equation}
+\left(
 \frac{\partial f}{\partial \epsilon}
+\right)_\eta
 =
-\frac{\partial f}{\partial \epsilon}
-\frac{\partial \epsilon}{\partial \epsilon}
+\left(
+\frac{\partial f}{\partial \chi}
+\right)_\gamma
+\left(
+\frac{\partial \chi}{\partial \epsilon}
+\right)_\eta
 +
-\frac{\partial f}{\partial \nu}
-\frac{\partial \nu}{\partial \epsilon}
+\left(
+\frac{\partial f}{\partial \gamma}
+\right)_\chi
+\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
 =
-\frac{\partial f}{\partial \epsilon}
+\left(
+\frac{\partial f}{\partial \chi}
+\right)_\gamma
 +
-\frac{\partial f}{\partial \nu}
-\frac{\partial \nu}{\partial \epsilon}
+\left(
+\frac{\partial f}{\partial \gamma}
+\right)_\chi
+\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
+\end{equation} 
+
+with
+
+\begin{equation}
+\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
+=
+\frac{\partial }{\partial \chi}
+\left(
+    \frac{\eta}{\sqrt{2\epsilon}}
+\right)
+=
+\eta
+\frac{\partial }{\partial \chi}
+\left(
+    (2\epsilon)^{-1/2}
+\right)
+=
+-
+\eta
+(2\epsilon)^{-3/2}
+=
+-
+\frac{\eta}{(2\epsilon)^{1/2}(2\epsilon)}
+=
+-
+\frac{\gamma}{2\epsilon}
+\end{equation} 
+
+then 
+
+\begin{equation}
+\left(
+\frac{\partial f}{\partial \epsilon}
+\right)_\eta
+=
+\left(
+\frac{\partial f}{\partial \chi}
+\right)_\gamma
+-
+\frac{\gamma}{2\epsilon}
+\left(
+\frac{\partial f}{\partial \gamma}
+\right)_\chi
 \end{equation} 
 
 and 
 
 \begin{equation}
-\frac{\partial f}{\partial \eta}=
-\frac{\partial f}{\partial \epsilon}
-\frac{\partial \epsilon}{\partial \eta}
+\left(
+\frac{\partial f}{\partial \eta}
+\right)_\epsilon
+=
+\left(
+\frac{\partial f}{\partial \chi}
+\right)_\gamma
+\left(
+\frac{\partial \chi}{\partial \eta}
+\right)_\epsilon
 +
-\frac{\partial f}{\partial \nu}
-\frac{\partial \nu}{\partial \eta}
+\left(
+\frac{\partial f}{\partial \gamma}
+\right)_\chi
+\left(
+\frac{\partial \gamma}{\partial \eta}
+\right)_\epsilon
+=
+\left(
+\frac{\partial f}{\partial \gamma}
+\right)_\chi
+\frac{1}{\sqrt{2\epsilon}}
 .
 \end{equation} 
+
+Now using in the momentum streamwise direction with 
+
+\begin{equation} 
+F(\chi,\gamma)=\frac{\psi(\epsilon,\eta)}{\sqrt{2\epsilon}}
+\end{equation} 
+
+
+\begin{equation*} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial U}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial U}{\partial \eta}
+=
+\frac{\partial}{\partial \eta}
+\left(\mu\rho\frac{\partial U}{\partial \eta}\right)
+,
+\end{equation*} 
+
+\begin{equation*} 
+\frac{\partial \psi}{\partial \eta}
+\left(
+    \frac{\partial U}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    \frac{\partial U}{\partial \gamma}
+\right)
+-
+\frac{\partial \psi}{\partial \epsilon}
+\left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{\partial U}{\partial \gamma}
+\right)
+=
+-
+\frac{\partial}{\partial \eta}
+\left[
+    \mu\rho
+    \left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{\partial U}{\partial \gamma}
+    \right)
+\right]
+,
+\end{equation*} 
+
+
+\begin{equation} 
+F(\chi,\gamma)=\frac{\psi(\epsilon,\eta)}{\sqrt{2\epsilon}}
+\end{equation} 
+
+\begin{equation*} 
+F'=
+\frac{\partial F(\chi,\gamma)}{\partial \gamma}
+=
+\frac{\partial }{\partial \eta}
+\left(
+    \frac{\psi(\epsilon,\eta)}{\sqrt{2\epsilon}}
+\right)
+\frac{\partial \eta}{\partial \gamma}
+=
+\frac{\partial }{\partial \eta}
+\left(
+    \psi(\epsilon,\eta)
+\right)
+\frac{\sqrt{2\epsilon}}
+{\sqrt{2\epsilon}}
+=
+U
+\end{equation*}  
+
+\begin{equation*} 
+F^{\prime\prime}=
+\frac{\partial }{\partial \gamma}
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \gamma}
+\right)
+=
+\frac{\partial U}{\partial \gamma}
+\end{equation*} 
+
+
+\begin{equation*} 
+\sqrt{2\epsilon}
+F'
+\left(
+    \frac{\partial F'}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    F''
+\right)
+-
+\frac{\partial }{\partial \epsilon}
+\left(
+        F \sqrt{2\epsilon}
+     \right)
+\left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    F''
+     \right)
+=
+-
+\frac{\partial}{\partial \eta}
+\left[
+    \mu\rho
+    \left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    F''
+    \right)
+\right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+\sqrt{2\epsilon}
+F'
+\left(
+    \frac{\partial F'}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    F''
+\right)
+-
+\left[
+\frac{\partial}{\partial \chi}
+\left(
+        F \sqrt{2\epsilon}
+\right)
+-
+\frac{\gamma}{2\epsilon}
+\frac{\partial}{\partial \gamma}
+\left(
+        F \sqrt{2\epsilon}
+\right)
+\right]
+\left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    F''
+     \right)
+=
+-
+\frac{\partial}{\partial \eta}
+\left[
+    \mu\rho
+    \left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    F''
+    \right)
+\right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+\sqrt{2\epsilon}
+F'
+\left(
+    \frac{\partial F'}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    F''
+\right)
+-
+\left[
+\frac{\partial}{\partial \chi}
+\left(
+        F \sqrt{2\epsilon}
+\right)
+-
+\frac{\gamma\sqrt{2\epsilon}}{2\epsilon}
+        F' 
+\right]
+\left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    F''
+     \right)
+=
+-
+\frac{\partial}{\partial \eta}
+\left[
+    \mu\rho
+    \left(
+    \frac{\gamma}{\sqrt{2\epsilon}}
+    F''
+    \right)
+\right]
+,
+\end{equation*} 
