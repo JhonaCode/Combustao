@@ -948,7 +948,7 @@ defining:
 Now 
 
 \begin{equation*}
-    f=f(\epsilon(\chi,\gamma),\eta(\chi,\gamma)=f(\chi,\gamma)
+    f=f(\epsilon(\chi,\gamma),\eta(\chi,\gamma)=f(\chi,\gamma))
 \end{equation*} 
 
 and using the chain rule for  the derivates of the function $f$, 
@@ -1058,12 +1058,13 @@ and
 .
 \end{equation} 
 
-Now using in the momentum streamwise direction with 
+A function $F$ is assumed as:
 
 \begin{equation} 
 F(\chi,\gamma)=\frac{\psi(\epsilon,\eta)}{\sqrt{2\epsilon}}
 \end{equation} 
 
+Now using in the momentum streamwise direction with 
 
 \begin{equation*} 
 \frac{\partial \psi}{\partial \eta}
@@ -1088,26 +1089,23 @@ F(\chi,\gamma)=\frac{\psi(\epsilon,\eta)}{\sqrt{2\epsilon}}
 -
 \frac{\partial \psi}{\partial \epsilon}
 \left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{1}{\sqrt{2\epsilon}}
     \frac{\partial U}{\partial \gamma}
 \right)
 =
--
-\frac{\partial}{\partial \eta}
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial}{\partial \gamma}
 \left[
     \mu\rho
     \left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{1}{\sqrt{2\epsilon}}
     \frac{\partial U}{\partial \gamma}
     \right)
 \right]
 ,
 \end{equation*} 
 
-
-\begin{equation} 
-F(\chi,\gamma)=\frac{\psi(\epsilon,\eta)}{\sqrt{2\epsilon}}
-\end{equation} 
+The first and second derivate  of  $F$ are given by 
 
 \begin{equation*} 
 F'=
@@ -1139,10 +1137,235 @@ F^{\prime\prime}=
 \frac{\partial U}{\partial \gamma}
 \end{equation*} 
 
+The derivate of $F$ respect to $\chi$
 
 \begin{equation*} 
+\begin{split}  
+\left(
+    \frac{\partial F(\chi,\gamma)}{\partial \chi}
+\right)_\gamma
+=
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \epsilon}
+\right)_\eta
+\left(
+\frac{\partial \epsilon}{\partial \chi}
+\right)_\gamma
++
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \eta}
+\right)_\epsilon
+\left(
+\frac{\partial \eta}{\partial \chi}
+\right)_\gamma
+\\
+=
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \epsilon}
+\right)_\eta
++
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \eta}
+\right)_\epsilon
+\left(
+\frac{\partial \eta}{\partial \epsilon}
+\right)_\gamma
+\left(
+\frac{\partial \epsilon}{\partial \chi}
+\right)_\gamma
+=
+\\
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \epsilon}
+\right)_\eta
++
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \eta}
+\right)_\epsilon
+\left(
+\frac{\partial \eta}{\partial \epsilon}
+\right)_\gamma
+\end{split}  
+\end{equation*}  
+
+Remember the meaning of holding  $\gamma$, 
+with 
+
+\begin{equation*} 
+\gamma=\gamma(\epsilon,\eta)
+\end{equation*}  
+
+then
+
+\begin{equation*} 
+d\gamma
+=
+\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
+d\epsilon
++
+\left(
+\frac{\partial \gamma}{\partial \eta}
+\right)_\epsilon
+d\eta
+=
+0
+\end{equation*}  
+
+so  
+
+\begin{equation*} 
+d\gamma
+=
+\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
+d\epsilon
++
+\left(
+\frac{\partial \gamma}{\partial \eta}
+\right)_\epsilon
+d\eta
+=
+0
+\end{equation*}  
+
+\begin{equation*} 
+-
+\dfrac{\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
+}
+{
+\left(
+\frac{\partial \gamma}{\partial \eta}
+\right)_\epsilon
+}
+=
+\frac{d\eta}{d\epsilon}
+\bigg |_{\gamma=const}
+=
+\left(
+\frac{\partial \eta}{\partial \epsilon}
+\right)_\gamma
+=
+\frac{\gamma}{\sqrt{2\epsilon}}
+,
+\end{equation*} 
+
+with 
+
+\begin{equation*} 
+\left(
+\frac{\partial \gamma}{\partial \epsilon}
+\right)_\eta
+=
+-
+\frac{\gamma}{2\epsilon}
+\qquad
+\left(
+\frac{\partial \gamma}{\partial \eta}
+\right)_\epsilon
+=\frac{1}{\sqrt{2\epsilon}}
+\end{equation*} 
+
+Finally, 
+
+\begin{equation*} 
+\left(
+    \frac{\partial F(\chi,\gamma)}{\partial \chi}
+\right)_\gamma
+=
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \epsilon}
+\right)_\eta
++
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \eta}
+\right)_\epsilon
+\frac{1}{\sqrt{2\epsilon}}
+=
+\left(
+\frac{\partial F(\chi,\gamma)}{\partial \epsilon}
+\right)_\eta
++
+\frac{U}{\sqrt{2\epsilon}}
+\end{equation*}  
+
+\begin{equation*} 
+\left(
+    \frac{\partial F(\chi,\gamma)}{\partial \chi}
+\right)_\gamma
+=
+\left(
+\frac{\partial }{\partial \epsilon}
+\right)_\eta
+\left(
+\frac{\psi}{\sqrt{2\epsilon}}
+\right)
++
+\frac{U}{\sqrt{2\epsilon}}
+=
+\frac{1}{\sqrt{2\epsilon}}
+\left(
+\frac{\partial \psi}{\partial \epsilon}
+\right)_\eta
++
+\frac{\psi}{{(2\epsilon)}^{3/2}}
++
+\frac{U}{\sqrt{2\epsilon}}
+\end{equation*}  
+
+The similarity assumption request that 
+
+\begin{equation*} 
+F'=
+\frac{\partial F(\chi,\gamma)}{\partial \gamma}
+=
+\frac{\partial F(\gamma) }{\partial \eta}
+=
+U
+\end{equation*}  
+
+It is an ansatz, and it only works if the governing equations
+can be expressed in function only on -in this case- $\gamma$. 
+Then,  
+
+\begin{equation*} 
+\frac{\partial \psi}{\partial \eta}
+\left(
+    \frac{\partial U}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    \frac{\partial U}{\partial \gamma}
+\right)
+-
+\frac{\partial \psi}{\partial \epsilon}
+\left(
+    \frac{1}{\sqrt{2\epsilon}}
+    \frac{\partial U}{\partial \gamma}
+\right)
+=
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial}{\partial \gamma}
+\left[
+    \mu\rho
+    \left(
+    \frac{1}{\sqrt{2\epsilon}}
+    \frac{\partial U}{\partial \gamma}
+    \right)
+\right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial }{\partial \gamma}
+\left(
 \sqrt{2\epsilon}
-F'
+F
+\right)
 \left(
     \frac{\partial F'}{\partial \chi}
     -
@@ -1155,55 +1378,16 @@ F'
         F \sqrt{2\epsilon}
      \right)
 \left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{1}{\sqrt{2\epsilon}}
     F''
      \right)
 =
--
-\frac{\partial}{\partial \eta}
-\left[
-    \mu\rho
-    \left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
-    F''
-    \right)
-\right]
-,
-\end{equation*} 
-
-\begin{equation*} 
-\sqrt{2\epsilon}
-F'
-\left(
-    \frac{\partial F'}{\partial \chi}
-    -
-    \frac{\gamma}{2\epsilon}
-    F''
-\right)
--
-\left[
-\frac{\partial}{\partial \chi}
-\left(
-        F \sqrt{2\epsilon}
-\right)
--
-\frac{\gamma}{2\epsilon}
+\frac{1}{\sqrt{2\epsilon}}
 \frac{\partial}{\partial \gamma}
-\left(
-        F \sqrt{2\epsilon}
-\right)
-\right]
-\left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
-    F''
-     \right)
-=
--
-\frac{\partial}{\partial \eta}
 \left[
     \mu\rho
     \left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{1}{\sqrt{2\epsilon}}
     F''
     \right)
 \right]
@@ -1211,8 +1395,11 @@ F'
 \end{equation*} 
 
 \begin{equation*} 
+\frac{\partial }{\partial \gamma}
+\left(
 \sqrt{2\epsilon}
-F'
+F
+\right)
 \left(
     \frac{\partial F'}{\partial \chi}
     -
@@ -1220,28 +1407,174 @@ F'
     F''
 \right)
 -
-\left[
-\frac{\partial}{\partial \chi}
 \left(
+        \frac{\partial }{\partial \chi}
+        \left(
         F \sqrt{2\epsilon}
+        \right)
+        -
+        \frac{\gamma}{2\epsilon}
+        \frac{\partial }{\partial \gamma}
+        \left(
+        F \sqrt{2\epsilon}
+        \right)
 \right)
--
-\frac{\gamma\sqrt{2\epsilon}}{2\epsilon}
-        F' 
-\right]
-\left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
-    F''
-     \right)
+F''
 =
--
-\frac{\partial}{\partial \eta}
+\frac{\partial}{\partial \gamma}
 \left[
     \mu\rho
     \left(
-    \frac{\gamma}{\sqrt{2\epsilon}}
+    \frac{1}{\sqrt{2\epsilon}}
     F''
     \right)
 \right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+\left(
+\sqrt{2\epsilon}
+\frac{\partial F}{\partial \gamma}
+\right)
+\left(
+    \frac{\partial F'}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    F''
+\right)
+-
+\left(
+        \sqrt{2\epsilon}
+        \frac{\partial F }{\partial \chi}
+        +
+        F 
+        \frac{1}{\sqrt{2\epsilon}}
+        -
+        \frac{\gamma}{\sqrt{2\epsilon}}
+        \frac{\partial F}{\partial \gamma}
+\right)
+F''
+=
+\frac{\partial}{\partial \gamma}
+\left[
+    \mu\rho
+    \left(
+    \frac{1}{\sqrt{2\epsilon}}
+    F''
+    \right)
+\right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+\left(
+2\epsilon
+\frac{\partial F}{\partial \gamma}
+\right)
+\left(
+    \frac{\partial F'}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    F''
+\right)
+-
+\left(
+        2\epsilon
+        \frac{\partial F }{\partial \chi}
+        +
+        F 
+        -
+        \gamma
+        \frac{\partial F}{\partial \gamma}
+\right)
+F''
+=
+\frac{\partial}{\partial \gamma}
+\left[
+    \mu\rho
+    \left(
+    F''
+    \right)
+\right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+\left(
+2\epsilon
+\right)
+\left(
+    \frac{\partial F'}{\partial \chi}
+    F'
+        -
+    \frac{\partial F }{\partial \chi}
+    F''
+\right)
+-
+\left(
+        \cancel{
+        \gamma
+        \frac{\partial F}{\partial \gamma}
+        }
+        +
+        F 
+        -
+        \cancel{
+        \gamma
+        \frac{\partial F}{\partial \gamma}
+        }
+\right)
+F''
+=
+\frac{\partial}{\partial \gamma}
+\left[
+    \mu\rho
+    \left(
+    F''
+    \right)
+\right]
+,
+\end{equation*} 
+
+\begin{equation*} 
+2\epsilon
+\left(
+    F'
+    \frac{\partial F'}{\partial \chi}
+        -
+    \frac{\partial F }{\partial \chi}
+    F''
+\right)
++
+F
+F''
++
+\frac{\partial}{\partial \gamma}
+\left[
+    \mu\rho
+    \left(
+    F''
+    \right)
+\right]
+=0
+,
+\end{equation*} 
+
+
+By similarity ansatz
+
+\begin{equation*} 
+F
+F''
++
+\frac{\partial}{\partial \gamma}
+\left[
+    \mu\rho
+    \left(
+    F''
+    \right)
+\right]
+=0
 ,
 \end{equation*} 
