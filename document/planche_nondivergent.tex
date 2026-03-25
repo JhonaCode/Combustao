@@ -891,9 +891,9 @@ reacting mixing layer is:
 \frac{\partial U}{\partial \epsilon}
 -
 \frac{\partial \psi}{\partial \epsilon}
-\frac{\partial U}{\partial y}
+\frac{\partial U}{\partial \eta}
 =-
-\frac{\partial}{\partial y}
+\frac{\partial}{\partial \eta}
 \left(\mu\rho\frac{\partial u}{\partial \eta}\right)
 ,
 \end{equation} 
@@ -905,7 +905,7 @@ reacting mixing layer is:
 \frac{\partial H}{\partial \epsilon}
 -
 \frac{\partial \psi}{\partial \epsilon}
-\frac{\partial H}{\partial \epsilon}
+\frac{\partial H}{\partial \eta}
 =
 \frac{\partial}{\partial \eta}
     \left(
@@ -1577,4 +1577,277 @@ F''
 \right]
 =0
 ,
+\end{equation*} 
+
+In similar way for the 
+species equations:
+
+\begin{equation} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial Z_{i}}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial Z_{i}}{\partial \eta}
+=
+\frac{\partial}{\partial \eta}
+\left(\mu\rho  \frac{\partial Z_i}{\partial \eta}\right)
+\end{equation} 
+
+\begin{equation*} 
+\frac{\partial \psi}{\partial \eta}
+\left(
+    \frac{\partial Z_{i}}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    \frac{\partial Z_{i}}{\partial \gamma}
+\right)
+-
+\left(
+    \frac{\partial \psi}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    \frac{\partial \psi}{\partial \gamma}
+\right)
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial Z_{i}}{\partial \gamma}
+=
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial }{\partial \gamma}
+\left(\mu\rho  
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial Z_i}{\partial \gamma}
+\right)
+\end{equation*} 
+
+\begin{equation*} 
+\frac{\partial \sqrt{2\epsilon}F}{\partial \eta}
+\left(
+    \frac{\partial Z_{i}}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    \frac{\partial Z_{i}}{\partial \gamma}
+\right)
+-
+\left(
+    \frac{\partial \sqrt{2\epsilon}F}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    \frac{\partial \sqrt{2\epsilon}F}{\partial \gamma}
+\right)
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial Z_{i}}{\partial \gamma}
+=
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial }{\partial \gamma}
+\left(\mu\rho  
+\frac{1}{\sqrt{2\epsilon}}
+\frac{\partial Z_i}{\partial \gamma}
+\right)
+\end{equation*} 
+
+\begin{equation*} 
+2\epsilon
+F'
+\left(
+    \frac{\partial Z_{i}}{\partial \chi}
+    -
+    \frac{\gamma}{2\epsilon}
+    Z'_i
+\right)
+-
+\left(
+    \sqrt{2\epsilon}
+    \frac{\partial F}{\partial \chi}
+    +
+    F
+    \frac{1}{\sqrt{2\epsilon}}
+    -
+    \sqrt{2\epsilon}
+    \frac{\gamma}{2\epsilon}
+    F'
+\right)
+Z'_i
+=
+\frac{1}{\sqrt{2\epsilon}}
+\left(\mu\rho  
+Z'_i
+\right)'
+\end{equation*} 
+
+\begin{equation*} 
+2\epsilon
+\frac{\partial Z_{i}}{\partial \chi}
+F'
+-
+2\epsilon
+\frac{\partial F}{\partial \chi}
+Z'_i
+-
+\cancel{
+\gamma
+Z'_i
+F'
+}
+-
+F
+Z'_i
++
+\cancel{
+\gamma
+F'
+Z'_i
+}
+=
+\left(\mu\rho  
+Z'_i
+\right)'
+\end{equation*} 
+
+\begin{equation} 
+2\epsilon
+\frac{\partial Z_{i}}{\partial \chi}
+F'
+-
+2\epsilon
+\frac{\partial F}{\partial \chi}
+Z'_i
+-
+F
+Z'_i
+=
+\left(\mu\rho  
+Z'_i
+\right)'
+\end{equation} 
+
+By similarity ansatz and defining $Z_i=Z_i(\chi,\gamma)=Z_i(\gamma)$
+
+\begin{equation} 
+F
+Z'_i
++
+\left(\mu\rho  
+Z'_i
+\right)'=0
+\end{equation} 
+
+Finally for the total enthalphy equation:
+
+\begin{equation} 
+\begin{split} 
+\frac{\partial \psi}{\partial \eta}
+\frac{\partial H}{\partial \epsilon}
+-
+\frac{\partial \psi}{\partial \epsilon}
+\frac{\partial H}{\partial \eta}
+=
+\frac{\partial}{\partial \eta}
+    \left(
+    \mu
+    \rho
+        \frac{\partial H}{\partial \eta}
+    \right)
+    ,
+\end{split} 
+\end{equation} 
+
+
+\begin{equation} 
+2\epsilon
+\frac{\partial H}{\partial \chi}
+F'
+-
+2\epsilon
+\frac{\partial F}{\partial \chi}
+H'
+-
+F
+H'
+=
+\left(\mu\rho  
+H'
+\right)'
+\end{equation} 
+
+By similarity ansatz and defining $H=H(\chi,\gamma)=H(\gamma)$
+
+\begin{equation} 
+F
+H'
++
+\left(\mu\rho  
+H'
+\right)'
+=0
+\end{equation} 
+
+With the similarity assumption the compressible reacting mixing
+layer is given by 
+
+\begin{equation*} 
+F
+F''
++
+\left(
+    \mu\rho
+    F''
+\right)'
+=0
+\end{equation*} 
+
+\begin{equation*} 
+F
+Z'_i
++
+\left(\mu\rho  
+Z'_i
+\right)'=0
+\end{equation*} 
+
+\begin{equation*} 
+F
+H'
++
+\left(\mu\rho  
+H'
+\right)'
+=0
+\end{equation*} 
+
+
+a ordinary system of equation, providing that 
+$u$ and $\rho$ are function only on $\gamma$ or 
+with the non-dimensional gas ideal equation
+
+\begin{equation}
+1=\rho T
+\end{equation}
+
+assuming that $\mu=1/T$.
+
+Then the ordinary system of equation with 
+$\partial /\partial  \gamma=d/d \gamma=()'$ 
+
+\begin{equation*} 
+F'''
++
+F
+F''
+=0
+\end{equation*} 
+
+\begin{equation*} 
+Z''_i
++
+F
+Z'_i
+=0
+\end{equation*} 
+
+\begin{equation*} 
+H''
++
+F
+H'
+=0
 \end{equation*} 
