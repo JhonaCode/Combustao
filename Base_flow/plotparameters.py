@@ -5,7 +5,8 @@ import matplotlib as mpl
 # \showthe\columnwidth overleaf!
 #columnwidth = 397.495# value given by Latex
 
-out_fig='/pesq/dados/bamc/jhonatan.aguirre/git_repositories/Combustao/document/figs'
+#out_fig='/pesq/dados/bamc/jhonatan.aguirre/git_repositories/Combustao/document/figs'
+out_fig='/pesq/dados/bamc/jhonatan.aguirre/git_repositories/Combustao/encit/figs'
 
 def plotsize(wf,hf,cmmais,para_name): 
 
