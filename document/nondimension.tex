@@ -1,33 +1,31 @@
-%%
-The dimesionless equations for a reacting mixing layer are obtined using
-the positive freestream variables,$L_c$ characteritic lenghts:
-\\
-\\
+The dimesionless equations for a reacting mixing layer
+ are obtined using the acoording to \cite{planche1992numerical}:
+
 \begin{equation}
 %\overline{t}=t\frac{L_c}{u_{\infty}} \qquad 
 \overline{x}=\frac{x}{L_c}, \qquad 
 \overline{y}=\frac{y}{\delta}, \qquad 
 \end{equation} 
-\\
+
 \begin{equation}
 U=\frac{u}{u_{\infty}}, \qquad 
 V=\frac{v}{v_{\infty}},\qquad\text{but}\qquad
 v_{\infty}=\frac{u_{\infty}\delta_c}{L_c},\qquad\text{then}\qquad
 V=\frac{L_c}{\delta}\frac{v}{u_{\infty}},\qquad
 \end{equation} 
-\\
+
 \begin{equation}
 \overline{\rho}=\frac{\rho}{\rho_{\infty}}, \qquad
 \overline{T}=\frac{T}{T_{\infty}}, \qquad
 \overline{h}=\frac{h}{h_{\infty}}, \qquad
 P=\frac{p}{P_{\infty}}, 
 \end{equation} 
-\\
+
 \begin{equation}
 \psi_F=\frac{Y^F}{Y^{F\infty}}, \qquad
 \psi_O=\frac{Y^O}{Y^{O\infty}}, 
 \end{equation} 
-\\
+
 \begin{equation}
 \frac{\mu}{\mu_{\infty}} =
 \frac{k}{k_{\infty}} =
@@ -38,7 +36,6 @@ P=\frac{p}{P_{\infty}},
 \frac{R}{R_\infty}= 
 \overline{T}^n,
 \end{equation} 
-\\
 
 {\color{red}
 Vc como autor pode escrever como quiser.
@@ -48,24 +45,24 @@ Porem se usar a nomeclatura mais conhecida os revisores e os leitores nao terao 
 x=\frac{\bar{x}}{\bar{L}_c}, \qquad 
 y=\frac{\bar{y}}{\bar{\delta}}, \qquad 
 \]
-\\
+
 \[
 u=\frac{\bar{u}}{\bar{u}_{\infty}}, \qquad 
 v=\frac{\bar{v}}{\bar{v}_{\infty}},
 \]
-\\
+
 \begin{equation}
 \rho=\frac{\bar{\rho}}{\bar{\rho}_{\infty}}, \qquad
 T=\frac{\bar{T}}{\bar{T}_{\infty}}, \qquad
 h=\frac{\bar{h}}{\bar{h}_{\infty}}, \qquad
 p=\frac{\bar{p}}{\bar{p} _{\infty}}, 
 \end{equation} 
-\\
+
 \begin{equation}
 Y_F=\frac{\bar{Y}_F}{\bar{Y}_{F\infty}}, \qquad
 Y_O=\frac{\bar{Y}_O}{\bar{Y}_{O\infty}}, 
 \end{equation} 
-\\
+
 \begin{equation}
 \frac{\bar{\mu}} {\bar{\mu}_{\infty}} =
 \frac{\bar{k}} {\bar{k}_{\infty}} =
@@ -82,88 +79,84 @@ in which
 v_{\infty}=\frac{u_{\infty}\delta_c}{L_c}
 \]
 
-
 }
 
-
-\\
 \textbf{Mass conservation:}
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho u)+
 \frac{\partial}{\partial y}(\rho v)=0
 \label{mass2}
 \end{equation} 
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\rho_{\infty}U_{\infty}}{L_c}\frac{\partial}{\partial \overline{x}}(\varrho U)+
 \frac{\rho_{\infty}U_{\infty}}{L_c}\frac{\partial}{\partial \overline{y}}(\varrho V)=0
 \label{mass2}
 \end{equation} 
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\partial}{\partial \overline{x}}(\varrho U)+
 \frac{\partial}{\partial \overline{y}}(\varrho V)=0
 \label{mass2}
 \end{equation} 
-\\
-\\
+  
+  
 \textbf{Momemtum equation:}
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\rho_{\infty}U_{\infty}^2}{L_c}\varrho U\frac{\partial U}{\partial \overline{x}}+
 \frac{\rho_{\infty}U_{\infty}^2}{L_c}\varrho V\frac{\partial U}{\partial \overline{y}}=
 \frac{\mu_{\infty}U_{\infty}}{\delta^2}\frac{\partial}{\partial \overline{y}}\left(\mu\frac{\partial U}{\partial  \overline{y}}\right)
 \label{mnn}
 \end{equation} 
-\\
-\\
+  
+  
 We do not known the relation between characteristics lenghts  of  the problem, $\delta$ and $L_c$. 
 For the above equation have the same same order, we can defined:
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\rho_{\infty}U_{\infty}}{L_c}=\frac{\mu_{\infty}}{\delta^2}
 \end{equation} 
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\delta^2}{L_c}=\frac{\mu_{\infty}}{\rho_{\infty}U_{\infty}}
 \end{equation} 
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\delta^2}{L_c}=L_c\frac{\mu_{\infty}}{\rho_{\infty}L_c U_{\infty}}
 \end{equation} 
-\\
-\\
+  
+  
 Defining:
-\\
-\\
+  
+  
 \begin{equation} 
 Re_{L_c}=\frac{\mu_{\infty}}{\rho_{\infty}L_c U_{\infty}}
 \end{equation} 
-\\
-\\
+  
+  
 as the Reynolds number respect to $L_c$, we get:
-\\
-\\
+  
+  
 \begin{equation} 
 \frac{\delta^2}{L_c}    =L_c\frac{1}{Re_{L_c}}
 \end{equation} 
-\\
-\\
+  
+  
 then we obtain:
-\\
-\\
+  
+  
 \begin{equation} 
 \delta=L_c\sqrt{\frac{1}{Re_{L_c}}}
 \end{equation} 
-\\
+
 %%At the beginning we assume  
 %%\\
 %%\\
@@ -180,29 +173,25 @@ then we obtain:
 %%\end{equation} 
 
 Inserting this relation in the dimensionless Momemtum equation \ref{mnn}: 
-\\
-\\
+
 \begin{equation} 
 \frac{\rho_{\infty}U_{\infty}^2}{L_c}\varrho U\frac{\partial U}{\partial \overline{x}}+
 \frac{\rho_{\infty}U_{\infty}^2}{L_c}\varrho V\frac{\partial U}{\partial \overline{y}}=
 \frac{\mu_{\infty}U_{\infty}}{\delta^2}\frac{\partial}{\partial \overline{y}}\left(\mu\frac{\partial U}{\partial  \overline{y}}\right)
 \label{mn1}
 \end{equation} 
-\\
-\\
+
 we obtain:
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial U}{\partial \overline{x}}+
 \varrho V\frac{\partial U}{\partial \overline{y}}=
 \frac{\partial}{\partial \overline{y}}\left(\mu\frac{\partial U}{\partial  \overline{y}}\right)
 \end{equation} 
 {\color{red} Observe acima. vc misturou variavel adimensional com barra e outras com maiuscula. Vc é o autor, escreve como quiser, mas procura pensar no teu leitor.}
-\\
+
 \textbf{Species conservation:}
-\\
-\\
+
 \begin{equation} 
 \frac{\rho_{\infty}U_{\infty}Y^{O\infty}}{L_c}\varrho U\frac{\partial \psi_{o}}{\partial\overline{x}}+
 \frac{\rho_{\infty}U_{\infty}Y^{O\infty}}{L_c}\varrho V\frac{\partial \psi_{o}}{\partial\overline{y}}+
@@ -210,7 +199,7 @@ we obtain:
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
+
 \begin{equation} 
 \frac{\rho_{\infty}U_{\infty}Y^{F\infty}}{L_c}\varrho U\frac{\partial \psi_{F}}{\partial\overline{x}}+
 \frac{\rho_{\infty}U_{\infty}Y^{F\infty}}{L_c}\varrho V\frac{\partial \psi_{F}}{\partial\overline{y}}+
@@ -218,8 +207,7 @@ s^{o}\Omega
 s^{F}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial \psi_{o}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{o}}{\partial\overline{y}}+
@@ -230,8 +218,7 @@ s^{F}\Omega
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial \psi_{F}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{F}}{\partial\overline{y}}+
@@ -275,16 +262,14 @@ where $i$ is the specie, fuel (F) or oxidizer (O).
 \frac{1}{Pr}
 %\frac{1}{Le_O},\qquad \text{$Le_O$ is the Lewis number for the oxidizer.}
 \end{equation} 
-\\
+
 \begin{equation} 
 \frac{L_c}{\delta_c}
 \frac{D^{F\infty}}{\delta_cU_\infty}=\frac{1}{Le_FPr},
 \end{equation} 
-\\
-\\
+
 Then we get:
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial \psi_{o}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{o}}{\partial\overline{y}}+
@@ -292,8 +277,7 @@ Then we get:
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial \psi_{F}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{F}}{\partial\overline{y}}+
@@ -301,14 +285,11 @@ s^{o}\Omega
 s^{F}\Omega.
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
-\\
-\\
+
+
 Before non-dimensionalization the energy equation, we use the equation that relate the entaphy and 
 the temperature for a perfect gas, we get: 
-\\
-\\
+
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
 \rho u \frac{\partial }{\partial x}(c_p T)+
@@ -331,11 +312,9 @@ the temperature for a perfect gas, we get:
 +
 Q\Omega
 \end{equation} 
-\\
-\\
+
 Using the non-dimensional variables:
-\\
-\\
+
 \begin{equation}
 \begin{split}
 %\frac{\partial}{\partial t}(\rho h)+
@@ -363,7 +342,7 @@ Using the non-dimensional variables:
 Q\Omega
 \end{split}
 \end{equation} 
-\\
+
 \begin{equation}
 \begin{split}
 \frac{\rho_{\infty}D^{i\infty}Y^{i\infty}T_{\infty}c_{p\infty}}{\delta^2}
@@ -387,7 +366,7 @@ Y^{i\infty}
 \frac{Y^{i\infty}}{Le_iPr}
 \end{split}
 \end{equation} 
-\\
+
 \begin{equation}
 \begin{split}
 %\frac{\partial}{\partial t}(\rho h)+
@@ -413,16 +392,13 @@ Y^{i\infty}
 Q\Omega
 \end{split}
 \end{equation} 
-\\
-\\
+
 where:
-\\
-\\
+
 \begin{equation}
 M=\frac{U_{\infty}}{a_{0\infty}}\qquad\text{Mach Number with}\qquad a_{0\infty}=\sqrt{\gamma_{\infty}R_{\infty}T_{\infty}}
 \end{equation} 
-\\
-\\
+
 \begin{equation}
 Pr=\frac{\mu_{\infty}c_{p\infty}}{k_{\infty}}
 \end{equation} 
@@ -432,25 +408,20 @@ Le_n=\frac{\alpha}{D^{i\infty}}.
 \end{equation} 
 
 Finaly the equation for a perfect gas became:  
-\\
-\\
+
 \begin{equation}
 1=\varrho\overline{T}
 \end{equation} 
-\\
-\\
+
 \clearpage
 \textbf{Non-dimensional Reacting Mixing layer equation:}
-\\
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial \overline{x}}(\varrho U)+
 \frac{\partial}{\partial \overline{y}}(\varrho V)=0
 \label{mass2}
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial \psi_{o}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{o}}{\partial\overline{y}}=
@@ -458,8 +429,7 @@ Finaly the equation for a perfect gas became:
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial \psi_{F}}{\partial\overline{x}}+
 \varrho V\frac{\partial \psi_{F}}{\partial\overline{y}}=
@@ -467,15 +437,13 @@ s^{o}\Omega
 s^{F}\Omega.
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \varrho U\frac{\partial U}{\partial \overline{x}}+
 \varrho V\frac{\partial U}{\partial \overline{y}}=
 \frac{\partial}{\partial \overline{y}}\left(\mu\frac{\partial U}{\partial  \overline{y}}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
 \varrho U\frac{\partial }{\partial \overline{x}}(c_p \overline{T})+
@@ -494,8 +462,7 @@ s^{F}\Omega.
 +
 Q\Omega
 \end{equation} 
-\\
-\\
+
 \begin{equation}
 1=\varrho\overline{T}
 \label{g2}

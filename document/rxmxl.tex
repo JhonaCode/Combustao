@@ -12,8 +12,7 @@
  
 In a compressible, conservative form and in a perfect gas the conservation's
 equations are:
-\\
-\\
+
 %\vspace{5cm}
 \textbf{Mass conservation:}
 
@@ -24,8 +23,7 @@ equations are:
 ,
 \label{mass}
 \end{equation} 
-\\
-\\
+
 %\vspace{5cm}
 \textbf{Species conservation:}
 
@@ -36,24 +34,21 @@ equations are:
 \quad \text{for} \quad m=\text{Oxidizer, Fuel}
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 Using a constitutive equation for $V^m$ 
 
 \begin{equation} 
 V^m=-\rho D^m\frac{\partial Y^m}{\partial x_i} 
 %\vspace{5cm}
 \end{equation} 
-\\
+
 where $D^m$ is the diffusion coefficient of specie 
 respect to the most abundant specie.
 
 {\color{red} who is $\Omega$?}
-\\
-\\
+
 \textbf{Momemtum conservation:}
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial t}(\rho u_j)+
 \frac{\partial}{\partial x_i}(\rho u_iu_j)=-
@@ -63,20 +58,16 @@ respect to the most abundant specie.
 \quad \text{for} \quad i,j=1,2,3
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 where 
-\\
-\\
+
 \begin{equation} 
 \tau_{ij}=\lambda \delta_{ij}\frac{\partial u_k}{\partial x_k}+
 \mu\left(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 and using the Stoke's relation: 
-\\
-\\
+
 \begin{equation} 
 \lambda=-\frac{2}{3}\mu
 \end{equation} 
@@ -88,12 +79,10 @@ and using the Stoke's relation:
 \left(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\right)
 \right)
 \end{equation} 
-\\
-\\
 %\vspace{5cm}
+
 \textbf{Energy conservation:}
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial t}(\rho h)+
 \frac{\partial}{\partial x_i}(\rho u_i h)
@@ -118,27 +107,24 @@ Q\Omega
 %note this no external heat product of reaction, q is due to 
 %formatioin entalphy, already include in h, you need to 
 %separate to view q
-\\
 where 
+
 $\dfrac{\partial}{\partial x_i}
 \left(
 \sum_i\rho D_i\dfrac{\partial Y_i}{\partial x_i}
 \right)$ is the 
 enthalpy transported by species diffusion.
-\\
-\\
+
 \textbf{Perfect gas equation:}
-\\
+
 \begin{equation} 
 p=\rho T R
 \end{equation} 
-\\
+
 \begin{equation}
 h=c_pT
 \end{equation} 
-\\
-\\
-\\
+
 In the above equations $\rho$ is the density, $u_i=(u,v,w)$ 
 are the different velocities in the three different dimensions $x$, $y$ and $z$.
 $p$ is the pressure of the flow, $T$ is the temperature of the flow, $f_j$ 
@@ -147,11 +133,9 @@ $Y^m$ are the different mass fraction for the two different species, oxygen and 
 $\mu$, $D^{m}$ and $k$ are the viscosity, diffusion coefficient for the different 
 species and the gas thermal conductivity.  $Q$ is the heat release for the chemical reaction and
 $\Omega$ which is the mass reaction rate. 
-\\
-\\
+
 \textbf{Base Flow equations:}
-\\
-\\
+
 We are interesting in the a two dimensional compressible mixing layer, because the 
 tridimensional effect can be neglected for the study of instabilities in the first stages, 
  it states that for {\it the onset of linear instability in parallel shear flows, the
@@ -186,54 +170,43 @@ and assuming that $\rho$ is of order of $\rho_c$ then:
 
 Using the conservation of mass equation \ref{mass} in two dimensions $(x,y)$, 
 the order of 
-\\
-\\
+
 \begin{equation}
 \frac{\partial}{\partial y}(\rho v)\sim \frac{\rho_cU_c}{L_c}
 \end{equation}
-\\
-\\
+
 We know that in the mixing layer the velocity $v$ is smaller than
 $u$, then we can assume that 
-\\
-\\
+
 \begin{equation}
 v\sim\frac{\delta}{L_c}U_c\qquad
 \text{ being }\qquad
 \frac{\partial}{\partial y}\sim \frac{1}{\delta}.
 \end{equation}
-\\
-\\
+
 With this assumptions the terms in the conservation equations of order: 
-\\
-\\
+
 \begin{equation}
 \frac{\partial^2}{\partial x^2}\sim\frac{1}{L_c^2},
 \end{equation}
-\\
-\\
+
 are smaller that term of order   
-\\
-\\
+
 \begin{equation}
 \frac{\partial^2}{\partial y^2}\sim\frac{1}{\delta^2}.
 \end{equation}
-\\
-\\
+
 Thereby, using the different length scales in the others conservations equations
 and assuming steady state to the mean flow we get: 
-\\
-\\
+
 \textbf{Mass conservation:}
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho u)=
 \frac{\partial}{\partial y}(\rho v)
 \label{mass1}
 \end{equation} 
-\\
-\\
+
 %Using the characteristic lenght scales of the problem we obtein:
 %\\
 %\\
@@ -242,48 +215,40 @@ and assuming steady state to the mean flow we get:
 %\frac{}{}\frac{\partial}{\partial y}(\rho v)
 %\label{mass1}
 %\end{equation} 
-\\
-\\
+
 \textbf{Species conservation:}
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho Y^{o}(u+V^{o}))+
 \frac{\partial}{\partial y}(\rho Y^{o}(v+V^{o}))
 =s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho Y^{F}(u+V^{F}))+
 \frac{\partial}{\partial y}(\rho Y^{F}(v+V^{F}))
 =s^{F}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 Using a constitutive equation for $V^m$ 
-\\
-\\
+
 \begin{equation} 
 V^m=-\rho D^m\frac{\partial }{\partial x_i}(ln(Y^m))
 \quad \text{for} \quad m=1,2
 %\vspace{5cm}
 \end{equation} 
-\\
-\\
+
 Hence
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho Y^{m}V^m)=
 -\frac{\partial}{\partial x_i}\left(\rho D^m\frac{\partial Y^m}{\partial x_i}\right)
 \quad \text{for} \quad m=1,2
 %\vspace{5cm}
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho Y^{m}V^m)=
 -\frac{\partial}{\partial x}\left(\rho D^m\frac{\partial Y^m}{\partial x}\right)
@@ -291,11 +256,9 @@ Hence
 \quad \text{for} \quad m=1,2
 %\vspace{5cm}
 \end{equation} 
-\\
-\\
+
 Using the characteristic length scales:
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho Y^{m}V^m)=
 -\frac{1}{ L_c}\frac{\rho_c D_c^mY_c^m}{L_c}
@@ -303,8 +266,7 @@ Using the characteristic length scales:
 \quad \text{for} \quad m=1,2
 %\vspace{5cm}
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho Y^{m}V^m)=
 -\frac{\rho_c D_c^mY_c^m}{ L_c^2}
@@ -312,8 +274,7 @@ Using the characteristic length scales:
 \quad \text{for} \quad m=1,2
 %\vspace{5cm}
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho Y^{m}V^m)=
 \cancelto{\approx~0}{
@@ -323,11 +284,9 @@ Using the characteristic length scales:
 \quad \text{for} \quad m=1,2
 %\vspace{5cm}
 \end{equation} 
-\\
-\\
+
 The Species conservation can be wrote as:
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho Y^{o}u)+
 \frac{\partial}{\partial y}(\rho Y^{o}v)=
@@ -335,7 +294,7 @@ The Species conservation can be wrote as:
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho Y^{F}u)+
 \frac{\partial}{\partial y}(\rho Y^{F}v)=
@@ -343,12 +302,10 @@ s^{o}\Omega
 s^{F}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\ 
+
 Using the mass conservation equation \ref{mass}, we can write 
 the Species conservation as:
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial Y^{o}}{\partial x}+
 \rho v\frac{\partial Y^{o}}{\partial y}=
@@ -356,7 +313,7 @@ the Species conservation as:
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
+
 \begin{equation} 
 \rho u\frac{\partial Y^{F}}{\partial x}+
 \rho v\frac{\partial Y^{F}}{\partial y}=
@@ -364,13 +321,11 @@ s^{o}\Omega
 s^{F}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\ 
 
 %\vspace{5cm}
+
 \textbf{Momemtum conservation:}
-\\
-\\
+
 \begin{equation} 
 %\frac{\partial}{\partial t}(\rho u_j)+
 \frac{\partial}{\partial x_i}(\rho u_iu_j)=-
@@ -380,31 +335,27 @@ s^{F}\Omega
 \quad \text{for} \quad i,j=1,2,3
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \tau_{ij}=
 \lambda \delta_{ij}\frac{\partial u_k}{\partial x_k}+
 \mu\left(\frac{\partial u_i}{\partial x_j}+\frac{\partial u_j}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{ij}}{\partial x_i}=
 \frac{\partial}{\partial x_i}\left(\lambda \delta_{ij}\frac{\partial u_k}{\partial x_k}\right)+
 \frac{\partial}{\partial x_i}\left(\mu\left(\frac{\partial u_i}{\partial x_j}
 +\frac{\partial u_j}{\partial x_i}\right)\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{ij}}{\partial x_i}=
 \frac{\partial}{\partial x_j}\left(\lambda \frac{\partial u_k}{\partial x_k}\right)+
 \frac{\partial}{\partial x_i}\left(\mu\frac{\partial u_i}{\partial x_j}\right)+
 \frac{\partial}{\partial x_i}\left(\mu\frac{\partial u_j}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i1}}{\partial x_i}=
 \frac{\partial}{\partial x}\left(\lambda\frac{\partial u}{\partial x}\right)+
@@ -414,8 +365,7 @@ s^{F}\Omega
 \frac{\partial}{\partial x}\left(\mu\frac{\partial u}{\partial x}\right)+
 \frac{\partial}{\partial y}\left(\mu\frac{\partial u}{\partial y}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i1}}{\partial x_i}=
 \frac{1}{L_c^2}(\lambda_c U_c)+
@@ -425,8 +375,7 @@ s^{F}\Omega
 \frac{1}{L_c^2}(\mu_c U_c)+
 \frac{1}{\delta^2}(\mu_c U_c)+
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i1}}{\partial x_i}=
 	\cancelto{\approx0}{\frac{1}{L_c^2}(\lambda_c U_c)}+
@@ -436,14 +385,12 @@ s^{F}\Omega
 \cancelto{\approx0}{\frac{1}{L_c^2}(\mu_c U_c)}+
 \frac{1}{\delta^2}(\mu_c U_c)+
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i1}}{\partial x_i}=
 \frac{\partial}{\partial y}\left(\mu\frac{\partial u}{\partial y}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i2}}{\partial x_i}=
 \frac{\partial}{\partial y}\left(\lambda\frac{\partial u}{\partial x}\right)+
@@ -453,11 +400,9 @@ s^{F}\Omega
 \frac{\partial}{\partial x}\left(\mu\frac{\partial v}{\partial x}\right)+
 \frac{\partial}{\partial y}\left(\mu\frac{\partial v}{\partial y}\right)
 \end{equation} 
-\\
-\\
+
 Now using the characteristic length of the problem we found:
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i2}}{\partial x_i}=
 \frac{1}{\delta L_c}(\lambda_c U_c)+
@@ -468,10 +413,9 @@ Now using the characteristic length of the problem we found:
 \frac{1}{\delta L_c}(\mu_c U_c)
 \label{my}
 \end{equation} 
-\\
+
 Multiply \ref{my} by $\delta^2$ 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i2}}{\partial x_i}=
 \left(\frac{\delta}{ L_c}\right)(\lambda_c U_c)+
@@ -481,8 +425,7 @@ Multiply \ref{my} by $\delta^2$
 \left(\frac{\delta}{L_c}\right)^3(\mu_c \delta U_c)+
 \left(\frac{\delta}{L_c}\right)(\mu_c U_c)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i2}}{\partial x_i}=
 \cancelto{\approx0}{\left(\frac{\delta}{ L_c}\right)(\lambda_c U_c)}+
@@ -492,16 +435,13 @@ Multiply \ref{my} by $\delta^2$
 \cancelto{\approx0}{\left(\frac{\delta}{L_c}\right)^3(\mu_c \delta U_c)}+
 \cancelto{\approx0}{\left(\frac{\delta}{L_c}\right)(\mu_c U_c)}
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial\tau_{i2}}{\partial x_i}\approx0
 \end{equation} 
-\\
-\\
+
 Now Momentum conservation equation in $x$ direction can be wrote:
-\\
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho uu)+
 \frac{\partial}{\partial y}(\rho vu)=-
@@ -509,12 +449,10 @@ Now Momentum conservation equation in $x$ direction can be wrote:
 \frac{\partial}{\partial y}\left(\mu\frac{\partial u}{\partial y}\right)+
 \rho f_x
 \end{equation} 
-\\
-\\
+
 Using the characteristic length of the problem, we can see that 
 the others terms are important:
-\\
-\\
+
 \begin{equation} 
 \frac{1}{L_c}(\rho_c U_c^2)+
 \frac{1}{L_c}(\rho_c U_c^2)=
@@ -523,9 +461,9 @@ the others terms are important:
 \rho_c f_{xc}.
 \label{mx}
 \end{equation} 
-%
+
 In the viscous term multiple by $\dfrac{L_c}{U_c^2\rho_c}$:
-%
+
 \begin{equation} 
 \frac{L_c}{U_c^2\rho_c}
 \frac{1}{\delta^2}(\mu_c U_c)=
@@ -533,19 +471,16 @@ In the viscous term multiple by $\dfrac{L_c}{U_c^2\rho_c}$:
 \frac{L_c}{\delta U_c}=
 \frac{\mu_c }{\rho_cV_c\delta}
 \end{equation} 
-% 
+
 In order to keep the approximation $\delta_c<<L_c$
 this term:
 
 \begin{equation} 
 \frac{\mu_c }{\rho_cV_c\delta}\approx1=Re
 \end{equation} 
-%
-\\
-\\
+
 Using the mass conservation equation \ref{mass1} in \ref{mx}: 
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial u}{\partial x}+
 \rho v\frac{\partial u}{\partial y}=-
@@ -553,11 +488,8 @@ Using the mass conservation equation \ref{mass1} in \ref{mx}:
 \frac{\partial}{\partial y}\left(\mu\frac{\partial u}{\partial y}\right)+
 \rho f_x
 \end{equation} 
-\\
-\\
+
 The Momentum equation in $y$ direction can be wrote as:
-\\
-\\
 
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho uv)+
@@ -565,44 +497,37 @@ The Momentum equation in $y$ direction can be wrote as:
 \frac{\partial p}{\partial y}+
 \rho f_y
 \end{equation} 
-\\
-\\
+
 Using the characteristic length of the problem, we can see that 
 the others terms are important:
-\\
-\\
+
 \begin{equation} 
 \frac{1}{L_c}\frac{\delta}{L_c}(\rho_c U_c^2)+
 \frac{1}{L_c}\frac{\delta}{L_c}(\rho_c U_c^2)=
 -\frac{p_c}{L_c}+
 \rho_c f_{yc}.
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \cancelto{\approx0}{\frac{1}{L_c}\frac{\delta}{L_c}(\rho_c U_c^2)}+
 \cancelto{\approx0}{\frac{1}{L_c}\frac{\delta}{L_c}(\rho_c U_c^2)}=
 -\frac{p_c}{L_c}+
 \rho_c f_{yc}.
 \end{equation} 
-\\
-\\
+
 Then the $y$ momentum equation using the boundary layer assumption can be wrote as:
-\\
-\\
+
 \begin{equation} 
 \frac{\partial p}{\partial y}=
 \rho f_y.
 \end{equation} 
-\\
-\\
+
 This equation means that the only variations of the pressure in $y$ is determined 
 by the body forces in that direction.
 %\vspace{5cm}
-\\
-\\
+
 \textbf{Energy conservation:}
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho u_i h)=
 u_i\frac{\partial p}{\partial x_i}+
@@ -616,31 +541,28 @@ u_i\frac{\partial p}{\partial x_i}+
 +
 Q\Omega
 \end{equation} 
-\\
+
 \begin{equation} 
 \tau_{ij}=
 \lambda \delta_{ij}\frac{\partial u_k}{\partial x_k}+
 \mu\left(\frac{\partial u_i}{\partial x_j}
 +\frac{\partial u_j}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial u}{\partial x_i}\tau_{i1}=
 \frac{\partial u}{\partial x_i}\lambda \delta_{i1}\frac{\partial u_k}{\partial x_k}+
 \frac{\partial u}{\partial x_i}\mu\left(\frac{\partial u_i}{\partial x}
 +\frac{\partial u}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial u}{\partial x_i}\tau_{i1}=
 \frac{\partial u}{\partial x}\lambda \frac{\partial u_k}{\partial x_k}+
 \frac{\partial u}{\partial x_i}\mu\left(\frac{\partial u_i}{\partial x}
 +\frac{\partial u}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial u}{\partial x_i}\tau_{i1}=
 \frac{\partial u}{\partial x}
@@ -653,8 +575,7 @@ Q\Omega
 \frac{\partial u_i}{\partial x}+
 \mu\left(\frac{\partial u}{\partial x_i}\right)^2
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial u}{\partial x_i}\tau_{i1}=
 \lambda 
@@ -672,8 +593,7 @@ Q\Omega
 +
 \mu\left(\frac{\partial u}{\partial y}\right)^2
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial u}{\partial x_i}\tau_{i1}=
 \cancelto{\approx0}{
@@ -703,22 +623,19 @@ Q\Omega
 +
 \mu\left(\frac{\partial u}{\partial y}\right)^2
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial u}{\partial x_i}\tau_{i1}\approx
 \mu\left(\frac{\partial u}{\partial y}\right)^2
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial v}{\partial x_i}\tau_{i2}=
 \frac{\partial v}{\partial x_i}\lambda \delta_{i2}\frac{\partial u_k}{\partial x_k}+
 \frac{\partial v}{\partial x_i}\mu\left(\frac{\partial u_i}{\partial y}
 +\frac{\partial v}{\partial x_i}\right)
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial v}{\partial x_i}\tau_{i2}=
 \lambda\frac{\partial v}{\partial y}
@@ -731,8 +648,7 @@ Q\Omega
 \left(
 \mu\frac{\partial v}{\partial x_i}\right)^2
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial v}{\partial x_i}\tau_{i2}=
 \lambda\frac{\partial v}{\partial y}
@@ -755,8 +671,7 @@ Q\Omega
 \frac{\partial v}{\partial y}
 \right)^2
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial v}{\partial x_i}\tau_{i2}=
 \cancelto{\approx0}{
@@ -795,10 +710,7 @@ Q\Omega
 \right)^2
 }
 \end{equation} 
-\\
-\\
-\\
-\\
+
 \begin{equation} 
 \frac{\partial v}{\partial x_i}\tau_{i2}\approx0
 \end{equation} 
@@ -826,10 +738,9 @@ k
 \frac{ T_c}{\delta_c}
 \end{equation} 
 %
-\\
-\\
+
 Hence, the energy equation for steady flow become:
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x_i}(\rho u_i h)=
 u_i\frac{\partial p}{\partial x_i}+
@@ -844,7 +755,7 @@ u_i\frac{\partial p}{\partial x_i}+
 +
 Q\Omega
 \end{equation} 
-\\
+
 \begin{equation} 
 \frac{\rho_c U_c h_c}{L_c}
 +
@@ -898,10 +809,9 @@ k
 +...
 \end{equation} 
 %%
-%
-\\
+
 Then the Energy conservation gets:
-\\
+
 \begin{equation} 
 \frac{\partial}{\partial x}(\rho u h)
 +
@@ -925,7 +835,7 @@ k
 +
 Q\Omega
 \end{equation} 
-\\
+
 Using the mass conservation equation:
 %
 \begin{equation} 
@@ -985,10 +895,9 @@ k
 +
 Q\Omega
 \end{equation} 
-\\
+
 The equations that govern the Steady Reacting Mixing Layer are: 
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial Y^{o}}{\partial x}+
 \rho v\frac{\partial Y^{o}}{\partial y}
@@ -1006,8 +915,7 @@ s^{o}\Omega
 s^{F}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial u}{\partial x}+
 \rho v\frac{\partial u}{\partial y}=-
@@ -1015,14 +923,12 @@ s^{F}\Omega
 \frac{\partial}{\partial y}\left(\mu\frac{\partial u}{\partial y}\right)+
 \rho f_x
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \frac{\partial p}{\partial y}=
 \rho f_y.
 \end{equation} 
-\\
-\\
+
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
 \rho u \frac{\partial h}{\partial x}+
@@ -1043,12 +949,10 @@ v\frac{\partial p}{\partial y}+
 +
 Q\Omega
 \end{equation} 
-\\
-\\
+
 The above equations can be more simplified if we omit the body force
 in all direction and  with a zero pressure gradient,  became: 
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial Y^{o}}{\partial x}+
 \rho v\frac{\partial Y^{o}}{\partial y}
@@ -1057,8 +961,7 @@ in all direction and  with a zero pressure gradient,  became:
 s^{o}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial Y^{F}}{\partial x}+
 \rho v\frac{\partial Y^{F}}{\partial y}
@@ -1067,8 +970,7 @@ s^{o}\Omega
 s^{F}\Omega
 %\frac{\partial\rho D^m \tfrac{\partial\rho Y^m u_i}{\partial x_i}u_i}{\partial x_i}=
 \end{equation} 
-\\
-\\
+
 \begin{equation} 
 \rho u\frac{\partial u}{\partial x}+
 \rho v\frac{\partial u}{\partial y}=
@@ -1081,8 +983,7 @@ s^{F}\Omega
 %\begin{equation} 
 %\frac{\partial p}{\partial y}=0
 %\end{equation} 
-\\
-\\
+
 \begin{equation}
 %\frac{\partial}{\partial t}(\rho h)+
 \rho u \frac{\partial h}{\partial x}+
@@ -1104,16 +1005,15 @@ s^{F}\Omega
 +
 Q\Omega
 \end{equation} 
-\\
-\\
+
 \begin{equation}
 p=\rho R T
 \end{equation} 
-\\
+
 \begin{equation}
 h=c_pT
 \end{equation} 
-\\
+
 \begin{equation}
 \Omega=\beta Y_{F}Y_{O}\exp\left(\frac{E}{RT}\right)
 \end{equation} 
@@ -1123,32 +1023,32 @@ h=c_pT
 \textbf{Boundary conditions}
 
 \textbf{x $\longrightarrow +\infty$}
-\\
+
 $u=u_{+\infty}$
-\\
+
 $v=v_{+\infty}=0$
-\\
+
 $p=p_{+\infty}=constant=C$
-\\
+
 $\rho=\rho_{+\infty}=0$
-\\
+
 $Y_F=Y_{F+\infty}=1$
-\\
+
 $Y_O=Y_{O+\infty}=0$
-\\
+
 
 \textbf{x $\longrightarrow -\infty$}
-\\
+
 $u=u_{-\infty}$
-\\
+
 $v=v_{-\infty}=0$
-\\
+
 $p=p_{-\infty}=constant=C$
-\\
+
 $\rho=\rho_{-\infty}=0$
-\\
+
 $Y_F=Y_{F+\infty}=0$
-\\
+
 $Y_O=Y_{O+\infty}=1$
  
 
