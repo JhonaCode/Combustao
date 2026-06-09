@@ -1,0 +1,673 @@
+Then the ordinary system of equation with 
+$\partial /\partial  \gamma=d/d \gamma=()'$ 
+
+\begin{equation} 
+F'''
++
+F
+F''
+=0
+\end{equation} 
+
+with the boundary condition:
+$F(0):=F_0=0$ (v=0 at the dividing streamline), $F'(\infty)=F_\infty=\dfrac{u_{\infty}}{u_{-\infty}}=1$ and  $F'(-\infty):=F'_{-\infty}=\dfrac{u_{-\infty}}{u_{\infty}}=0.5$.
+
+Remember that F is self-similar equation under the invariance to the transformation $F(\gamma)=a\tilde{F}(a\gamma)$. 
+
+To corroborate it, define $\upsilon=a\gamma$ which imply
+$ 
+F(\gamma)=a\tilde{F}(\upsilon)$,
+then using the chain ruler  
+
+\begin{equation*}
+F'(\gamma)= 
+\frac{d F}{ d\gamma }
+=
+\frac{d F}{ d\upsilon }
+\frac{d\upsilon }{d\gamma}
+=
+a
+\frac{d (a\tilde{F})}{ d\upsilon }
+=
+a^2
+\frac{d \tilde{F}}{ d\upsilon }
+=
+a^2
+\tilde{F}'
+\end{equation*}
+
+From de second derivative:
+
+\begin{equation*}
+F''(\gamma)= 
+\frac{d }{ d\gamma }
+\left[
+\frac{d F}{ d\gamma }
+\right]
+=
+\frac{d }{ d\upsilon }
+\left[
+\frac{d F}{ d\gamma }
+\right]
+\frac{d\upsilon }{d\gamma}
+=
+a
+\frac{d }{ d\upsilon }
+\left[
+\frac{a^2
+\tilde{F}}{ d\upsilon }
+\right]
+=
+a^3
+\frac{d \tilde{F}}{ d\upsilon }
+a^3
+\tilde{F}''
+\end{equation*}
+
+Similarly for the third derivative:
+
+\begin{equation*}
+F'''(\gamma)= 
+\frac{d }{ d\gamma }
+\left[
+\frac{d^2 F}{ d^2\gamma }
+\right]
+=
+a^4
+\frac{d \tilde{F}}{ d\upsilon }
+=
+a^4
+\tilde{F}'''
+\end{equation*}
+
+then, substitute into the momentum equation:
+
+\begin{equation} 
+F'''
++
+F
+F''
+=
+a^4
+\tilde{F}'''
++
+a^4
+\tilde{F}
+\tilde{F}''
+=
+a^4
+[
+\tilde{F}'''
++
+\tilde{F}
+\tilde{F}''
+]
+=
+0
+\end{equation} 
+
+Then, $\tilde{F}$ the same equation that $F$.
+
+To apply the invariance of the equation, consider the boundary condition at $\infty$.
+
+\begin{equation*}
+F'_\infty
+=
+a^2
+\tilde{F}'_\infty
+=1
+\end{equation*}
+
+Then, the its not necessary to shooting the value of $\tilde{F}_\infty'$
+because any value is solution, only need to be rescaled using the factor a,  
+\begin{equation*}
+a
+=\sqrt{\frac{1}{\tilde{F}'_\infty}}
+\end{equation*}
+
+To resolve we are using the reduction of order
+defining
+
+\begin{equation}
+    S=
+\begin{bmatrix}
+   S_1\\ 
+   S_2\\
+   S_3\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+   F\\ 
+   F'\\
+   F''\\
+\end{bmatrix}
+,
+\quad
+S'=
+\begin{bmatrix}
+   F'\\ 
+   F''\\
+   F'''\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+   F'\\ 
+   F''\\
+   -FF''\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+S_2\\
+S_3\\
+-S_1S_3\\
+\end{bmatrix}
+\end{equation}
+
+Then the stream-wise equation gets  
+
+\begin{equation}
+S'=
+\begin{bmatrix}
+   F'\\ 
+   F''\\
+   F'''\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+S_2\\
+S_3\\
+-S_1S_3\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+0    & 1 & 0\\
+0    & 0 & 1\\
+-S_3 & 0 & 0\\
+\end{bmatrix}
+\begin{bmatrix}
+   S_1\\ 
+   S_2\\
+   S_3\\
+\end{bmatrix}
+\end{equation}
+
+Once the function $F$ is found, 
+the $Z$ can be resolved. 
+The special form of the species equation
+
+\begin{equation*}
+    Z''+FZ'=0 ,
+\end{equation*}
+
+with the  boundary conditions 
+$Z(\infty):=Z_\infty=Y_F$ and $Z(-\infty):=Z_{-\infty}=-Y_O/n$. 
+is also self-similar respect 
+to the invariant transformation $\tilde{Z}=aZ(\gamma)+b$. 
+
+Using the chain rule the 
+first derivative  
+
+\begin{equation}
+   Z'
+   =
+   \frac{d Z}{d \gamma} 
+   =
+   \dfrac{d \left[\dfrac{(\tilde{Z}-b)}{a}\right]}{d \gamma} 
+   =
+   \frac{1}{a}
+    \dfrac{d\tilde{Z}}{d \gamma} 
+    =
+   \frac{1}{a}
+    \tilde{Z}'
+\end{equation}
+
+and the second derivative
+
+\begin{equation}
+   Z''
+   =
+   \frac{d }{d \gamma} 
+   \left[
+    \frac{d Z}{d \gamma} 
+   \right]
+   =
+   \frac{1}{a}
+   \frac{d }{d \gamma} 
+   \left[
+    \dfrac{d\tilde{Z}}{d \gamma} 
+   \right]
+    =
+   \frac{1}{a}
+    \tilde{Z}''
+    .
+\end{equation}
+
+Substituting in the $Z$ equation:
+can be written in similar form using the reduction of order  
+
+\begin{equation}
+    Z''
+    +
+    Z' 
+    =
+   \frac{1}{a}
+    \tilde{Z}''
+    +
+   \frac{1}{a}
+    F\tilde{Z}'
+    =
+    \tilde{Z}''
+    +
+    F\tilde{Z}'
+    =
+    0
+\end{equation}
+
+Then, the equation is self-similarity and the scaling factors
+can be obtained using the boundary conditions. 
+
+Beginning with the lower boundary:
+
+\begin{equation}
+    Z_{-\infty}=-\frac{Y_O}{n}=a\tilde{Z}_{-\infty} +b .
+\end{equation}
+
+and  assuming that $\tilde{Z}_{-\infty}=0$ as a first guess for the shooting method
+
+\begin{equation}
+b=-\frac{Y_O}{n} .
+\end{equation}
+
+Then, in the upper boundary
+
+\begin{equation}
+Z_\infty
+=
+Y_F=a\tilde{Z}_\infty +b 
+=
+Y_F=a\tilde{Z}_\infty
+-
+\frac{Y_O}{n} .
+\end{equation}
+
+then
+
+\begin{equation}
+a
+=
+\dfrac{Y_F+\dfrac{Y_O}{n}}{\tilde{Z}_\infty}
+.
+\end{equation}
+
+To resolve, the reduction of 
+order will  be used, defining 
+
+\begin{equation}
+    S=
+\begin{bmatrix}
+   S_1\\ 
+   S_2\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+   Z\\ 
+   Z'\\
+\end{bmatrix}
+,
+\quad
+S'=
+\begin{bmatrix}
+   Z'\\ 
+   Z''\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+   Z'\\ 
+   -FZ'\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+S_2\\
+-FS_2\\
+\end{bmatrix}
+\end{equation}
+
+Then the $Z$ equation gets  
+
+\begin{equation}
+S'=
+\begin{bmatrix}
+   Z'\\ 
+   Z''\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+S_2\\
+-FS_2\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+0    & 1 \\
+0    & -F \\
+\end{bmatrix}
+\begin{bmatrix}
+   S_1\\ 
+   S_2\\
+\end{bmatrix}
+\end{equation}
+
+As the total energy has the same 
+form as the $Z$ equation, the same 
+procedure is apply. The 
+boundary condition are determined by:
+
+\begin{equation}
+    H
+    =
+    \sum_i^NY_ic_{pi}T
+    +
+    \sum_i^NY_ih_{fi}^{\circ }
+    +
+    \frac{U^{2}}{2}  
+    =
+    \sum_i^NY_ic_{pi}T
+    \frac{R_i}{R_i}
+    +
+    \sum_i^NY_ih_{fi}^{\circ }
+    +
+    \frac{U^{2}}{2}  
+    =
+    \sum_i^NY_iR_iT
+    \frac{\gamma_i}{\gamma_i-1}
+    +
+    \sum_i^NY_ih_{fi}^{\circ }
+    +
+    \frac{U^{2}}{2}  
+\end{equation}
+evaluated in the boundaries $H(\infty): =H_\infty$ and 
+$H(-\infty):=H_{-\infty}$
+Remember that:
+
+\begin{equation}
+M_w=\sum_i^NY_iM_{wi}, 
+\quad
+\text{with}
+\quad
+R_i=\frac{R_u}{M_w},
+\quad
+\text{then}:
+\quad
+R=\sum_i^NR_iW_i
+\end{equation}
+
+so,
+
+\begin{equation}
+    H
+    =
+    \sum_i^NY_iT
+    R
+    \frac{\gamma_i}{\gamma_i-1}
+    +
+    \sum_i^NY_ih_{fi}^{\circ }
+    +
+    \frac{U^{2}}{2}  
+    .
+\end{equation}
+
+ Then, in the upper boundary
+
+\begin{equation}
+    H_\infty
+    =
+    R_FT_\infty
+    \frac{\gamma_F}{\gamma_F-1}
+    +
+    Y_Fh_{fF}^{\circ }
+    +
+    \frac{U_\infty^{2}}{2}  
+    , 
+\end{equation}
+
+and in the lower boundary
+
+\begin{equation}
+    H_{-\infty}
+    =
+    R_OT_{-\infty}
+    \frac{\gamma_O}{\gamma_O-1} +
+    Y_Oh_{fO}^{\circ }
+    +
+    \frac{U_{-\infty}^{2}}{2}  
+    .
+\end{equation}
+
+With definition of $Z_1$, $Z_1$ and $Z_3$, 
+
+\begin{equation}
+   Z_1=Y_F-\frac{Y_O}{n}, 
+   \quad
+   Z_2=Y_F+\frac{Y_p}{n+1}, 
+   \quad
+   Z_3=\frac{Y_O}{n}+\frac{Y_p}{n+1}, 
+\end{equation}
+
+It is important to note that $Z_3=Z_2-Z_1$, which show that 
+the tree equation are not independent.
+
+The species equation 
+
+\begin{equation}
+   Y_F+Y_O+Y_P=1 
+\end{equation}
+
+can be rewritten in terms of $Z_i$ as 
+
+\begin{equation}
+   %Y_F
+   Z_1
+   +
+   \frac{Y_O}{n} 
+   +
+   Y_O
+   +
+   (n+1)Z_3
+   -
+   Y_O\frac{n+1}{n}, 
+   =
+   1 
+\end{equation}
+
+\begin{equation}
+   Z_1
+   +
+   Y_O
+   \left(
+   \frac{1}{n} 
+   +
+   1
+   -
+   \frac{n+1}{n}, 
+   \right)
+   +
+   (n+1)Z_3
+   =
+   1 
+\end{equation}
+
+\begin{equation}
+   Z_1
+   +
+   Y_O
+   \left(
+   \frac{2}{n} 
+   \right)
+   +
+   (n+1)Z_3
+   =
+   1 
+\end{equation}
+
+Resolving for $Y_O$
+
+\begin{equation}
+   Y_O
+   =
+   \frac{n}{2} 
+   \left(
+   1 
+   -
+   (n+1)Z_3
+   -
+   Z_1
+   \right)
+\end{equation}
+
+and using to found $Y_F$ 
+
+\begin{equation}
+   Y_F
+   =
+   Z_1
+   +
+   \frac{Y_O}{n}, 
+   =
+   Z_1
+   +
+   \frac{1}{2} 
+   \left(
+   1 
+   -
+   (n+1)Z_3
+   -
+   Z_1
+   \right)
+   =
+   \frac{1}{2} 
+   Z_1
+   +
+   \frac{1}{2} 
+   \left(
+   1
+   -
+   (n+1)Z_3
+   \right)
+\end{equation}
+
+Now, for the $Z_3$
+
+\begin{equation}
+   Y_p 
+   =
+   (n+1)
+   \left(
+       Z_2
+       -
+       Y_F
+   \right)
+   =
+   (n+1)
+   \left(
+       Z_2
+       -
+   \frac{1}{2} 
+   Z_1
+   -
+   \frac{1}{2} 
+   \left(
+   1
+   -
+   (n+1)Z_3
+   \right)
+   \right)
+\end{equation}
+
+So, the mass fraction can be expressed in terms of the $Z_i$ as expected.  However, as $C_p$ was considered constant is more adequate use it to 
+calculate the temperature.
+
+Temperature is calculated in function of the $H$:
+
+\begin{equation}
+T
+=
+\frac{\left(    
+    H(\gamma)
+    -
+    Y_F
+    \Delta^{\circ}_{fF}
+    -
+    Y_O
+    \Delta^{\circ}_{fO}
+    -
+    \dfrac{u^2}{2}
+\right)}
+{C_pZ(\gamma)}
+\end{equation}
+
+    {\color{red}For mim is not consistent to have the formation enthalpy of the products equal to zero}
+
+with 
+
+\begin{equation}
+C_p(Z(\gamma))
+=
+\sum_i^N
+Y_i
+C_{pi}(\gamma)
+.
+\end{equation}
+
+To calculate the $Y_i$ is used the variable $Z$ once was assumed
+an infinite reaction rate, fast chemistry. Then the oxygen and fuel can not presented at the same place ate the same time.  Remember that $Z_1=Y_F-Y_O/n$.
+Then, the mass fraction can be calculated using the function $max$ and $min$ defined as  
+
+\begin{equation}
+Y_F=
+[\max(Z_1(\gamma), 0] 
+= 
+\begin{cases} Z_1(\gamma) & \text{if } Z_1(\gamma) \geq 0 \\ 0 & \text{if }  Z_1(\gamma) < 0 \end{cases}    
+\end{equation}
+
+and 
+
+\begin{equation}
+Y_O=
+[-n\min(Z_1(\gamma), 0]
+= 
+\begin{cases} Z_1(\gamma) & \text{if } Z_1(\gamma) \leq 0 \\ 0 & \text{if }  Z_1(\gamma) > 0 
+\end{cases}    
+\end{equation}
+
+Then, $Yp=1-Y_F-Y_O$, and the temperature can be calculated. 
+
+The heat release can be written as :
+
+\begin{equation*}
+    \Delta H_f^{\circ} =\sum_{products}^Ns_i\Delta h_{fi}^{\circ}-\sum_{reactans}^Ms_i\Delta h_{fi}^{\circ}    
+\end{equation*}
+
+For a exothermic reaction, the heat release  $Q=-\Delta H_f^{\circ}$  with $\Delta H_f^{\circ}<0$, then the flame temperature can be defined as 
+
+\begin{equation}
+    T_{ad}
+    =
+    \frac{Q}{C_p}+T_u
+\end{equation}
+
+when $T_{ad}$ is the adiabatic temperature of the flame and $T_u$ is the unburned temperature of the reactants. 
+
+For one step reaction $F+nO\rightarrow (n+1)P$ the energy balance is 
+
+\begin{equation*}
+    \Delta h_{fF}^{\circ}
+    +
+    n
+    \Delta h_{fF}^{\circ}
+    +
+    C_{p,reactans}
+    [T_u-T^{\circ})]
+    =(n+1)[h_{fP}^{\circ}+C_{pP}(T_{ad}-T^{\circ})]
+\end{equation*}
+
+where $T^{\circ}$ is the reference temperature at which the standard formation
+enthalpies are defined. Usually $T^{\circ}=298.15 K$
