@@ -604,7 +604,31 @@ T
 {C_pZ(\gamma)}
 \end{equation}
 
-    {\color{red}For mim is not consistent to have the formation enthalpy of the products equal to zero}
+{\color{red}To my  is not consistent to have the formation enthalpy of the products equal to zero, then:
+
+\begin{equation}
+T
+=
+\frac{\left(    
+    H(\gamma)
+    -
+    Y_F
+    \Delta^{\circ}_{fF}
+    -
+    Y_O
+    \Delta^{\circ}_{fO}
+    -
+    Y_P
+    \Delta^{\circ}_{fP}
+    -
+    \dfrac{u^2}{2}
+\right)}
+{C_pZ(\gamma)}
+\end{equation}
+
+
+With the product formation enthalpy the results is consistent with the Planché results. 
+}
 
 with 
 
@@ -617,9 +641,11 @@ C_{pi}(\gamma)
 .
 \end{equation}
 
-To calculate the $Y_i$ is used the variable $Z$ once was assumed
-an infinite reaction rate, fast chemistry. Then the oxygen and fuel can not presented at the same place ate the same time.  Remember that $Z_1=Y_F-Y_O/n$.
-Then, the mass fraction can be calculated using the function $max$ and $min$ defined as  
+To calculate the $Y_i$ is used the variable $Z$, once was assumed
+an infinite reaction rate, fast chemistry. 
+Then the oxygen and fuel can not presented at the same place ate the same time.
+Remember that $Z_1=Y_F-Y_O/n$.  Then, the mass fraction can be calculated using
+the function $max$ and $min$ defined as  
 
 \begin{equation}
 Y_F=
@@ -670,4 +696,280 @@ For one step reaction $F+nO\rightarrow (n+1)P$ the energy balance is
 \end{equation*}
 
 where $T^{\circ}$ is the reference temperature at which the standard formation
-enthalpies are defined. Usually $T^{\circ}=298.15 K$
+enthalpies are defined. Usually $T^{\circ}=298.15 K$. 
+
+Now, once the velocity and temperature are calculated, is necessary  
+to came back to the original variable $y$, reverse the Howard-Dorodnitsyn and the similarity 
+transformations: 
+
+\begin{equation*}
+   \frac{dy}{d\eta}
+   =
+   \frac{1}{\rho}
+   =
+   T
+   \quad
+   \text{and}
+   \quad
+  \eta
+  =
+  \gamma 
+   \sqrt{2\epsilon}
+   \quad
+  \frac{d\eta}{d\gamma}
+  =
+   \sqrt{2\epsilon}
+   .
+\end{equation*}
+
+Defined
+$\delta$ as  the normalized vorticity thickness of the mixing layer, defined as 
+
+\begin{equation*}
+\delta_w=\frac{\delta^*}{\delta^*(x^*)}
+\end{equation*}
+
+with
+
+\begin{equation*}
+  \delta^*=\frac{\Delta u^*}{\big|\frac{\partial u^* }{\partial y^*}\big|_{max}}
+ =
+ \frac{u_1^*-u_2^*}{\big|\frac{\partial u^* }{\partial y^*}\big|_{max}}
+\end{equation*}
+
+representing a region of maximum shear stress. 
+
+
+To find it is easy, in the inflection point draw a
+straight tangent line along that steepest slope. Extend that tangent line until
+it intercepts the upper freestream velocity ($u_1$) and the lower freestream
+velocity ($u_2$).
+The similarity solution implies that the velocity and consequently the
+temperature, Z and species profiles are self-similar, which means 
+that the shape of the profiles does not change with the stream-wise coordinate $x$, 
+just is scaled by a factor. 
+
+
+Using the chain rule and the non-dimensional definition, the derivative of the velocity can be written as 
+
+\begin{equation*}
+   \frac{\partial u^*}{\partial y^*}
+   =
+   \frac{u^*_1 \partial  u}{\delta^* \partial y}
+   =
+   \frac{\partial u}{\partial y}
+   =
+   \frac{\delta^*}{u^*_1}
+   \frac{\partial u}{\partial \gamma}
+   \frac{\partial \gamma}{\partial \eta}
+   \frac{\partial \eta}{\partial y}
+\end{equation*}
+
+In standard similarity theory, $\gamma$  is defined as the physical distance $\eta$
+divided by a scaling length factor $\delta_w(\epsilon)$ (which represents the growing
+thickness of the boundary/mixing layer):
+
+$$\gamma = \frac{\eta}{\delta_w(\epsilon)}$$
+
+ Now, we
+ take the derivative of this coordinates definition with respect to $\eta$:
+ 
+$$
+\frac{\partial \gamma}{\partial \eta}
+ = 
+\frac{\partial}{\partial \eta}
+\left[
+\frac{\eta}{\delta_w(\epsilon)}
+\right]
+$$
+
+ Because we are looking at a single downstream
+ location ($\epsilon = \text{constant}$), the thickness $\delta_w(\epsilon)$ acts as a constant
+ during this derivative. The derivative of $\eta$ with respect to itself is just
+ $1$, leaving us with:
+ 
+ $$
+ \frac{\partial \gamma}{\partial \eta}
+ =
+\frac{1}{\delta_w(\epsilon)}
+ $$
+
+then,
+
+\begin{equation*}
+   \frac{\partial u}{\partial y}
+   =
+   \frac{\delta^*}{u^*_1}
+   \frac{1}{\delta_w(\epsilon)}
+   \frac{\partial u}{\partial \gamma}
+   \frac{\partial \eta}{\partial y}
+\end{equation*}
+
+remember that $u=F'(\gamma)$, then
+
+\begin{equation*}
+   \frac{\partial u}{\partial y}
+   =
+   \frac{\delta^*}{u^*_1}
+   F''
+   \left[
+   \frac{1}{\delta_w(\epsilon)}
+   \right]
+   \frac{\partial \eta}{\partial y}
+\end{equation*}
+
+
+and using in the normalized vorticity thickness definition:
+
+\begin{equation*}
+\delta_w
+=
+\dfrac{
+ \frac{u_1^*-u_2^*}{\big|\frac{\partial u^* }{\partial y^*}\big|_{max}}
+}{\delta^*(\epsilon)}
+=
+\dfrac{
+ \frac{u_1^*-u_2^*}{\big|
+   \frac{\delta^*}{u^*_1}
+   F''
+   \left[
+   \frac{1}{\delta_w(\epsilon)}
+   \right]
+   \frac{\partial \eta}{\partial y}
+\big|_{max}}
+}{\delta^*(\epsilon)}
+=
+ \frac{1-u_2^*/u_1^*}
+ {
+   \big|
+   \frac{\partial \eta}{\partial y}
+   F''
+   \big|_{max}
+  }
+\end{equation*}
+
+From the e H-D transformation, $\partial \eta/\partial y=1/\rho=T$, then
+
+\begin{equation*}
+\delta_w
+=
+ \frac{1-u_2^*/u_1^*}
+ {
+   \big|
+   \frac{F''}{T}
+   \big|_{max}
+  }
+\end{equation*}   
+
+Remember  that $\frac{\partial \eta}{\partial y}$ is not constant across
+the mixing layer (in the vertical direction) and can be not pulled out of the $\max$
+operation.
+This also can be used as shooting condition, 
+If the maximum ratio of your resulting arrays doesn't equal $1 - \bar{u}_2$,
+the code knows its guess was wrong, adjusts, and shoots again until this
+identity matches perfectly.
+
+Note that $\delta^*(x)=\delta^*(\epsilon)$ disappears from the equation, which means that the vorticity
+thickness is constant along the stream-wise direction, which is a consequence of
+the self-similarity of the solution.
+Because $u_1$, $u_2$, and the maximum value of the mathematical function
+$F''(\eta)$ are constants, the non-dimensional vorticity thickness must be a
+constant number. It cannot grow or shrink; it is locked in place by the nature
+of similarity.
+
+In an incompressible (constant temperature, density) flow, the maximum shear stress is
+simply dictated by the velocity difference: $|F''|_{\max} = 1 -
+\bar{u}_2$.However, this result  proves that in a high-speed compressible flow,
+temperature acts as a spatial cushion. Because temperature $T(\gamma)$ is in the
+denominator inside the maximum operator, where the fluid is extremely hot (high
+$T$), the physical velocity gradient is flattened out.This means that thermal
+expansion stretches the mixing layer physically wide, reducing the local shear
+stress. This equation  perfectly captures how density variations damp out the
+sharpness of the velocity profile.
+
+
+Now  to calculated the vorticity thickess $\delta^*$
+with $\delta^*(\epsilon)=\sqrt{2\epsilon}$
+
+Remember that  $\epsilon=\epsilon^*\sqrt{Re}/\delta^*$ $y=y^*/\delta^*$. 
+The two scales must be non-dimensionalized by the same reference length $\delta^*$, which is the vorticity thickness at the reference location $x^*$.
+So, redefining $x=\dfrac{\epsilon}{\sqrt{Re}}$, then $\delta^*(\epsilon)=\sqrt{\frac{2\epsilon}{Re}}$ and 
+
+\begin{equation*}
+   \frac{dy}{d\gamma}
+   =
+   \frac{dy}{d\eta}
+   \frac{d\eta}{d\gamma}
+   =
+   T\sqrt{\frac{2\epsilon}{Re}}
+\end{equation*}
+
+Then to calculate the physical distance $y$ from the similarity coordinate $\gamma$, we need to integrate this expression:
+\begin{equation*}
+   y
+   =
+   \sqrt{\frac{2\epsilon}{Re}}
+   \int_0^\gamma
+   T(\tilde{\gamma})
+   d\tilde{\gamma}
+\end{equation*}
+
+with $y(0)=0$ at the dividing streamline. 
+Assuming that $\delta^*=1$
+
+\begin{equation*}
+   y
+   =
+   \int_0^\gamma
+   T(\tilde{\gamma})
+   d\tilde{\gamma}
+\end{equation*}
+
+If you strictly perform the integration above, your physical coordinate will
+start at zero at the bottom boundary ($y^*(-40) = 0$).However, in a physical
+split-stream mixing layer, the dividing line between the upper and lower streams
+occurs at the centerline where $\eta = 0$. To make sure your physical coordinate
+system centers perfectly ($y^* = 0$ at $\eta = 0$), you subtract a shift
+constant ($y^*_0$):$$y^*(\eta) = \int_{-40}^{\eta} T(\eta) \, d\eta -
+y^*_0$$Where $y^*_0$ is simply the value of that cumulative integral evaluated
+exactly at the center index ($\eta = 0$):$$y^*_0 = \int_{-40}^{0} T(\eta) \,
+d\eta$$
+
+Now, to find x, the dimesional vorticity thickness $\delta^*$ is assumed equal to $1$ at the reference location $x^*$, then:
+
+\begin{equation*}
+\delta_w
+=
+\delta^*
+\delta^*(x)
+\quad
+\delta^*
+=
+\frac{\delta_w}
+{\delta^*(x)}
+\quad
+=
+ \dfrac{1-u_2^*/u_1^*}
+ {
+\sqrt{\dfrac{2x}{Re}}
+   \big|
+   \frac{F''}{T}
+   \big|_{max}
+  }
+  =1
+\end{equation*}
+
+\begin{equation*}
+   x
+   =
+   \frac{Re}{2}
+   \left[
+   \frac{1-u_2^*/u_1^*}
+   {\big|
+   \frac{F''}{T}  \big|_{max}
+   }
+   \right]^2
+\end{equation*}
+
+
+
