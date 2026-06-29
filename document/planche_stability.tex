@@ -1,8 +1,10 @@
 The linear Stability Analysis (LST) is performed using the  inviscid Navier-stokes equation, called Euler equation, defined as  
 
+\textbf{ Mass conservation  equation:}
+
 \begin{equation} 
-\frac{\partial\rho}{\partial t}+
-\frac{\partial}{\partial x_i}(\rho u_i)=0
+\frac{\partial\rho^*}{\partial t^*}+
+\frac{\partial}{\partial x_i^*}(\rho u_i^*)=0
 \quad \text{for} \quad i=1,2,3
 \label{mass}
 \end{equation} 
@@ -41,6 +43,8 @@ where
 \tau_{ij}^*=\lambda^* \delta_{ij}^*\frac{\partial u_k^*}{\partial x_k^*}+
 \mu^*\left(\frac{\partial u_i^*}{\partial x_j^*}+\frac{\partial u_j^*}{\partial x_i^*}\right)
 \end{equation} 
+
+for inviscid flow 
 
 \begin{equation*} 
 u_j^*
@@ -98,6 +102,7 @@ u_i^*
 =
 -
 \frac{\partial p^*}{\partial x_j^*} 
+.
 \end{equation} 
 
 \textbf{Species conservation:}
@@ -313,6 +318,7 @@ So, with the above separation the  energy enthalpy equation gets :
 
 
 \begin{equation}
+\rho^*
 \frac{D h_{s}^*(T^*)}{D t^*}
 =
 \frac{D p^* }{Dt^*}
@@ -334,6 +340,7 @@ So, with the above separation the  energy enthalpy equation gets :
         \frac{\partial Y_i^*}{\partial x_i^*}
 \right)
 -
+\rho^*
 \sum_i  
 \dot{\omega}_i
 h_{fi}^{\circ*}
@@ -346,6 +353,7 @@ can be written as:
     Q_{rxn}
     \dot{\omega}
     =
+    \rho^*
     \sum_i h_{fi}^{*\circ}
     \dot{\omega}_i
 \end{equation} 
@@ -381,12 +389,15 @@ u_j^*
 \end{equation} 
 
 \begin{equation*}
+\begin{split}
+\rho^*
 \frac{D h_{s}^*(T^*)}{D t^*}
 +
 u_j^*
 \rho^*
 \frac{D u_j^*}{D t^*}
 =
+\\
 -
 u_j^*
 \frac{\partial p}{\partial x_j} 
@@ -415,6 +426,7 @@ u_j^*
 -
 Q_{rxn}
 \dot{\omega}
+\end{split}
 \end{equation*} 
 
 \begin{equation*}
@@ -494,6 +506,7 @@ for all species
         \frac{\partial Y_i^* }{\partial x_i^*}
     \right)
     +
+    \rho^*
     \sum_i
     h_{fi}^{\circ*}
     \dot{\omega}_i^{*}
@@ -516,6 +529,7 @@ for all species
         \frac{\partial Y_i^* }{\partial x_i^*}
     \right)
     +
+    \rho^*
     \sum_i
     h_{fi}^{\circ*}
     \dot{\omega}_i^{*}
@@ -525,6 +539,7 @@ is added
 
 \begin{equation*}
 \begin{split}
+\rho^*
 \frac{D h_{s}^*(T^*)}{D t^*}
 +
 u_j^*
@@ -568,6 +583,7 @@ h_{fi}^{\circ*}
 \right)
 +
 \cancel{
+\rho^*
 \sum_i
 h_{fi}^{\circ*}
 \dot{\omega}_i^{*}
@@ -582,6 +598,7 @@ Q_{rxn}
 
 \begin{equation*}
 \begin{split}
+\rho^*
 \frac{D H^*}{D t^*}
 =
 \frac{\partial p^*}{\partial t} 
@@ -620,6 +637,7 @@ of the energy equation is given by :
 
 \begin{equation*}
 \begin{split}
+\rho^*
 \frac{D H^*}{D t^*}
 =
 \frac{\partial p^*}{\partial t} 
@@ -629,7 +647,7 @@ of the energy equation is given by :
 +
 \frac{\partial}{\partial x_i^*}
 \left(
-    k^*\frac{\partial T^*}{x_i^*}
+    k^*\frac{\partial T^*}{\partial x_i^*}
 \right)
 -
 \frac{\partial}{\partial x_i^*}
@@ -643,450 +661,162 @@ of the energy equation is given by :
 \end{split}
 \end{equation*} 
 
-Now a special form of the total enthalpy equation can 
-be obtained assuming that the specific heat at 
-constant pressure is constant 
+for inviscid flow
+
+\begin{equation*}
+\begin{split}
+\rho^*
+\frac{D H^*}{D t^*}
+=
+\frac{\partial p^*}{\partial t} 
+.
+\end{split}
+\end{equation*} 
+
+This energy equation can be expressed in terms 
+of the Temperature, using the definition of the total enthalpy 
+and the  \textbf{perfect gas equation:}
 
 \begin{equation} 
-    h_s^*
-    =
-    \int_{T_0^*}^{T^*}
-    c_p^*(T^*)
-    dT^*
-    =
-    c_p^*
-    T^*
+p=\rho T R.
 \end{equation} 
-
-and the thermal difussion and viscous work can be 
-unified  
-
-\begin{equation*} 
-\begin{split} 
-\frac{\partial}{\partial y^*}
-\left(
-    \mu
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-\right)
-+
-\frac{1}{c_p^*}
-\frac{\partial}{\partial y^*}
-\left(
-    k^*\frac{\partial h_s^*}{\partial y^*}
-\right)
--
-\frac{\partial}{\partial y^*}
-\left(
-        \sum_i
-        h_{si}^*
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
-\end{split} 
-\end{equation*} 
-
-\begin{equation*} 
-\begin{split} 
-\frac{\partial}{\partial y^*}
-\left(
-    \mu
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-\right)
-+
-\frac{1}{c_p^*}
-\frac{\partial}{\partial y^*}
-\left[
-    k^*
-    \left(
-        \sum_i
-        \frac{\partial Y_i}{\partial y^*}
-        h_{si}
-        +
-        \sum_i
-        Y_i
-        \frac{\partial h_{si} }{\partial y^*}
-    \right)
-\right]
--
-\frac{\partial}{\partial y^*}
-\left(
-        \sum_i
-        h_{si}^*
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
-\end{split} 
-\end{equation*} 
-
-The derivate of the Total enphalpy is 
-
-\begin{equation*} 
-\frac{\partial H^*}{\partial y^*}
-=
-\frac{\partial h_{s}^*}{\partial y^*}
-+
-u^*
-\frac{\partial u^*}{\partial y^*}
-=
-\frac{\partial }{\partial y^*}
-\left(
-    \sum_ih_{si}Y_i
-\right)
-+
-u^*
-\frac{\partial u^*}{\partial y^*}
-=
-\sum_i
-\frac{\partial Y_i}{\partial y^*}
-h_{si}
-+
-\sum_i
-Y_i
-\frac{\partial h_{si} }{\partial y^*}
-+
-u^*
-\frac{\partial u^*}{\partial y^*}
-\end{equation*} 
 
 Then 
 
-\begin{equation*} 
-\frac{\partial H^*}{\partial y^*}
--
-u^*
-\frac{\partial u^*}{\partial y^*}
+\begin{equation*}
+\begin{split}
+\rho^*
+\frac{D (c_p^*T^*)}{D t^*}
++
+\rho^*
+u_j^*
+\frac{D u_j^*}{D t^*}
 =
-\sum_i
-Y_i^*
-\frac{\partial h_{si}^* }{\partial y^*}
+\frac{\partial p^*}{\partial t} 
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+\rho^*
+\frac{\partial  (c_p^*T^*)}{\partial  t^*}
 +
-\sum_i
-\frac{\partial Y_i^*}{\partial y^*}
-h_{si}^*
-\end{equation*} 
-
-
-\begin{equation*} 
-\begin{split} 
-\frac{\partial}{\partial y^*}
-\left(
-    \mu
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-\right)
+\rho^*
+u_i^*
+\frac{\partial (c_p^*T^*)}{\partial  x_i^*}
 +
-\frac{1}{c_p^*}
-\frac{\partial}{\partial y^*}
-\left[
-    k^*
-    \left(
-        \frac{\partial H^*}{\partial y^*}
-        -
-        u^*
-        \frac{\partial u^*}{\partial y^*}
-    \right)
-\right]
-\\
--
-\frac{\partial}{\partial y^*}
-\left(
-        \sum_i
-        h_{si}^*
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
-\end{split} 
-\end{equation*} 
-
-Joined the velocity gradient term  
-
-\begin{equation*} 
-\begin{split} 
-\frac{1}{c_p^*}
-\frac{\partial}{\partial y^*}
-\left[
-    k^*
-    \frac{\partial H^*}{\partial y^*}
-    +
-    \left(
-        \frac{\mu^*{c_p^*}}{k^*}
-        -
-        1 
-    \right)
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-\right]
--
-\frac{\partial}{\partial y^*}
-\left(
-        \sum_i
-        h_{si}^*
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
-\end{split} 
-\end{equation*} 
-
-An interenting term  apper in the velociy gradient.  
-Remember that \\$Pr=\mu^*c_p^*/k^*$. If $Pr=1$ 
-the heat diffusivity and the momemtum diffussivity are 
-the same, and this term vanish form the energy equation. 
-
-Similarly another interesting term apper. 
-Begining with the total enthalpy equation: 
-
-\begin{equation*} 
-\begin{split} 
-\frac{\partial}{\partial y^*}
-\left(
-    \mu
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-\right)
+\rho^*
+u_j^*
+\frac{\partial  (u_j^*)}{\partial  t^*}
 +
-\frac{1}{c_p^*}
-\frac{\partial}{\partial y^*}
-\left[
-    k^*
-    \left(
-        \sum_i
-        \frac{\partial Y_i}{\partial y^*}
-        h_i
-        +
-        \sum_i
-        Y_i
-        \frac{\partial h_{si} }{\partial y^*}
-    \right)
-\right]
--
-\frac{\partial}{\partial y^*}
-\left(
-        \sum_i
-        h_{si}^*
-        \rho^* 
-        D_i^*
-        \frac{\partial Y_i^*}{\partial y^*}
-\right)
-\end{split} 
-\end{equation*} 
-
-Separing the gradient of the heat conduction in term of 
-sensible  enthalpy of species, join with the  difussion of energy by species   
-and put the work of viscous diffution 
-
-\begin{equation*} 
-\begin{split} 
-\frac{1}{c_p^*} \frac{\partial}{\partial y^*}
-\left[
-    k^*
-    \left(
-    \sum_i
-    Y_i
-    \frac{\partial h_{si} }{\partial y^*}
-    +
-    \frac{\mu c_p^*}{k^*}   
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-    \right)
-\right]
--
-\frac{\partial}{\partial y^*}
-    \left[
-        \sum_i
-        h_{si}^*
-        \left(
-            \frac{k^*}{c_p^*} 
-            -
-            \rho^* 
-            D_i^*
-        \right)
-        \frac{\partial Y^*_i}{\partial y^*}
-    \right]
-\end{split} 
-\end{equation*} 
-
-The derivate of the Total enphalpy is 
-
-\begin{equation*} 
-\frac{\partial H^*}{\partial y^*}
--
-\sum_i
-\frac{\partial Y_i}{\partial y^*}
-h_{si}
--
-u^*
-\frac{\partial u^*}{\partial y^*}
+\rho^*
+u_j^*
+u_i^*
+\frac{\partial (u_j^*)}{\partial  x_i^*}
 =
-\sum_i
-Y_i
-\frac{\partial h_{si} }{\partial y^*}
+R^*
+\frac{\partial \rho^* T^*}{\partial t} 
+.
+\end{split}
 \end{equation*} 
 
-Therefore
-
-\begin{equation*} 
-\begin{split} 
-\frac{1}{c_p^*} \frac{\partial}{\partial y^*}
-\left[
-    k^*
-    \left(
-    \frac{\partial H^*}{\partial y^*}
-    -
-    \sum_i
-    \frac{\partial Y_i}{\partial y^*}
-    h_{si}
-    +
-    \left(
-    \frac{\mu c_p^*}{k^*}   
-    -
-    1
-    \right)
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-    \right)
-\right]
--
-\frac{\partial}{\partial y^*}
-    \left[
-        \sum_i
-        h_{si}^*
-        \left(
-            \frac{k^*}{c_p^*} 
-            -
-            \rho^* 
-            D_i^*
-        \right)
-        \frac{\partial Y^*_i}{\partial y^*}
-    \right]
-\end{split} 
-\end{equation*} 
-
-Defining 
-$Le_i=k^*/(D_i^*c_p^* \rho^*)$
-
-\begin{equation*} 
-\begin{split} 
-\frac{\partial}{\partial y^*}
-\left[
-    \frac{ k^*}{c_p^*} 
-    \left(
-    \frac{\partial H^*}{\partial y^*}
-    -
-    \sum_i
-    \frac{\partial Y_i}{\partial y^*}
-    h_{si}
-    +
-    \left(
-    Pr
-    -
-    1
-    \right)
-    u^*
-    \frac{\partial u^*}{\partial y^*}
-    \right)
-\right]
--
-\frac{k^*}{c_p^*} 
-\frac{\partial}{\partial y^*}
-    \left[
-        \sum_i
-        h_{si}^*
-        \left(
-            1
-            -
-            \frac{1}{Le_1} 
-        \right)
-        \frac{\partial Y^*_i}{\partial y^*}
-    \right]
-\end{split} 
-\end{equation*} 
-
-If $Le_i=1$ and $Pr=1$, the total enthalpy equation can be simplified 
+Multiplied the momentum equation by $u_j$ and using in the 
+energy equation
 
 \begin{equation} 
-\begin{split} 
-\rho^* u^* \frac{\partial H^*}{\partial x^*}
+u_j^*
+\rho^*
+\left(
+\frac{\partial}{\partial t^*}u_j^*
 +
-\rho^* v^* \frac{\partial H^*}{\partial y^*}
+u_i^* 
+\frac{\partial}{\partial x_i}u_j^*
+\right)
 =
-\frac{\partial}{\partial y^*}
-\left[
-    \frac{ k^*}{c_p^*} 
-    \left(
-        \frac{\partial H^*}{\partial y^*}
-        -
-        \sum_i
-        \frac{\partial Y_i}{\partial y^*}
-        h_{si}
-    \right)
-\right]
-\end{split} 
+-
+u_j^*
+\frac{\partial p^*}{\partial x_j^*} 
+.
 \end{equation} 
 
-An important simplification is obtained 
-assuming that  \\ $c_p=c_{pi}=constant$ which is the 
-same that have equal thermal enthalpy for each specie.
-Then, 
+So, 
 
-\begin{equation} 
-\begin{split} 
-\rho^* u^* \frac{\partial H^*}{\partial x^*}
+\begin{equation*}
+\begin{split}
+    \rho^*
+\frac{\partial  (c_p^*T^*)}{\partial  t^*}
 +
-\rho^* v^* \frac{\partial H^*}{\partial y^*}
+\rho^*
+u_i^*
+\frac{\partial (c_p^*T^*)}{\partial  x_i^*}
+-
+u_j^*
+\frac{\partial p^*}{\partial x_j^*} 
 =
-\frac{\partial}{\partial y^*}
-\left[
-    \frac{ k^*}{c_p^*} 
-    \left(
-        \frac{\partial H^*}{\partial y^*}
-   \right)
-\right]
+R^*
+T^*
+\frac{\partial \rho^* }{\partial t} 
++
+R^*
+\rho^*
+\frac{\partial  T^*}{\partial t} 
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+    \rho^*
+\frac{\partial  (c_p^*T^*)}{\partial  t^*}
++
+\rho^*
+u_i^*
+\frac{\partial (c_p^*T^*)}{\partial  x_i^*}
+-
+u_j^*
+\frac{\partial \rho^*T^*}{\partial x_j^*} 
 =
-\frac{\partial}{\partial y^*}
-\left[
-    \frac{ \mu}{Pr} 
-    \left(
-        \frac{\partial H^*}{\partial y^*}
-   \right)
-\right]
+R^*
+T^*
+\frac{\partial \rho^* }{\partial t} 
++
+R^*
+\rho^*
+\frac{\partial  T^*}{\partial t} 
+.
+\end{split}
+\end{equation*} 
+
+Assuming constant $c_p$
+
+\begin{equation*}
+\begin{split}
+    \rho^*
+\frac{\partial  (T^*)}{\partial  t^*}
++
+\rho^*
+u_i^*
+\frac{\partial (T^*)}{\partial  x_i^*}
+-
+\frac{u_j^*}{c_p^*}
+\frac{\partial \rho^*T^*}{\partial x_j^*} 
 =
-\frac{\partial}{\partial y^*}
-\left[
-    \mu 
-    \left(
-        \frac{\partial H^*}{\partial y^*}
-   \right)
-\right]
-\end{split} 
-\end{equation} 
+\frac{1}{c_p^*}
+R^*
+T^*
+\frac{\partial \rho^* }{\partial t} 
++
+\frac{1}{c_p^*}
+R^*
+\rho^*
+\frac{\partial  T^*}{\partial t} 
+.
+\end{split}
+\end{equation*} 
 
 
-\textbf{Perfect gas equation:}
-\\
-\\
-\begin{equation} 
-p=\rho T R
-\end{equation} 
-\\
-\begin{equation}
-h=c_pT
-\end{equation} 
-\\
-\\
-\\
-In the above equations $\rho$ is the density, $u_i=(u,v,w)$ 
-are the different velocities in the three different dimensions $x$, $y$ and $z$.
-$p$ is the pressure of the flow, $T$ is the temperature of the flow, $f_j$ 
-is the body force acting on the flow.
-$Y^m$ are the different mass fraction for the two different species, oxigen and fuel.
-$\mu$, $D^{m}$ and $k$ are the viscosity, diffution coeficient for the different 
-species and the gas thermal conductivity.  $\Omega$ é o calor liverado pela reação química and
-$\Omega$ which is the mass reaction rate. 
-\\
-\\
+In the above equations $\rho^*$ is the density, $u_i^*=(u^*,v^*,w^*)$ 
+are the different velocities in the three different dimensions $x^*$, $y^*$ and $z^*$.
+$p$ is the pressure of the flow and $T^*$ is the temperature of the flow. 
+The sub-script $*$ account for dimensional variables. 
