@@ -716,16 +716,340 @@ u_i^*
 \frac{\partial (u_j^*)}{\partial  x_i^*}
 =
 R^*
-\frac{\partial \rho^* T^*}{\partial t} 
+\frac{\partial (\rho^* T^*)}{\partial t} 
 .
 \end{split}
 \end{equation*} 
 
-Multiplied the momentum equation by $u_j$ and using in the 
-energy equation
+\begin{equation*}
+\begin{split}
+c_p^*
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
++
+c_p^*
+\rho^*
+u_i^*
+\frac{\partial T^*}{\partial  x_i^*}
++
+\rho^*
+u_j^*
+\frac{\partial  (u_j^*)}{\partial  t^*}
++
+\rho^*
+u_j^*
+u_i^*
+\frac{\partial (u_j^*)}{\partial  x_i^*}
+=
+\frac{\partial p^*}{\partial t} 
+-
+T^*
+\rho^*
+\frac{\partial  c_p^*}{\partial  t^*}
+-
+T^*
+\rho^*
+u_i^*
+\frac{\partial c_p^*}{\partial  x_i^*}
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+c_p^*
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
++
+c_p^*
+\rho^*
+u_i^*
+\frac{\partial T^*}{\partial  x_i^*}
++
+\rho^*
+u_j^*
+\left(
+\frac{\partial  (u_j^*)}{\partial  t^*}
++
+u_i^*
+\frac{\partial (u_j^*)}{\partial  x_i^*}
+\right)
+=
+\frac{\partial p^*}{\partial t} 
+-
+T^*
+\rho^*
+\frac{\partial  c_p^*}{\partial  t^*}
+-
+T^*
+\rho^*
+u_i^*
+\frac{\partial c_p^*}{\partial  x_i^*}
+,
+\end{split}
+\end{equation*} 
+
+using the momentum equation
+
+\begin{equation*}
+\begin{split}
+c_p^*
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
++
+c_p^*
+\rho^*
+u_i^*
+\frac{\partial T^*}{\partial  x_i^*}
+=
+\frac{\partial p^*}{\partial t} 
++
+u_j^*
+\frac{\partial p^*}{\partial x_j^*} 
+-
+T^*
+\rho^*
+\frac{\partial  c_p^*}{\partial  t^*}
+-
+T^*
+\rho^*
+u_i^*
+\frac{\partial c_p^*}{\partial  x_i^*}
+,
+\end{split}
+\end{equation*} 
+
+and the gas ideal equation,
+
+\begin{equation*}
+\begin{split}
+c_p^*
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
++
+c_p^*
+\rho^*
+u_i^*
+\frac{\partial T^*}{\partial  x_i^*}
+=
+R^*
+\frac{\partial \rho^* T^*}{\partial t} 
++
+R^*
+u_j^*
+\frac{\partial \rho^* T^*}{\partial x_j^*} 
+-
+T^*
+\rho^*
+\frac{\partial  c_p^*}{\partial  t^*}
+-
+T^*
+\rho^*
+u_i^*
+\frac{\partial c_p^*}{\partial  x_i^*}
+,
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+c_p^*
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
+-
+\rho^*
+R^*
+\frac{\partial  T^*}{\partial t} 
++
+c_p^*
+\rho^*
+u_i^*
+\frac{\partial T^*}{\partial  x_i^*}
+-
+\rho^*
+u_j^*
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
+T^*
+R^*
+\frac{\partial \rho^*}{\partial t} 
++
+R^*
+T^*
+u_j^*
+\frac{\partial \rho^* }{\partial x_j^*} 
+-
+T^*
+\rho^*
+\frac{\partial  c_p^*}{\partial  t^*}
+-
+T^*
+\rho^*
+u_i^*
+\frac{\partial c_p^*}{\partial  x_i^*}
+,
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+\rho^*
+\left(
+c_p^*
+-
+R
+\right)
+\frac{\partial  T^*}{\partial  t^*}
++
+\rho^*
+u_i^*
+\left(
+    c_p^*
+    -
+    R^* 
+\right)
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
+T^*
+R^*
+\left(
+\frac{\partial \rho^*}{\partial t} 
++
+u_i^*
+\frac{\partial \rho^* }{\partial x_j^*} 
+\right)
+-
+T^*
+\rho^*
+\left(
+\frac{\partial  c_p^*}{\partial  t^*}
++
+u_i^*
+\frac{\partial c_p^*}{\partial  x_i^*}
+\right)
+,
+\end{split}
+\end{equation*} 
+
+Using the mass conservation in the right hand side 
+
+
+\begin{equation*}
+\begin{split}
+\rho^*
+c_v^*
+\frac{\partial  T^*}{\partial  t^*}
++
+\rho^*
+c_v^*
+u_i^*
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
+-
+T^*
+R^*
+\rho^*
+\frac{\partial u_i^* }{\partial x_j^*} 
+-
+T^*
+\rho^*
+\left(
+\frac{\partial  (R^*+c_v^*)}{\partial  t^*}
++
+u_i^*
+\frac{\partial (R^*+c_v^*)}{\partial  x_i^*}
+\right)
+,
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+\rho^*
+c_v^*
+\frac{\partial  T^*}{\partial  t^*}
++
+\rho^*
+c_v^*
+u_i^*
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
+-
+p^*
+\frac{\partial u_i^* }{\partial x_j^*} 
+-
+T^*
+\rho^*
+\left(
+\frac{\partial  c_v^*}{\partial  t^*}
++
+u_i^*
+\frac{\partial c_v^*}{\partial  x_i^*}
+\right)
+.
+\end{split}
+\end{equation*} 
+
+As was made in the base flow equation, 
+is assumed that $c_p^*$ is only function of $Z^*$
+and not of time and space; similarly for $c_v^*$. 
+Therefore, the energuy equation gets 
+
+\begin{equation*}
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
++
+\rho^*
+c_v^*
+u_i^*
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
+-
+\frac{p^*}{c_v^*}
+\frac{\partial u_i^* }{\partial x_j^*} 
+.
+\end{equation*} 
+
+Using the fact 
+
+$R^*=C_p-C_v, $
+$\frac{R^*}{c_p}=1-\frac{1}{\gamma}=\frac{\gamma-1}{\gamma}, $
+$\frac{R^*}{c_v}=\gamma-1$, so 
+
+
+\begin{equation}
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
++
+\rho^*
+u_i^*
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
+-
+\frac{p^*(\gamma-1)}{R^*}
+\frac{\partial u_i^* }{\partial x_j^*} 
+.
+\end{equation} 
+
+In the above equations $\rho^*$ is the density, $u_i^*=(u^*,v^*,w^*)$ 
+are the different velocities in the three different dimensions $x^*$, $y^*$ and $z^*$.
+$p^*$ is the pressure of the flow, $T^*$ is the temperature of the flow and
+$R^{*}$ is the gas constant. 
+The sub-script $*$ account for dimensional variables. 
+
+Finally the Euler equation for the stability analysis are: 
 
 \begin{equation} 
-u_j^*
+\frac{\partial\rho^*}{\partial t^*}
++
+u_i^*
+\frac{\partial \rho^*}{\partial x_i^*} 
++
+\rho^*
+\frac{\partial u_i^*}{\partial x_i^*}
+\end{equation} 
+
+\begin{equation} 
 \rho^*
 \left(
 \frac{\partial}{\partial t^*}u_j^*
@@ -735,88 +1059,456 @@ u_i^*
 \right)
 =
 -
-u_j^*
 \frac{\partial p^*}{\partial x_j^*} 
 .
 \end{equation} 
 
-So, 
+\begin{equation} 
+\frac{\partial Z^*}{\partial t^*}
++
+u_i ^*
+\frac{\partial Z^*}{\partial x_i^*}
+=
+0
+\end{equation} 
 
-\begin{equation*}
-\begin{split}
-    \rho^*
-\frac{\partial  (c_p^*T^*)}{\partial  t^*}
+\begin{equation}
+\rho^*
+\frac{\partial  T^*}{\partial  t^*}
 +
 \rho^*
 u_i^*
-\frac{\partial (c_p^*T^*)}{\partial  x_i^*}
+\frac{\partial  T^*}{\partial x_j^*} 
+= 
 -
-u_j^*
-\frac{\partial p^*}{\partial x_j^*} 
-=
-R^*
-T^*
-\frac{\partial \rho^* }{\partial t} 
-+
-R^*
-\rho^*
-\frac{\partial  T^*}{\partial t} 
+\frac{p^*(\gamma-1)}{R^*}
+\frac{\partial u_i^* }{\partial x_j^*} 
 .
-\end{split}
-\end{equation*} 
+\end{equation} 
 
-\begin{equation*}
+\begin{equation}
+   p^*= \rho^*R^*T^*
+\end{equation} 
+
+Defining the non-dimensional quantities 
+
+\begin{equation}
+\begin{split} 
+    \rho=\frac{\rho^*}{\rho_{+\infty}}
+    ,
+    \quad
+    T=\frac{T^*}{T_{+\infty}}
+    ,
+    \quad
+    u=\frac{u^*}{u_{+\infty}}
+    ,
+    \quad
+    v=\frac{v^*}{v_{+\infty}}
+    ,
+    \quad
+    w=\frac{w^*}{w_{+\infty}}
+    ,
+    \quad
+    p=\frac{p^*}{p_{+\infty}}
+    \\
+    \quad
+    Z=\frac{Z^*}{Z_{+\infty}}=\frac{Z^*}{Y_f}
+    \quad
+    R=\frac{R^*}{R_{+\infty}}
+    ,
+    \quad
+    x=\frac{x^*}{L}
+    ,
+    \quad
+    y=\frac{y^*}{L}
+    \quad
+    ,
+    z=\frac{z^*}{L}
+    .
+\label{nondimesional_stability}
+\end{split}
+\end{equation}
+
+Where the sub-script ($+\infty$) is the propertie 
+in the upper stream of the reacting mixing layer located  
+at $L$  distance from the center.  Using \ref{nondimesional_stability} 
+in the Euler equations:
+
+\begin{equation} 
+\frac{\partial\rho}{\partial t}
++
+u_i
+\frac{\partial \rho}{\partial x_i} 
++
+\rho
+\frac{\partial u_i}{\partial x_i}
+,
+\end{equation} 
+
+\begin{equation} 
+\rho
+\left(
+\frac{\partial}{\partial t}u_j
++
+u_i 
+\frac{\partial}{\partial x_i}u_j
+\right)
+=
+-
+%{\color{red}
+%\frac{p_{\infty}L_{\infty}}{\rho_{\infty}Lu^{2}_{\infty}}
+%}
+%{\color{blue}
+%\frac{a^{2}_{\infty}}{u^{2}_{\infty}}
+%\frac{p_{\infty}}{\rho_{\infty}a^{2}_{\infty}}
+%}
+%{\color{magenta}
+%\frac{1}{M^{2}}
+%\frac{\rho_{\infty}R T_{\infty}}{\rho_{\infty}a^{2}_{\infty}}
+%}
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p}{\partial x_j} 
+,
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial Z}{\partial t}
++
+u_i 
+\frac{\partial Z}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+\begin{equation}
+\rho
+\frac{\partial  T}{\partial  t}
++
+\rho
+u_i
+\frac{\partial  T}{\partial x_j} 
+= 
+-
+p
+%\frac{p_{\infty}}{T_{\infty}\rho_{\infty}R_{\infty}}
+\frac{(\gamma-1)}{R}
+\frac{\partial u_i }{\partial x_j} 
+.
+\end{equation} 
+
+To defined the linear stability equation is assuming that 
+the flow can be descomposed  into  a sum of mean flow and 
+small perturbation of order $\epsilon$, where the base flow 
+is only function of the vertical coordinate $y$,  
+
+\begin{equation}
 \begin{split}
-    \rho^*
-\frac{\partial  (c_p^*T^*)}{\partial  t^*}
-+
-\rho^*
-u_i^*
-\frac{\partial (c_p^*T^*)}{\partial  x_i^*}
--
-u_j^*
-\frac{\partial \rho^*T^*}{\partial x_j^*} 
-=
-R^*
-T^*
-\frac{\partial \rho^* }{\partial t} 
-+
-R^*
-\rho^*
-\frac{\partial  T^*}{\partial t} 
-.
+   \rho(t,x,y,z)=\overline{\rho}(y)+\epsilon\rho^\prime(t,x,y,z) 
+   ,
+   \quad
+   p(t,x,y,z)=1+\epsilon p^\prime(t,x,y,z) 
+   ,
+   \\
+   T(t,x,y,z)=\overline{T}(y)+\epsilon T^\prime(t,x,y,z) 
+   ,
+   \quad
+   Z(t,x,y,z)=\overline{Z}(y)+\epsilon Z^\prime(t,x,y,z) 
+    \\
+   \quad
+   R(t,x,y,z)=\overline{R}(Z)+\epsilon R^\prime(t,x,y,z) 
+   ,
+   u(t,x,y,z)=\overline{u}(y)+\epsilon u^\prime(t,x,y,z) 
+   ,
+   \quad
+   \\
+   v(t,x,y,z)=\epsilon v^\prime(t,x,y,z) 
+   ,
+   \quad
+   w(t,x,y,z)=\epsilon w^\prime(t,x,y,z) 
+   .
 \end{split}
+\label{perturbation}
+\end{equation}
+
+Appling Eqs. \ref{perturbation} in the Euler equation,  
+assuming that the product of pertbation are despressible once $\epsilon<<1$ 
+and reconized that the base flow is also solution of the equations, the 
+linear Euler equation are obtained:
+
+\begin{equation*} 
+\frac{\partial \overline{\rho}}{\partial t}
++
+\epsilon
+\frac{\partial\rho^{\prime}}{\partial t}
++
+(\overline{u}_i+\epsilon u^{\prime})
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\epsilon
+(\overline{u}_i+\epsilon u^{\prime})
+\frac{\partial \rho^{\prime}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial}{\partial x_i}
+(\overline{u}_i+\epsilon u^{\prime})
++
+\epsilon
+\rho^{\prime}
+\frac{\partial }{\partial x_i}
+(\overline{u}_i+\epsilon u^{\prime})
+=
+0
+,
 \end{equation*} 
 
-Assuming constant $c_p$
-
-\begin{equation*}
-\begin{split}
-    \rho^*
-\frac{\partial  (T^*)}{\partial  t^*}
+\begin{equation*} 
+\cancelto{0}{
+\frac{\partial \overline{\rho}}{\partial t}
 +
-\rho^*
-u_i^*
-\frac{\partial (T^*)}{\partial  x_i^*}
--
-\frac{u_j^*}{c_p^*}
-\frac{\partial \rho^*T^*}{\partial x_j^*} 
+(\overline{u}_i)
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial\overline{u}_i}{\partial x_i}
+}
++
+(\epsilon u^{\prime})
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\epsilon
+\frac{\partial\rho^{\prime}}{\partial t}
++
+\epsilon
+(\overline{u}_i)
+\frac{\partial \rho^{\prime}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial}{\partial x_i}
+(\epsilon u^{\prime})
++
+\epsilon
+\rho^{\prime}
+\frac{\partial }{\partial x_i}
+(\overline{u}_i)
 =
-\frac{1}{c_p^*}
-R^*
-T^*
-\frac{\partial \rho^* }{\partial t} 
-+
-\frac{1}{c_p^*}
-R^*
-\rho^*
-\frac{\partial  T^*}{\partial t} 
-.
-\end{split}
+0
+,
 \end{equation*} 
 
 
-In the above equations $\rho^*$ is the density, $u_i^*=(u^*,v^*,w^*)$ 
-are the different velocities in the three different dimensions $x^*$, $y^*$ and $z^*$.
-$p$ is the pressure of the flow and $T^*$ is the temperature of the flow. 
-The sub-script $*$ account for dimensional variables. 
+\begin{equation} 
+\frac{\partial\rho^{\prime}}{\partial t}
++
+u^{\prime}
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\overline{u}_i
+\frac{\partial \rho^{\prime}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial u^{\prime}}{\partial x_i}
++
+\rho^{\prime}
+\frac{\partial \overline{u}_i}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+
+\begin{equation*} 
+(\overline{\rho}+\epsilon \rho^{\prime})
+\left(
+\frac{\partial}{\partial t}
+(\overline{u}_j+\epsilon u_j^{\prime})
++
+(\overline{u}_i+\epsilon u_i^{\prime})
+\frac{\partial}{\partial x_i}
+(\overline{u}_j+\epsilon u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(1+\epsilon p^{\prime})
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\overline{\rho}+\epsilon \rho^{\prime})
+\left(
+\frac{\partial}{\partial t}
+(\overline{u}_j)
++
+\frac{\partial}{\partial t}
+(\epsilon u_j^{\prime})
++
+(\overline{u}_i+\epsilon u_i^{\prime})
+\frac{\partial}{\partial x_i}
+(\overline{u}_j)
++
+(\overline{u}_i+\epsilon u_i^{\prime})
+\frac{\partial}{\partial x_i}
+(\epsilon u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(1+\epsilon p^{\prime})
+,
+\end{equation*} 
+
+
+\begin{equation*} 
+(\overline{\rho}+\epsilon \rho^{\prime})
+\left(
+\epsilon
+\frac{\partial}{\partial t}
+( u_j^{\prime})
++
+\epsilon u_i^{\prime}
+\frac{\partial}{\partial x_i}
+(\overline{u}_j)
++
+\epsilon 
+(\overline{u}_i)
+\frac{\partial}{\partial x_i}
+(u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(\epsilon p^{\prime})
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\overline{\rho})
+\left(
+\epsilon
+\frac{\partial}{\partial t}
+( u_j^{\prime})
++
+\epsilon u_i^{\prime}
+\frac{\partial}{\partial x_i}
+(\overline{u}_j)
++
+\epsilon 
+(\overline{u}_i)
+\frac{\partial}{\partial x_i}
+(u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(\epsilon p^{\prime})
+,
+\end{equation*} 
+
+\begin{equation*} 
+\overline{\rho}
+\left(
+\frac{\partial u_j^{\prime}}{\partial t}
++
+u_i^{\prime}
+\frac{\partial\overline{u}_j}{\partial x_i}
++
+\overline{u}_i
+\frac{\partial u_j^{\prime}}{\partial x_i}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial x_j} 
+,
+\end{equation*} 
+
+then, for the velocity components
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial u^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial u^{\prime}}{\partial x}
++
+v^{\prime}
+\frac{\partial\overline{u}}{\partial y}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial x} 
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial v^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial v^{\prime}}{\partial x}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial y} 
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial w^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial w^{\prime}}{\partial x}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial z} 
+,
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial Z}{\partial t}
++
+u_i 
+\frac{\partial Z}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial Z}{\partial t}
++
+u_i 
+\frac{\partial Z}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+\begin{equation}
+\rho
+\frac{\partial  T}{\partial  t}
++
+\rho
+u_i
+\frac{\partial  T}{\partial x_j} 
+= 
+-
+p
+%\frac{p_{\infty}}{T_{\infty}\rho_{\infty}R_{\infty}}
+\frac{(\gamma-1)}{R}
+\frac{\partial u_i }{\partial x_j} 
+.
+\end{equation} 
