@@ -819,7 +819,7 @@ u_i^*
 \end{split}
 \end{equation*} 
 
-and the gas ideal equation,
+and the  ideal gas equation,
 
 \begin{equation*}
 \begin{split}
@@ -870,6 +870,7 @@ u_i^*
 u_j^*
 \frac{\partial  T^*}{\partial x_j^*} 
 = 
+\\
 T^*
 R^*
 \frac{\partial \rho^*}{\partial t} 
@@ -908,7 +909,7 @@ u_i^*
     -
     R^* 
 \right)
-\frac{\partial  T^*}{\partial x_j^*} 
+\frac{\partial  T^*}{\partial x_i^*} 
 = 
 T^*
 R^*
@@ -916,7 +917,7 @@ R^*
 \frac{\partial \rho^*}{\partial t} 
 +
 u_i^*
-\frac{\partial \rho^* }{\partial x_j^*} 
+\frac{\partial \rho^* }{\partial x_i^*} 
 \right)
 -
 T^*
@@ -943,13 +944,13 @@ c_v^*
 \rho^*
 c_v^*
 u_i^*
-\frac{\partial  T^*}{\partial x_j^*} 
+\frac{\partial  T^*}{\partial x_i^*} 
 = 
 -
 T^*
 R^*
 \rho^*
-\frac{\partial u_i^* }{\partial x_j^*} 
+\frac{\partial u_i^* }{\partial x_i^*} 
 -
 T^*
 \rho^*
@@ -972,11 +973,11 @@ c_v^*
 \rho^*
 c_v^*
 u_i^*
-\frac{\partial  T^*}{\partial x_j^*} 
+\frac{\partial  T^*}{\partial x_i^*} 
 = 
 -
 p^*
-\frac{\partial u_i^* }{\partial x_j^*} 
+\frac{\partial u_i^* }{\partial x_i^*} 
 -
 T^*
 \rho^*
@@ -1002,11 +1003,11 @@ Therefore, the energuy equation gets
 \rho^*
 c_v^*
 u_i^*
-\frac{\partial  T^*}{\partial x_j^*} 
+\frac{\partial  T^*}{\partial x_i^*} 
 = 
 -
 \frac{p^*}{c_v^*}
-\frac{\partial u_i^* }{\partial x_j^*} 
+\frac{\partial u_i^* }{\partial x_i^*} 
 .
 \end{equation*} 
 
@@ -1023,11 +1024,11 @@ $\frac{R^*}{c_v}=\gamma-1$, so
 +
 \rho^*
 u_i^*
-\frac{\partial  T^*}{\partial x_j^*} 
+\frac{\partial  T^*}{\partial x_i^*} 
 = 
 -
 \frac{p^*(\gamma-1)}{R^*}
-\frac{\partial u_i^* }{\partial x_j^*} 
+\frac{\partial u_i^* }{\partial x_i^*} 
 .
 \end{equation} 
 
@@ -1078,11 +1079,11 @@ u_i ^*
 +
 \rho^*
 u_i^*
-\frac{\partial  T^*}{\partial x_j^*} 
+\frac{\partial  T^*}{\partial x_i^*} 
 = 
 -
 \frac{p^*(\gamma-1)}{R^*}
-\frac{\partial u_i^* }{\partial x_j^*} 
+\frac{\partial u_i^* }{\partial x_i^*} 
 .
 \end{equation} 
 
@@ -1197,318 +1198,3 @@ p
 .
 \end{equation} 
 
-To defined the linear stability equation is assuming that 
-the flow can be descomposed  into  a sum of mean flow and 
-small perturbation of order $\epsilon$, where the base flow 
-is only function of the vertical coordinate $y$,  
-
-\begin{equation}
-\begin{split}
-   \rho(t,x,y,z)=\overline{\rho}(y)+\epsilon\rho^\prime(t,x,y,z) 
-   ,
-   \quad
-   p(t,x,y,z)=1+\epsilon p^\prime(t,x,y,z) 
-   ,
-   \\
-   T(t,x,y,z)=\overline{T}(y)+\epsilon T^\prime(t,x,y,z) 
-   ,
-   \quad
-   Z(t,x,y,z)=\overline{Z}(y)+\epsilon Z^\prime(t,x,y,z) 
-    \\
-   \quad
-   R(t,x,y,z)=\overline{R}(Z)+\epsilon R^\prime(t,x,y,z) 
-   ,
-   u(t,x,y,z)=\overline{u}(y)+\epsilon u^\prime(t,x,y,z) 
-   ,
-   \quad
-   \\
-   v(t,x,y,z)=\epsilon v^\prime(t,x,y,z) 
-   ,
-   \quad
-   w(t,x,y,z)=\epsilon w^\prime(t,x,y,z) 
-   .
-\end{split}
-\label{perturbation}
-\end{equation}
-
-Appling Eqs. \ref{perturbation} in the Euler equation,  
-assuming that the product of pertbation are despressible once $\epsilon<<1$ 
-and reconized that the base flow is also solution of the equations, the 
-linear Euler equation are obtained:
-
-\begin{equation*} 
-\frac{\partial \overline{\rho}}{\partial t}
-+
-\epsilon
-\frac{\partial\rho^{\prime}}{\partial t}
-+
-(\overline{u}_i+\epsilon u^{\prime})
-\frac{\partial \overline{\rho}}{\partial x_i} 
-+
-\epsilon
-(\overline{u}_i+\epsilon u^{\prime})
-\frac{\partial \rho^{\prime}}{\partial x_i} 
-+
-\overline{\rho}
-\frac{\partial}{\partial x_i}
-(\overline{u}_i+\epsilon u^{\prime})
-+
-\epsilon
-\rho^{\prime}
-\frac{\partial }{\partial x_i}
-(\overline{u}_i+\epsilon u^{\prime})
-=
-0
-,
-\end{equation*} 
-
-\begin{equation*} 
-\cancelto{0}{
-\frac{\partial \overline{\rho}}{\partial t}
-+
-(\overline{u}_i)
-\frac{\partial \overline{\rho}}{\partial x_i} 
-+
-\overline{\rho}
-\frac{\partial\overline{u}_i}{\partial x_i}
-}
-+
-(\epsilon u^{\prime})
-\frac{\partial \overline{\rho}}{\partial x_i} 
-+
-\epsilon
-\frac{\partial\rho^{\prime}}{\partial t}
-+
-\epsilon
-(\overline{u}_i)
-\frac{\partial \rho^{\prime}}{\partial x_i} 
-+
-\overline{\rho}
-\frac{\partial}{\partial x_i}
-(\epsilon u^{\prime})
-+
-\epsilon
-\rho^{\prime}
-\frac{\partial }{\partial x_i}
-(\overline{u}_i)
-=
-0
-,
-\end{equation*} 
-
-
-\begin{equation} 
-\frac{\partial\rho^{\prime}}{\partial t}
-+
-u^{\prime}
-\frac{\partial \overline{\rho}}{\partial x_i} 
-+
-\overline{u}_i
-\frac{\partial \rho^{\prime}}{\partial x_i} 
-+
-\overline{\rho}
-\frac{\partial u^{\prime}}{\partial x_i}
-+
-\rho^{\prime}
-\frac{\partial \overline{u}_i}{\partial x_i}
-=
-0
-,
-\end{equation} 
-
-
-\begin{equation*} 
-(\overline{\rho}+\epsilon \rho^{\prime})
-\left(
-\frac{\partial}{\partial t}
-(\overline{u}_j+\epsilon u_j^{\prime})
-+
-(\overline{u}_i+\epsilon u_i^{\prime})
-\frac{\partial}{\partial x_i}
-(\overline{u}_j+\epsilon u_j^{\prime})
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial }{\partial x_j} 
-(1+\epsilon p^{\prime})
-,
-\end{equation*} 
-
-\begin{equation*} 
-(\overline{\rho}+\epsilon \rho^{\prime})
-\left(
-\frac{\partial}{\partial t}
-(\overline{u}_j)
-+
-\frac{\partial}{\partial t}
-(\epsilon u_j^{\prime})
-+
-(\overline{u}_i+\epsilon u_i^{\prime})
-\frac{\partial}{\partial x_i}
-(\overline{u}_j)
-+
-(\overline{u}_i+\epsilon u_i^{\prime})
-\frac{\partial}{\partial x_i}
-(\epsilon u_j^{\prime})
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial }{\partial x_j} 
-(1+\epsilon p^{\prime})
-,
-\end{equation*} 
-
-
-\begin{equation*} 
-(\overline{\rho}+\epsilon \rho^{\prime})
-\left(
-\epsilon
-\frac{\partial}{\partial t}
-( u_j^{\prime})
-+
-\epsilon u_i^{\prime}
-\frac{\partial}{\partial x_i}
-(\overline{u}_j)
-+
-\epsilon 
-(\overline{u}_i)
-\frac{\partial}{\partial x_i}
-(u_j^{\prime})
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial }{\partial x_j} 
-(\epsilon p^{\prime})
-,
-\end{equation*} 
-
-\begin{equation*} 
-(\overline{\rho})
-\left(
-\epsilon
-\frac{\partial}{\partial t}
-( u_j^{\prime})
-+
-\epsilon u_i^{\prime}
-\frac{\partial}{\partial x_i}
-(\overline{u}_j)
-+
-\epsilon 
-(\overline{u}_i)
-\frac{\partial}{\partial x_i}
-(u_j^{\prime})
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial }{\partial x_j} 
-(\epsilon p^{\prime})
-,
-\end{equation*} 
-
-\begin{equation*} 
-\overline{\rho}
-\left(
-\frac{\partial u_j^{\prime}}{\partial t}
-+
-u_i^{\prime}
-\frac{\partial\overline{u}_j}{\partial x_i}
-+
-\overline{u}_i
-\frac{\partial u_j^{\prime}}{\partial x_i}
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial p^{\prime} }{\partial x_j} 
-,
-\end{equation*} 
-
-then, for the velocity components
-
-\begin{equation} 
-\overline{\rho}
-\left(
-\frac{\partial u^{\prime}}{\partial t}
-+
-\overline{u}
-\frac{\partial u^{\prime}}{\partial x}
-+
-v^{\prime}
-\frac{\partial\overline{u}}{\partial y}
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial p^{\prime} }{\partial x} 
-,
-\end{equation} 
-
-\begin{equation} 
-\overline{\rho}
-\left(
-\frac{\partial v^{\prime}}{\partial t}
-+
-\overline{u}
-\frac{\partial v^{\prime}}{\partial x}
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial p^{\prime} }{\partial y} 
-,
-\end{equation} 
-
-\begin{equation} 
-\overline{\rho}
-\left(
-\frac{\partial w^{\prime}}{\partial t}
-+
-\overline{u}
-\frac{\partial w^{\prime}}{\partial x}
-\right)
-=
--
-\frac{1}{\gamma_{\infty} M^{2}}
-\frac{\partial p^{\prime} }{\partial z} 
-,
-\end{equation} 
-
-\begin{equation} 
-\frac{\partial Z}{\partial t}
-+
-u_i 
-\frac{\partial Z}{\partial x_i}
-=
-0
-,
-\end{equation} 
-
-\begin{equation} 
-\frac{\partial Z}{\partial t}
-+
-u_i 
-\frac{\partial Z}{\partial x_i}
-=
-0
-,
-\end{equation} 
-
-\begin{equation}
-\rho
-\frac{\partial  T}{\partial  t}
-+
-\rho
-u_i
-\frac{\partial  T}{\partial x_j} 
-= 
--
-p
-%\frac{p_{\infty}}{T_{\infty}\rho_{\infty}R_{\infty}}
-\frac{(\gamma-1)}{R}
-\frac{\partial u_i }{\partial x_j} 
-.
-\end{equation} 

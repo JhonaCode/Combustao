@@ -1,0 +1,1068 @@
+
+To defined the linear stability equation is assuming that 
+the flow can be descomposed  into  a sum of mean flow and 
+small perturbation of order $\epsilon$, where the base flow 
+is only function of the vertical coordinate $y$,  
+
+\begin{equation}
+\begin{split}
+   \rho(t,x,y,z)=\overline{\rho}(y)+\epsilon\rho^\prime(t,x,y,z) 
+   ,
+   \quad
+   p(t,x,y,z)=1+\epsilon p^\prime(t,x,y,z) 
+   ,
+   \\
+   T(t,x,y,z)=\overline{T}(y)+\epsilon T^\prime(t,x,y,z) 
+   ,
+   \quad
+   Z(t,x,y,z)=\overline{Z}(y)+\epsilon Z^\prime(t,x,y,z) 
+    \\
+   \quad
+   R(t,x,y,z)=\overline{R}(Z)+\epsilon R^\prime(t,x,y,z) 
+   ,
+   u(t,x,y,z)=\overline{u}(y)+\epsilon u^\prime(t,x,y,z) 
+   ,
+   \quad
+   \\
+   v(t,x,y,z)=\epsilon v^\prime(t,x,y,z) 
+   ,
+   \quad
+   w(t,x,y,z)=\epsilon w^\prime(t,x,y,z) 
+   .
+\end{split}
+\label{perturbation}
+\end{equation}
+
+Appling Eqs. \ref{perturbation} in the Euler equation,  
+assuming that the product of pertbation are despressible once $\epsilon<<1$ 
+and reconized that the base flow is also solution of the equations, the 
+linear Euler equation are obtained:
+
+\begin{equation*} 
+\frac{\partial \overline{\rho}}{\partial t}
++
+\epsilon
+\frac{\partial\rho^{\prime}}{\partial t}
++
+(\overline{u}_i+\epsilon u^{\prime}_i)
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\epsilon
+(\overline{u}_i+\epsilon u^{\prime}_i)
+\frac{\partial \rho^{\prime}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial}{\partial x_i}
+(\overline{u}_i+\epsilon u^{\prime}_i)
++
+\epsilon
+\rho^{\prime}
+\frac{\partial }{\partial x_i}
+(\overline{u}_i+\epsilon u^{\prime}_i)
+=
+0
+,
+\end{equation*} 
+
+\begin{equation*} 
+\cancelto{0}{
+\frac{\partial \overline{\rho}}{\partial t}
++
+(\overline{u}_i)
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial\overline{u}_i}{\partial x_i}
+}
++
+(\epsilon u^{\prime}_i)
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\epsilon
+\frac{\partial\rho^{\prime}}{\partial t}
++
+\epsilon
+(\overline{u}_i)
+\frac{\partial \rho^{\prime}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial}{\partial x_i}
+(\epsilon u^{\prime}_i)
++
+\epsilon
+\rho^{\prime}
+\frac{\partial }{\partial x_i}
+(\overline{u}_i)
+=
+0
+,
+\end{equation*} 
+
+
+\begin{equation} 
+\frac{\partial\rho^{\prime}}{\partial t}
++
+u_i^{\prime}
+\frac{\partial \overline{\rho}}{\partial x_i} 
++
+\overline{u}_i
+\frac{\partial \rho^{\prime}}{\partial x_i} 
++
+\overline{\rho}
+\frac{\partial u^{\prime}_i}{\partial x_i}
++
+\rho^{\prime}
+\frac{\partial \overline{u}_i}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial\rho^{\prime}}{\partial t}
++
+v^{\prime}
+\frac{\partial \overline{\rho}}{\partial y} 
++
+\overline{u}
+\frac{\partial \rho^{\prime}}{\partial x} 
++
+\overline{\rho}
+\left(
+\frac{\partial u^\prime}{\partial x}
++
+\frac{\partial v^\prime}{\partial y}
++
+\frac{\partial w^\prime}{\partial z}
+\right)
+=
+0
+,
+\end{equation} 
+
+For the momemtum equation:
+
+
+\begin{equation*} 
+(\overline{\rho}+\epsilon \rho^{\prime})
+\left(
+\frac{\partial}{\partial t}
+(\overline{u}_j+\epsilon u_j^{\prime})
++
+(\overline{u}_i+\epsilon u_i^{\prime})
+\frac{\partial}{\partial x_i}
+(\overline{u}_j+\epsilon u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(1+\epsilon p^{\prime})
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\overline{\rho}+\epsilon \rho^{\prime})
+\left(
+\frac{\partial}{\partial t}
+(\overline{u}_j)
++
+\frac{\partial}{\partial t}
+(\epsilon u_j^{\prime})
++
+(\overline{u}_i+\epsilon u_i^{\prime})
+\frac{\partial}{\partial x_i}
+(\overline{u}_j)
++
+(\overline{u}_i+\epsilon u_i^{\prime})
+\frac{\partial}{\partial x_i}
+(\epsilon u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(1+\epsilon p^{\prime})
+,
+\end{equation*} 
+
+
+\begin{equation*} 
+(\overline{\rho}+\epsilon \rho^{\prime})
+\left(
+\epsilon
+\frac{\partial}{\partial t}
+( u_j^{\prime})
++
+\epsilon u_i^{\prime}
+\frac{\partial}{\partial x_i}
+(\overline{u}_j)
++
+\epsilon 
+(\overline{u}_i)
+\frac{\partial}{\partial x_i}
+(u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(\epsilon p^{\prime})
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\overline{\rho})
+\left(
+\epsilon
+\frac{\partial}{\partial t}
+( u_j^{\prime})
++
+\epsilon u_i^{\prime}
+\frac{\partial}{\partial x_i}
+(\overline{u}_j)
++
+\epsilon 
+(\overline{u}_i)
+\frac{\partial}{\partial x_i}
+(u_j^{\prime})
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial }{\partial x_j} 
+(\epsilon p^{\prime})
+,
+\end{equation*} 
+
+\begin{equation*} 
+\overline{\rho}
+\left(
+\frac{\partial u_j^{\prime}}{\partial t}
++
+u_i^{\prime}
+\frac{\partial\overline{u}_j}{\partial x_i}
++
+\overline{u}_i
+\frac{\partial u_j^{\prime}}{\partial x_i}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial x_j} 
+,
+\end{equation*} 
+
+then, for the velocity components
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial u^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial u^{\prime}}{\partial x}
++
+v^{\prime}
+\frac{\partial\overline{u}}{\partial y}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial x} 
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial v^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial v^{\prime}}{\partial x}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial y} 
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial w^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial w^{\prime}}{\partial x}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial z} 
+.
+\end{equation} 
+
+For the $Z$ equation, using the decomposition  \ref{perturbation} and 
+removing the base flow
+
+\begin{equation} 
+\frac{\partial Z}{\partial t}
++
+u_i 
+\frac{\partial Z}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial }{\partial t}
+(\overline{Z}+\epsilon Z^{\prime})
++
+(\overline{u}_i+\epsilon u_i^{\prime}) 
+\frac{\partial }{\partial x_i}
+(\overline{Z}+\epsilon Z^{\prime})
+=
+0
+,
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial Z^{\prime}}{\partial t}
++
+\overline{u}_i 
+\frac{\partial  Z^{\prime}}{\partial x_i}
++
+u_i^{\prime} 
+\frac{\partial \overline{Z}}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+Finally in similar way for the Energy equation:
+
+\begin{equation*}
+\rho
+\frac{\partial  T}{\partial  t}
++
+\rho
+u_i
+\frac{\partial  T}{\partial x_i} 
+= 
+-
+p
+%\frac{p_{\infty}}{T_{\infty}\rho_{\infty}R_{\infty}}
+\frac{(\gamma-1)}{R}
+\frac{\partial u_i }{\partial x_i} 
+.
+\end{equation*} 
+
+\begin{equation*}
+(\overline{\rho}+\epsilon \rho^{\prime})
+\frac{\partial  }{\partial  t}
+(\overline{T}+\epsilon T^{\prime})
++
+(\overline{\rho}+\epsilon \rho^{\prime})
+(\overline{u}_i+\epsilon u_i^{\prime}) 
+\frac{\partial }{\partial x_i} 
+(\overline{T}+\epsilon T^{\prime})
+= 
+-
+(1+\epsilon p^{\prime})
+%\frac{p_{\infty}}{T_{\infty}\rho_{\infty}R_{\infty}}
+\frac{(\gamma-1)}{
+(\overline{R}+\epsilon R^{\prime})
+}
+\frac{\partial}{\partial x_i} 
+(\overline{u}_j+\epsilon u_i^{\prime}) 
+.
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+(\overline{\rho})
+\frac{\partial  }{\partial  t}
+(\overline{T})
++
+(\overline{\rho})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
++
+(\overline{\rho})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\epsilon T^{\prime})
++
+\\
+(\overline{\rho})
+\frac{\partial  }{\partial  t}
+(\epsilon T^{\prime})
++
+(\epsilon \rho^{\prime})
+\frac{\partial  }{\partial  t}
+(\overline{T})
++
+(\overline{\rho})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
++
+(\overline{\rho})
+(\epsilon u_i^{\prime}) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
++
+(\epsilon \rho^{\prime})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
+= 
+\\
+-
+(1+\epsilon p^{\prime})
+\frac{(\gamma-1)}{
+(\overline{R}+\epsilon R^{\prime})
+}
+\frac{\partial}{\partial x_i} 
+(\overline{u}_j+\epsilon u_i^{\prime}) 
+.
+\end{split}
+\end{equation*} 
+
+
+The series expansion of \(\dfrac{1}{\overline{\Phi}+\epsilon \phi}\)
+ for a small parameter
+\(\epsilon \ll 1\) is:
+
+\begin{equation}
+\frac{1}{\overline{\Phi}+\epsilon \phi}
+=
+\frac{1}{\overline{\Phi}}
+-
+\epsilon
+\frac{\phi}{\overline{\Phi}^{2}}
++
+\epsilon ^{2}
+\frac{\phi^{2}}{\overline{\Phi}^{3}}
+-
+\epsilon^{3}
+\frac{\phi^{3}}{\overline{\Phi}^{4}}
++
+\mathcal{O}(\epsilon^{4})
+\end{equation}
+
+Step-by-Step
+DerivationFactor out \(X\) from the denominator to isolate the small
+term:
+
+\begin{equation*}
+\frac{1}{\overline{\Phi}+\epsilon \phi}
+=
+\frac{1}{\overline{\Phi}\left(1+\epsilon
+\frac{\phi}{\overline{\Phi}}\right)}
+=
+\frac{1}{\overline{\Phi}}
+\left(1+\epsilon \frac{\phi}{\overline{\Phi}}\right)^{-1}
+\end{equation*}
+
+Apply
+the Binomial Theorem approximation \((1 + z)^{-1} = 1 - z + z^2 - z^3 + \dots\)
+where \(z = \epsilon \frac{\phi}{\overline{\Phi}}\):
+
+\begin{equation*}
+\left(1+\epsilon \frac{\phi}{\overline{\Phi}}\right)^{-1}
+=
+1
+-
+\left(\epsilon
+\frac{\phi}{\overline{\Phi}}\right)
++
+\left(\epsilon \frac{\phi}{\overline{\Phi}}\right)^{2}
+-
+\left(\epsilon
+\frac{\phi}{\overline{\Phi}}\right)^{3}+\dots 
+\end{equation*}
+
+\begin{equation*}
+\frac{1}{\overline{\Phi}+\epsilon \phi}
+=
+\frac{1}{\overline{\Phi}}
+\left(1+\epsilon \frac{\phi}{\overline{\Phi}}\right)^{-1}
+\end{equation*}
+
+\begin{equation*}
+=
+1
+-
+\left(\epsilon
+\frac{\phi}{\overline{\Phi}}\right)
++
+\left(\epsilon \frac{\phi}{\overline{\Phi}}\right)^{2}
+-
+\left(\epsilon
+\frac{\phi}{\overline{\Phi}}\right)^{3}+\dots 
+=
+\frac{1}{\overline{\Phi}}
+-
+\left(\epsilon \frac{\phi}{\overline{\Phi}^2}\right)
++
+\left(\epsilon \frac{\phi^{2}}{\overline{\Phi}^3}\right)
+-
+\left(\epsilon
+\frac{\phi^{3}}{\overline{\Phi}^4}\right)+\dots 
+\end{equation*}
+
+Then :
+
+\begin{equation*}
+\begin{split}
+\cancel{
+(\overline{\rho})
+\frac{\partial  }{\partial  t}
+(\overline{T})
+}
++
+\cancel{
+(\overline{\rho})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
+}
+-
+\cancel{
+(1)
+\frac{(\gamma-1)}{
+(\overline{R})
+}
+\frac{\partial}{\partial x_i} 
+(\overline{u}_i+\epsilon u_i^{\prime}) 
+}
+\\
+(\overline{\rho})
+\frac{\partial  }{\partial  t}
+(\epsilon T^{\prime})
++
+(\overline{\rho})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\epsilon T^{\prime})
++
+(\epsilon \rho^{\prime})
+\frac{\partial  }{\partial  t}
+(\overline{T})
++
+(\overline{\rho})
+(\epsilon u_i^{\prime}) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
++
+(\epsilon \rho^{\prime})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
+= 
+\\
+-
+(\epsilon p^{\prime})
+\frac{(\gamma-1)}{
+(\overline{R})
+}
+\frac{\partial}{\partial x_i} 
+(\overline{u}_i) 
+-
+1
+\frac{(\gamma-1)}{
+(\overline{R})
+}
+\frac{\partial}{\partial x_i} 
+(\epsilon u^\prime_i) 
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*}
+\begin{split}
+(\overline{\rho})
+\frac{\partial  }{\partial  t}
+( T^{\prime})
++
+(\overline{\rho})
+(\overline{u}) 
+\frac{\partial }{\partial x} 
+(T^{\prime})
++
+(\epsilon \rho^{\prime})
+\cancelto{\overline{T}=\overline{T}(y)}{
+\frac{\partial  }{\partial  t}
+(\overline{T})
+}
++
+(\overline{\rho})
+( v^{\prime}) 
+\frac{\partial }{\partial y} 
+(\overline{T})
++
+\cancelto{\overline{v}=0}{
+( \rho^{\prime})
+(\overline{u}_i) 
+\frac{\partial }{\partial x_i} 
+(\overline{T})
+}
+= 
+\\
+-
+\cancelto{\overline{v}=0}{
+( p^{\prime})
+\frac{(\gamma-1)}{
+(\overline{R})
+}
+\frac{\partial}{\partial x_i} 
+(\overline{u}_i) 
+}
+-
+1
+\frac{(\gamma-1)}{
+(\overline{R})
+}
+\frac{\partial}{\partial x_i} 
+( u^\prime_i) 
+,
+\end{split}
+\end{equation*} 
+
+\begin{equation}
+\overline{\rho}
+\frac{\partial T^{\prime} }{\partial  t}
++
+\overline{\rho}
+\overline{u}
+\frac{\partial T^{\prime}}{\partial x}
++
+\overline{\rho}
+v^{\prime}
+\frac{\partial \overline{T} }{\partial y} 
+= 
+\frac{(\gamma-1)}{(\overline{R})}
+\frac{\partial}{\partial x_i} 
+(u^\prime_i) 
+.
+\end{equation} 
+
+Then, the linear Euler Equation for the perturbation on a reacting mixing layer are 
+
+\begin{equation} 
+\frac{\partial\rho^{\prime}}{\partial t}
++
+v^{\prime}
+\frac{\partial \overline{\rho}}{\partial y} 
++
+\overline{u}
+\frac{\partial \rho^{\prime}}{\partial x} 
++
+\overline{\rho}
+\left(
+\frac{\partial u^\prime}{\partial x}
++
+\frac{\partial v^\prime}{\partial y}
++
+\frac{\partial w^\prime}{\partial z}
+\right)
+=
+0
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial u^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial u^{\prime}}{\partial x}
++
+v^{\prime}
+\frac{\partial\overline{u}}{\partial y}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial x} 
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial v^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial v^{\prime}}{\partial x}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial y} 
+,
+\end{equation} 
+
+
+\begin{equation} 
+\overline{\rho}
+\left(
+\frac{\partial w^{\prime}}{\partial t}
++
+\overline{u}
+\frac{\partial w^{\prime}}{\partial x}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial p^{\prime} }{\partial z} 
+.
+\end{equation} 
+
+\begin{equation} 
+\frac{\partial Z^{\prime}}{\partial t}
++
+\overline{u}_i 
+\frac{\partial  Z^{\prime}}{\partial x_i}
++
+u_i^{\prime} 
+\frac{\partial \overline{Z}}{\partial x_i}
+=
+0
+,
+\end{equation} 
+
+\begin{equation}
+\overline{\rho}
+\frac{\partial T^{\prime} }{\partial  t}
++
+\overline{\rho}
+\overline{u}
+\frac{\partial T^{\prime}}{\partial x}
++
+\overline{\rho}
+v^{\prime}
+\frac{\partial \overline{T} }{\partial y} 
+= 
+\frac{(\gamma-1)}{(\overline{R})}
+\frac{\partial}{\partial x_i} 
+(u^\prime_i) 
+.
+\end{equation} 
+
+\begin{equation*}
+   p^{\prime}
+   = 
+   \rho^{\prime}
+   \overline{R}
+   \overline{T}
+   +
+   R^{\prime}
+   \overline{\rho}
+   \overline{T}
+   +
+   T^{\prime}
+   \overline{\rho}
+   \overline{R}
+   .
+\end{equation*}
+
+An special anzat can be assumed. Suppose that 
+the pertubation are given  by 
+
+\begin{equation}
+   [u^\prime, v^\prime, w^\prime, p^\prime, \rho^\prime, T^\prime,  Z^\prime, R^\prime] 
+   (t,x,y,z)
+   =
+   [\hat{u}, \hat{v}, \hat{w},\hat{p},\hat{\rho},\hat{T},\hat{Z},\hat{R}]
+   (y)
+   e^{i(\alpha x+\beta z  -\omega t)}
+\end{equation}
+
+%\begin{equation*} 
+%\frac{\partial\rho^{\prime}}{\partial t}
+%+
+%v^{\prime}
+%\frac{\partial \overline{\rho}}{\partial y} 
+%+
+%\overline{u}
+%\frac{\partial \rho^{\prime}}{\partial x} 
+%+
+%\overline{\rho}
+%\left(
+%\frac{\partial u^\prime}{\partial x}
+%+
+%\frac{\partial v^\prime}{\partial y}
+%+
+%\frac{\partial w^\prime}{\partial z}
+%\right)
+%=
+%0
+%,
+%\end{equation*} 
+%
+%\begin{equation*}
+%-  
+%i\omega \hat{\rho}
+%+
+%\hat{v}
+%\frac{\partial \overline{\rho}}{\partial y} 
+%+
+%i
+%\alpha
+%\overline{u}
+%\hat{\rho}
+%+
+%i
+%\overline{\rho}
+%\left(
+%\alpha
+%u^{\prime}
+%+
+%\beta
+%w^{\prime}
+%+
+%\frac{\partial \hat{v}}{\partial y}
+%\right)
+%=
+%0
+%,
+%\end{equation*} 
+
+\begin{equation}
+i
+\hat{\rho}
+(\alpha\overline{u}- \omega) 
++
+\hat{v}
+\frac{\partial \overline{\rho}}{\partial y} 
++
+\overline{\rho}
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+=
+0
+,
+\end{equation} 
+
+
+\begin{equation} 
+i
+\overline{\rho}
+\left(
+-
+\omega 
+\hat{u}
++
+\alpha 
+\overline{u}
+\hat{u}
++
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+\right)
+=
+-
+i
+\alpha\hat{p}
+\frac{1}{\gamma_{\infty} M^{2}}
+,
+\end{equation} 
+
+\begin{equation} 
+i
+\overline{\rho}
+\left(
+-
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+\hat{v}
+=
+-
+i
+\frac{\partial \hat{p}}{\partial y}
+\frac{1}{\gamma_{\infty} M^{2}}
+,
+\end{equation} 
+
+\begin{equation} 
+i
+\overline{\rho}
+\left(
+-
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+\hat{w}
+=
+-
+i
+\beta\hat{p}
+\frac{1}{\gamma_{\infty} M^{2}}
+,
+\end{equation} 
+
+\begin{equation} 
+i
+\left(
+-
+\omega 
++
+\alpha 
+\right)
+\overline{u}
+\hat{Z}
++
+\frac{\partial \overline{Z}}{\partial y}
+\hat{v}
+=
+0
+,
+\end{equation} 
+
+\begin{equation} 
+\overline{\rho}
+\left[
+    i
+    \left(
+    -
+    \omega 
+    +
+    \alpha 
+    \right)
+    \overline{u}
+    \hat{T}
+    +
+    \hat{v}
+    \frac{\partial \overline{T} }{\partial y}
+\right]
+=
+-
+\frac{(\gamma-1)}{\overline{R}}
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{equation} 
+
+These equation are able to combine to obtain a single equation 
+for the perturbation variable $\hat{u}$. 
+To do this add  to the 
+energy equation the continuity equation multiply by 
+$\frac{(\gamma-1)}{\overline{\rho}\overline{R}}$ 
+
+\begin{equation*} 
+\begin{split} 
+\overline{\rho}
+\left[
+    i
+    \left(
+    -
+    \omega 
+    +
+    \alpha 
+    \right)
+    \overline{u}
+    \hat{T}
+    +
+    \hat{v}
+    \frac{\partial \overline{T} }{\partial y}
+\right]
+=
+\\
+-
+\cancel{
+\frac{(\gamma-1)}{\overline{R}}
+\left(
+\alpha
+\hat{u}
++
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+}
++
+i
+\frac{(\gamma-1)}{\overline{\rho}\overline{R}}
+\hat{\rho}
+(\alpha\overline{u}- \omega) 
++
+\frac{(\gamma-1)}{\overline{\rho}\overline{R}}
+\hat{v}
+\frac{\partial \overline{\rho}}{\partial y} 
++
+\cancel{
+\frac{(\gamma-1)}{\overline{\rho}\overline{R}}
+\overline{\rho}
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+}
+\end{split} 
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split} 
+\overline{\rho}
+\left[
+    i
+    \left(
+    -
+    \omega 
+    +
+    \alpha 
+    \right)
+    \overline{u}
+    \hat{T}
+    +
+    \hat{v}
+    \frac{\partial \overline{T} }{\partial y}
+\right]
+=
+i
+\frac{(\gamma-1)}{\overline{\rho}\overline{R}}
+\hat{\rho}
+(\alpha\overline{u}- \omega) 
++
+\frac{(\gamma-1)}{\overline{\rho}\overline{R}}
+\hat{v}
+\frac{\partial \overline{\rho}}{\partial y} 
+\end{split} 
+\end{equation*} 
