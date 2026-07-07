@@ -33,9 +33,9 @@ is only function of the vertical coordinate $y$,
 \label{perturbation}
 \end{equation}
 
-Appling Eqs. \ref{perturbation} in the Euler equation,  
-assuming that the product of pertbation are despressible once $\epsilon<<1$ 
-and reconized that the base flow is also solution of the equations, the 
+Applying Eqs. \ref{perturbation} in the Euler equation,  
+assuming that the product of perturbation are depressible once $\epsilon<<1$ 
+and recognized that the base flow is also solution of the equations, the 
 linear Euler equation are obtained:
 
 \begin{equation*} 
@@ -773,7 +773,7 @@ v^{\prime}
 \end{equation*}
 
 An special anzat can be assumed. Suppose that 
-the pertubation are given  by 
+the perturbation are given  by 
 
 \begin{equation}
    [u^\prime, v^\prime, w^\prime, p^\prime, \rho^\prime, T^\prime,  Z^\prime, R^\prime] 
@@ -861,20 +861,21 @@ i
 
 
 \begin{equation} 
-i
 \overline{\rho}
-\left(
+\left[
 -
+i
+\left(
 \omega 
-\hat{u}
 +
 \alpha 
 \overline{u}
+\right)
 \hat{u}
 +
 \hat{v}
 \frac{\partial\overline{u}}{\partial y}
-\right)
+\right]
 =
 -
 i
@@ -928,8 +929,8 @@ i
 \omega 
 +
 \alpha 
-\right)
 \overline{u}
+\right)
 \hat{Z}
 +
 \frac{\partial \overline{Z}}{\partial y}
@@ -972,8 +973,366 @@ i
 .
 \end{equation} 
 
+\begin{equation*}
+   \hat{p}
+   = 
+   \hat{\rho}
+   \overline{R}
+   \overline{T}
+   +
+   \hat{R}
+   \overline{\rho}
+   \overline{T}
+   +
+   \hat{T}
+   \overline{\rho}
+   \overline{R}
+   .
+\end{equation*}
+
 These equation are able to combine to obtain a single equation 
 for the perturbation variable $\hat{u}$. 
+To do it,  multiplied the mass conservation by $\hat{T}$ and add  to the 
+energy equation, 
+
+\begin{equation*}
+i
+\overline{T}
+\hat{\rho}
+(\alpha\overline{u}- \omega) 
++
+\overline{T}
+\hat{v}
+\frac{\partial \overline{\rho}}{\partial y} 
++
+\overline{T}
+\overline{\rho}
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+=
+0
+,
+\end{equation*} 
+
+\begin{equation*} 
+\overline{\rho}
+\left[
+    i
+    \left(
+    -
+    \omega 
+    +
+    \alpha 
+    \overline{u}
+    \right)
+    \hat{T}
+    +
+    \hat{v}
+    \frac{\partial \overline{T} }{\partial y}
+\right]
+=
+-
+\frac{(\gamma-1)}{\overline{R}}
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{equation*} 
+
+
+\begin{equation*} 
+\begin{split} 
+i
+\overline{T}
+\hat{\rho}
+(\alpha\overline{u}- \omega) 
++
+\overline{T}
+\hat{v}
+\frac{\partial \overline{\rho}}{\partial y} 
++
+\overline{\rho}
+\left[
+    i
+    \left(
+    -
+    \omega 
+    +
+    \alpha 
+    \overline{u}
+    \right)
+    \hat{T}
+    +
+    \hat{v}
+    \frac{\partial \overline{T} }{\partial y}
+\right]
+=
+\\
+-
+\left(
+\overline{T}
+\overline{\rho}
++
+\frac{(\gamma-1)}{\overline{R}}
+\right)
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{split} 
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split} 
+i
+\left[
+\overline{T}
+\hat{\rho}
++
+\overline{\rho}
+\hat{T}
+\right]
+    \left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+    \right)
++
+\hat{v}
+\left(
+    \overline{\rho}
+    \frac{\partial \overline{T}}{\partial y} 
+    +
+    \overline{T}
+    \frac{\partial \overline{\rho}}{\partial y} 
+\right)
+=
+\\
+-
+\gamma
+\frac{1 }{\overline{R}} 
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{split} 
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split} 
+i
+\left[
+\overline{T}
+\hat{\rho}
++
+\overline{\rho}
+\hat{T}
+\right]
+    \left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+    \right)
+-
+\hat{v}
+\frac{1}{\overline{R}^2} 
+\left(
+    \frac{\partial \overline{R}}{\partial y} 
+\right)
+=
+\\
+-
+\gamma
+\frac{1 }{\overline{R}} 
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{split} 
+\end{equation*} 
+
+Now using the ideal gas equation:
+
+\begin{equation*}
+   \hat{p}
+   = 
+   \overline{\rho}
+   \hat{R}
+   \overline{T}
+   +
+   \hat{\rho}
+   \overline{R}
+   \overline{T}
+   +
+   \overline{\rho}
+   \overline{R}
+   \hat{T}
+   .
+\end{equation*}
+
+\begin{equation*}
+   \hat{p}
+   -
+   \overline{\rho}
+   \hat{R}
+   \overline{T}
+   = 
+   \hat{\rho}
+   \overline{R}
+   \overline{T}
+   +
+   \overline{\rho}
+   \overline{R}
+   \hat{T}
+   .
+\end{equation*}
+
+\begin{equation*}
+   \frac{1}{\overline{R}^2}
+   \left(
+        \overline{R}\hat{p}
+        -
+        \hat{R}
+   \right)
+   = 
+   \overline{\rho}
+   \hat{T}
+   +
+   \hat{\rho}
+   \overline{T}
+   .
+\end{equation*}
+
+Then, 
+
+\begin{equation*} 
+\begin{split} 
+i
+\left[
+   \left(
+        \overline{R}\hat{p}
+        -
+        \hat{R}
+   \right)
+\right]
+    \left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+    \right)
+-
+\hat{v}
+\left(
+    \frac{\partial \overline{R}}{\partial y} 
+\right)
+=
+\\
+-
+\overline{R}
+\gamma
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{split} 
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split} 
+    i
+    \overline{R}\hat{p}
+    \left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+    \right)
+    -
+    i
+    \hat{R}
+    \left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+    \right)
+-
+\hat{v}
+\left(
+    \frac{\partial \overline{R}}{\partial y} 
+\right)
+=
+\\
+-
+\overline{R}
+\gamma
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\end{split} 
+\end{equation*} 
+
 To do this add  to the 
 energy equation the continuity equation multiply by 
 $\frac{(\gamma-1)}{\overline{\rho}\overline{R}}$ 
@@ -988,8 +1347,8 @@ $\frac{(\gamma-1)}{\overline{\rho}\overline{R}}$
     \omega 
     +
     \alpha 
-    \right)
     \overline{u}
+    \right)
     \hat{T}
     +
     \hat{v}
@@ -1048,8 +1407,8 @@ i
     \omega 
     +
     \alpha 
-    \right)
     \overline{u}
+    \right)
     \hat{T}
     +
     \hat{v}
