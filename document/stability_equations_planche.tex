@@ -1,6 +1,5 @@
-
 To defined the linear stability equation is assuming that 
-the flow can be descomposed  into  a sum of mean flow and 
+the flow can be decomposed  into  a sum of mean flow and 
 small perturbation of order $\epsilon$, where the base flow 
 is only function of the vertical coordinate $y$,  
 
@@ -140,7 +139,7 @@ v^{\prime}
 ,
 \end{equation} 
 
-For the momemtum equation:
+For the momentum equation:
 
 
 \begin{equation*} 
@@ -772,7 +771,7 @@ v^{\prime}
    .
 \end{equation*}
 
-An special anzat can be assumed. Suppose that 
+An special ansatz can be assumed. Suppose that 
 the perturbation are given  by 
 
 \begin{equation}
@@ -782,6 +781,7 @@ the perturbation are given  by
    [\hat{u}, \hat{v}, \hat{w},\hat{p},\hat{\rho},\hat{T},\hat{Z},\hat{R}]
    (y)
    e^{i(\alpha x+\beta z  -\omega t)}
+   \label{ansatz}
 \end{equation}
 
 %\begin{equation*} 
@@ -863,9 +863,9 @@ i
 \begin{equation} 
 \overline{\rho}
 \left[
--
 i
 \left(
+    -
 \omega 
 +
 \alpha 
@@ -897,7 +897,6 @@ i
 \hat{v}
 =
 -
-i
 \frac{\partial \hat{p}}{\partial y}
 \frac{1}{\gamma_{\infty} M^{2}}
 ,
@@ -1331,7 +1330,542 @@ i
 \right)
 .
 \end{split} 
+\label{withR}
 \end{equation*} 
+
+An equation for the perturbation of gas constant  can be obtained 
+from the species equation with 
+the definition of $R=\sum_i=0^n Y_i R_i$. 
+Using the perturbation definition: 
+
+\begin{equation*} 
+R=\sum_{i=0}^n (\overline{Y}_i+Y'_i) R_i=\overline{R}+R'
+\end{equation*} 
+
+\begin{equation*} 
+\frac{\partial (\sum_{i=0}^n R_i Y_i^{\prime})}{\partial t}
++                                    
+\overline{u}_i                       
+\frac{\partial (\sum_{i=0}^n R_i Y_i^{\prime})}{\partial x_i}
++
+u_i^{\prime} 
+\frac{\partial (\sum_{i=0}^n R_i \overline{ Y_i})}{\partial x_i}
+=
+0
+,
+\end{equation*} 
+
+\begin{equation*} 
+\frac{\partial R^{\prime}}{\partial t}
++                                    
+\overline{u}_i                       
+\frac{\partial R^{\prime}}{\partial x_i}
++
+u_i^{\prime} 
+\frac{\partial \overline{R}}{\partial x_i}
+=
+0
+,
+\end{equation*} 
+
+Using the normal modes solution \ref{ansatz}, this equation gets  
+
+\begin{equation} 
+i(
+\alpha
+\overline{u}
+-
+\omega 
+)
+\hat{R}
++
+\hat{v}
+\frac{\partial \overline{R}}{\partial y}
+=
+0
+,
+\label{rhat}
+\end{equation} 
+
+and can be eliminated from \ref{withR} equation,
+{\color{red}Planche said it is because $R$ only depend on $Z$},  
+to obtain
+
+
+\begin{equation*} 
+    i
+    \hat{p}
+    (
+    \alpha
+    \overline{u}
+    -
+    \omega 
+    )
+=
+-
+\gamma
+\left(
+i
+\alpha
+\hat{u}
++
+i
+\beta
+\hat{w}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+\label{beforeuw}
+\end{equation*} 
+
+To eliminated $\hat{u}$ and $\hat{w}$ are using 
+their respectively momentum equations. Then: 
+
+\begin{equation*} 
+\overline{\rho}
+\left[
+i
+\left(
+    -
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+\hat{u}
++
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+\right]
+=
+-
+i
+\alpha\hat{p}
+\frac{1}{\gamma_{\infty} M^{2}}
+,
+\end{equation*} 
+
+%
+\begin{equation*} 
+    i
+    \alpha
+\hat{u}
+=
+-
+\alpha
+\frac{1}{
+\left(
+    -
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+}
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+-
+i
+\frac{1}{
+\overline{\rho}
+\left(
+-
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+}
+\alpha^2\hat{p}
+\frac{1}{\gamma_{\infty} M^{2}}
+.
+\end{equation*} 
+
+
+\begin{equation*} 
+i
+\overline{\rho}
+\left(
+-
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+\hat{w}
+=
+-
+i
+\beta\hat{p}
+\frac{1}{\gamma_{\infty} M^{2}}
+,
+\end{equation*} 
+
+\begin{equation*} 
+    i
+    \beta
+\hat{w}
+=
+-
+i
+\beta^2
+\frac{1}{
+\left(-\omega +\alpha \overline{u}
+\right)}
+\frac{1}{\gamma_{\infty} \overline{\rho}M^{2}}
+\hat{p}
+,
+\end{equation*} 
+
+Using both in \ref{beforeuw}
+
+\begin{equation*} 
+    \begin{split}
+    i
+    \hat{p}
+    (
+    \alpha
+    \overline{u}
+    -
+    \omega 
+    )
+=
+\\
+-
+\gamma
+\left(
+-
+\alpha
+\frac{1}{
+\left(
+    -
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+}
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+-
+i
+\frac{1}{
+\overline{\rho}
+\left(
+-
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+}
+\alpha^2\hat{p}
+\frac{1}{\gamma_{\infty} M^{2}}
+-
+i
+\beta^2
+\frac{1}{
+\left(-\omega +\alpha \overline{u}
+\right)}
+\frac{1}{\gamma_{\infty} \overline{\rho}M^{2}}
+\hat{p}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+    \end{split}
+\end{equation*} 
+
+\begin{equation*} 
+    \begin{split}
+    i
+    \hat{p}
+    (
+    \alpha
+    \overline{u}
+    -
+    \omega 
+    )
+=
+\\
+-
+\gamma
+\left(
+    -
+\alpha
+\frac{1}{
+\left(
+-
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+}
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+-
+\frac{i(\alpha^2+\beta^2)}{
+\overline{\rho}
+\left(
+    -
+\omega 
++
+\alpha 
+\overline{u}
+\right)
+}
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
++
+\frac{\partial \hat{v}}{\partial y}
+\right)
+.
+    \end{split}
+\end{equation*} 
+
+\begin{equation*} 
+    \begin{split}
+    \frac{1}{\gamma}
+    i
+    (
+    \alpha
+    \overline{u}
+    -
+    \omega 
+    )^2
+    \hat{p}
+-
+i\frac{(\alpha^2+\beta^2)}{\overline{\rho}}
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
+=
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+-
+(\alpha\overline{u}-\omega)
+\frac{\partial \hat{v}}{\partial y}
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split}
+i
+\frac{1}{\gamma_{\infty} M^{2}}
+\alpha^2
+\left[
+M^{2}
+\frac{\gamma_\infty}{\gamma}
+\frac{(\alpha\overline{u}-\omega )^2}
+{\alpha^2}
+-
+\frac{(\alpha^2+\beta^2)}{\alpha^2\overline{\rho}}
+\right]
+\hat{p}
+=
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+-
+(\alpha\overline{u}-\omega)
+\frac{\partial \hat{v}}{\partial y}
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split}
+(\alpha\overline{u}-\omega)
+\frac{\partial \hat{v}}{\partial y}
+-
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+=
+-
+i
+\frac{1}{\gamma_{\infty} M^{2}}
+\alpha^2
+\left[
+\frac{(\alpha^2+\beta^2)}{\alpha^2\overline{\rho}}
+-
+M^{2}
+\frac{\gamma_\infty}{\gamma}
+\frac{(\alpha\overline{u}-\omega )^2}
+{\alpha^2}
+\right]
+\hat{p}
+.
+\end{split}
+\end{equation*} 
+
+Define: 
+
+\begin{equation} 
+g\equiv
+\frac{(\alpha^2+\beta^2)}{\alpha^2\overline{\rho}}
+-
+M^{2}
+\frac{\gamma_\infty}{\gamma}
+\frac{(\alpha\overline{u}-\omega )^2}
+{\alpha^2}
+\end{equation} 
+
+Then, the system of equations reduced to the following two equations for the perturbation variables $\hat{v}$ and $\hat{p}$:
+
+\begin{equation} 
+\begin{split}
+(\alpha\overline{u}-\omega)
+\frac{\partial \hat{v}}{\partial y}
+-
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+=
+-
+i
+g\alpha^2
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
+.
+\end{split}
+\end{equation} 
+
+\begin{equation*} 
+i
+\overline{\rho}
+\left(
+\alpha 
+\overline{u}
+-
+\omega 
+\right)
+\hat{v}
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial \hat{p}}{\partial y}
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\alpha\overline{u}-\omega)
+\frac{\partial \hat{v}}{\partial y}
+-
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
++
+i
+\overline{\rho}
+(\alpha \overline{u}-\omega) 
+\hat{v}
+=
+-
+i
+g\alpha^2
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial \hat{p}}{\partial y}
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\alpha \overline{u}-\omega) 
+\frac{\partial \hat{v}}{\partial y}
+-
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
++
+i
+\overline{\rho}
+(\alpha \overline{u}-\omega) 
+\hat{v}
++
+\left[
+\frac{\partial \hat{p}}{\partial y}
++
+ig\alpha^2
+\hat{p}
+\right]
+\frac{1}{\gamma_{\infty} M^{2}}
+=
+0
+,
+\end{equation*} 
+
+\begin{equation*} 
+(\alpha \overline{u}-\omega) 
+\left[
+\frac{\partial }{\partial y}
++
+i
+\overline{\rho}
+\right]
+\hat{v}
+-
+\alpha
+\frac{\partial\overline{u}}{\partial y}
+\hat{v}
++
+\frac{1}{\gamma_{\infty} M^{2}}
+\left[
+\frac{\partial}{\partial y}
++
+ig\alpha^2
+\right]
+\hat{p}
+=
+0
+,
+\end{equation*} 
+
+\begin{equation*} 
+\alpha \overline{u}
+\left[
+\frac{\partial }{\partial y}
++
+i
+\overline{\rho}
+\right]
+\hat{v}
+-
+\alpha
+\frac{\partial\overline{u}}{\partial y}
+\hat{v}
+-
+\omega
+\left[
+\frac{\partial }{\partial y}
++
+i
+\overline{\rho}
+\right]
+\hat{v}
++
+\frac{1}{\gamma_{\infty} M^{2}}
+\left[
+\frac{\partial}{\partial y}
++
+ig\alpha^2
+\right]
+\hat{p}
+=
+0
+,
+\end{equation*} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\color{red}
+Obtain the second order pressure equation?
+}
 
 To do this add  to the 
 energy equation the continuity equation multiply by 
