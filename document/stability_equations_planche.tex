@@ -1826,26 +1826,18 @@ ig\alpha^2
 ,
 \end{equation*} 
 
+
 \begin{equation*} 
-\alpha \overline{u}
 \left[
-\frac{\partial }{\partial y}
-+
-i
-\overline{\rho}
-\right]
-\hat{v}
--
-\alpha
-\frac{\partial\overline{u}}{\partial y}
-\hat{v}
--
-\omega
-\left[
-\frac{\partial }{\partial y}
-+
-i
-\overline{\rho}
+    (\alpha \overline{u}-\omega) 
+    \frac{\partial }{\partial y}
+    +
+    i
+    \overline{\rho}
+    (\alpha \overline{u}-\omega) 
+    -
+    \alpha
+    \frac{\partial\overline{u}}{\partial y}
 \right]
 \hat{v}
 +
@@ -1860,6 +1852,222 @@ ig\alpha^2
 0
 ,
 \end{equation*} 
+
+\begin{equation*} 
+(\alpha \overline{u}-\omega) 
+\left[
+    \frac{\partial }{\partial y}
+    +
+    i
+    \overline{\rho}
+    -
+    \frac{\alpha}{(\alpha \overline{u}-\omega)}
+    \frac{\partial\overline{u}}{\partial y}
+\right]
+\hat{v}
++
+\frac{1}{\gamma_{\infty} M^{2}}
+\left[
+\frac{\partial}{\partial y}
++
+ig\alpha^2
+\right]
+\hat{p}
+=
+0
+,
+\end{equation*} 
+
+%%%%Gronpengieser
+\begin{equation} 
+    \chi
+    =
+    \frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+\end{equation} 
+
+\begin{equation*} 
+    \frac{\partial \chi}{\partial y}
+    =
+    \frac{\partial }{\partial y}
+    \left(
+        \frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+    \right)
+    =
+    \frac{i\alpha }{\gamma M^2 }
+    \left(
+        \hat{v}
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        \frac{\hat{p}}{\hat{v}^2}
+        \frac{\partial \hat{v}}{\partial y}
+    \right)
+\end{equation*} 
+
+Stabilily equation 
+
+\begin{equation} 
+        \frac{\partial \chi}{\partial y}
+        =
+        \frac{\alpha(\alpha\overline{u}-\omega)}{\overline{T}} 
+        -
+        \frac{\chi
+        (\chi g+\dfrac{\partial \overline{u}}{\partial y})}{\overline{u}-\dfrac{\omega}{\alpha}}
+\end{equation} 
+
+\begin{equation*} 
+        \frac{\partial \chi}{\partial y}
+        =
+        \frac{\alpha(\alpha\overline{u}-\omega)}{\overline{T}} 
+        -
+        \alpha\frac{\chi
+        (\chi g+\dfrac{\partial \overline{u}}{\partial y})}{\alpha\overline{u}-\omega}
+\end{equation*} 
+
+\begin{equation*} 
+        (\alpha\overline{u}-\omega)
+        \left[
+            \frac{i\alpha }{\gamma M^2 }
+            \left(
+                \hat{v}
+                \frac{\partial \hat{p}}{\partial y}
+                -
+                \frac{\hat{p}}{\hat{v}^2}
+                \frac{\partial \hat{v}}{\partial y}
+            \right)
+        \right]
+        =
+        \alpha(\alpha\overline{u}-\omega)^2
+        \overline{R}
+        \overline{\rho}
+        -
+        \frac{i\alpha^2 \hat{p}}{\gamma M^2 \hat{v}}
+        \left(
+            g\frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+            +
+            \frac{\partial \overline{u}}{\partial y}
+        \right)
+\end{equation*} 
+
+\begin{equation*} 
+        (\alpha\overline{u}-\omega)
+        \frac{i\alpha }{\gamma M^2 }
+        \hat{v}
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        (\alpha\overline{u}-\omega)
+        \frac{i\alpha }{\gamma M^2 }
+        \frac{\hat{p}}{\hat{v}^2}
+        \frac{\partial \hat{v}}{\partial y}
+        =
+        \alpha(\alpha\overline{u}-\omega)^2
+        \overline{R}
+        \overline{\rho}
+        -
+        \frac{i\alpha^2 \hat{p}}{\gamma M^2 \hat{v}}
+        \left(
+            g\frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+            +
+            \frac{\partial \overline{u}}{\partial y}
+        \right)
+\end{equation*}
+
+\begin{equation*} 
+        (\alpha\overline{u}-\omega)
+        \hat{v}
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        (\alpha\overline{u}-\omega)
+        \frac{\hat{p}}{\hat{v}^2}
+        \frac{\partial \hat{v}}{\partial y}
+        =
+        \frac{\gamma M^2 }{i\alpha }
+        \alpha(\alpha\overline{u}-\omega)^2
+        \overline{R}
+        \overline{\rho}
+        -
+        \frac{\alpha \hat{p}}{ \hat{v}}
+        \left(
+            g\frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+            +
+            \frac{\partial \overline{u}}{\partial y}
+        \right)
+\end{equation*} 
+
+\begin{equation*} 
+        (\alpha\overline{u}-\omega)
+        \hat{v}^3
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        (\alpha\overline{u}-\omega)
+        \hat{p}
+        \frac{\partial \hat{v}}{\partial y}
+        =
+        \frac{\gamma M^2 }{i }
+        (\alpha\overline{u}-\omega)^2
+        \overline{R}
+        \overline{\rho}
+        \hat{v}^2
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        \hat{v}
+        \alpha \hat{p}
+        \left(
+            g\frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+            +
+            \frac{\partial \overline{u}}{\partial y}
+        \right)
+\end{equation*} 
+
+\begin{equation*} 
+        (\alpha\overline{u}-\omega)
+        \hat{v}^3
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        (\alpha\overline{u}-\omega)
+        \hat{p}
+        \frac{\partial \hat{v}}{\partial y}
+        =
+        \frac{\gamma M^2 }{i }
+        (\alpha\overline{u}-\omega)^2
+        \overline{R}
+        \overline{\rho}
+        \hat{v}^2
+        \frac{\partial \hat{p}}{\partial y}
+        -
+        \left(
+            g\frac{i\alpha^2 \hat{p}^2}{\gamma M^2}
+            +
+            \hat{v}
+            \alpha \hat{p}
+            \frac{\partial \overline{u}}{\partial y}
+        \right)
+\end{equation*} 
+
+\begin{equation*} 
+        \hat{v}^2
+        (\alpha\overline{u}-\omega)
+        \left(
+        (\alpha\overline{u}-\omega)
+        \hat{v}
+        -
+        \frac{\gamma M^2 }{i }
+        \overline{R}
+        \overline{\rho}
+        \right)
+        \frac{\partial \hat{p}}{\partial y}
+        =
+        (\alpha\overline{u}-\omega)
+        \hat{p}
+        \frac{\partial \hat{v}}{\partial y}
+        -
+        g\frac{i\alpha^2 \hat{p}^2}{\gamma M^2}
+        -
+        \hat{v}
+        \alpha \hat{p}
+        \frac{\partial \overline{u}}{\partial y}
+\end{equation*} 
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
