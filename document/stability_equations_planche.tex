@@ -1751,6 +1751,367 @@ i
 ,
 \end{equation*} 
 
+Derivate the second equation respect to $y$ 
+
+\begin{equation*} 
+i
+\frac{\partial }{\partial y}
+\left(
+\overline{\rho}
+\left(
+\alpha 
+\overline{u}
+-
+\omega 
+\right)
+\hat{v}
+\right)
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+,
+\end{equation*} 
+
+\begin{equation*} 
+\left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+\right)
+\frac{\partial \hat{v}}{\partial y}
++
+\frac{\hat{v}}{\overline{\rho}}
+\frac{\partial }{\partial y}
+\left(
+\overline{\rho}
+\left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+\right)
+\right)
+=
+\frac{i}{\gamma_{\infty} M^{2}\overline{\rho}}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+,
+\end{equation*} 
+
+and add to the first one, 
+to obtain a single equation for $\hat{p}$:
+
+\begin{equation} 
+\begin{split}
+-
+\frac{\hat{v}}{\overline{\rho}}
+\frac{\partial }{\partial y}
+\left(
+\overline{\rho}
+\left(
+    \alpha 
+    \overline{u}
+    -
+    \omega 
+\right)
+\right)
++
+\frac{i}{\gamma_{\infty} M^{2}\overline{\rho}}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+=
+-
+i
+g\alpha^2
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
+.
+\end{split}
+\end{equation} 
+
+using the definitioin of $\hat{v}$ of the second equation to 
+to obtain a ordinary equation only in pressure  
+
+\begin{equation*} 
+\hat{v}
+=
+-
+\frac{1}{
+i
+\overline{\rho}
+\left(\alpha \overline{u}-\omega \right)
+}
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial \hat{p}}{\partial y}
+,
+\end{equation*} 
+
+\begin{equation} 
+\begin{split}
+-
+    \frac{1}{
+    i
+    \overline{\rho}
+    \left(\alpha \overline{u}-\omega \right)
+    }
+    \frac{1}{\gamma_{\infty} M^{2}}
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \frac{1}{\overline{\rho}}
+    \frac{\partial }{\partial y}
+    \left(
+    \overline{\rho}
+    \left(
+        \alpha 
+        \overline{u}
+        -
+        \omega 
+    \right)
+    \right)
+    +
+    \alpha
+    \frac{\partial\overline{u}}{\partial y}
+\right]
++
+\frac{i}{\gamma_{\infty} M^{2}\overline{\rho}}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+=
+-
+i
+g\alpha^2
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
+.
+\end{split}
+\end{equation} 
+
+\begin{equation} 
+\begin{split}
+    \frac{1}{
+    \left(\alpha \overline{u}-\omega \right)
+    }
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \frac{\partial }{\partial y}
+    \left(
+    \overline{\rho}
+    \left(
+        \alpha 
+        \overline{u}
+        -
+        \omega 
+    \right)
+    \right)
+    +
+    \overline{\rho}
+    \alpha
+    \frac{\partial\overline{u}}{\partial y}
+\right]
++
+\frac{\partial^2 \hat{p}}{\partial y^2}
+=
+-
+i
+g\alpha^2
+\overline{\rho}
+\hat{p}
+.
+\end{split}
+\end{equation} 
+
+\begin{equation} 
+\begin{split}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+    \frac{1}{
+    \left(\alpha \overline{u}-\omega \right)
+    }
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \left(
+        \alpha 
+        \overline{u}
+        -
+        \omega 
+    \right)
+    \frac{\partial \overline{\rho}}{\partial y}
+    +
+    \alpha 
+    \overline{\rho}
+    \frac{\partial \overline{u}}{\partial y}
+    +
+    \overline{\rho}
+    \alpha
+    \frac{\partial\overline{u}}{\partial y}
+\right]
++
+i
+g\alpha^2
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation} 
+
+\begin{equation} 
+\begin{split}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \frac{1}{\overline{\rho}}
+    \frac{\partial \overline{\rho}}{\partial y}
+    +
+    2
+    \frac{\alpha }{\left(\alpha \overline{u}-\omega \right)}
+    \frac{\partial \overline{u}}{\partial y}
+\right]
++
+i
+g\alpha^2
+\overline{\rho}
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation} 
+
+%%%%Gronpengieser
+\begin{equation} 
+    \chi
+    =
+    \frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+\end{equation} 
+
+Step 1: Isolate $\hat{p}$ from the first equationStarting with your first
+equation:$$(\alpha\overline{u}-\omega) \frac{\partial \hat{v}}{\partial y} -
+\alpha \hat{v} \frac{\partial\overline{u}}{\partial y} = - i g\alpha^2
+\frac{1}{\gamma_{\infty} M^{2}} \hat{p}$$We isolate $\hat{p}$ by dividing both
+sides by the coefficients on the right-hand side (recalling that $\frac{1}{-i} =
+i$):$$\hat{p} = \frac{i \gamma_{\infty} M^{2}}{g \alpha^2} \left[
+(\alpha\overline{u}-\omega) \frac{\partial \hat{v}}{\partial y} - \alpha
+\frac{\partial\overline{u}}{\partial y} \hat{v} \right]$$Step 2: Differentiate
+$\hat{p}$ with respect to $y$To substitute this into your second equation, we
+need the derivative $\frac{\partial \hat{p}}{\partial y}$. Taking the derivative
+with respect to $y$ requires applying the product rule to the terms inside the
+brackets:$$\frac{\partial \hat{p}}{\partial y} = \frac{i \gamma_{\infty}
+M^{2}}{g \alpha^2} \frac{\partial}{\partial y} \left[
+(\alpha\overline{u}-\omega) \frac{\partial \hat{v}}{\partial y} - \alpha
+\frac{\partial\overline{u}}{\partial y} \hat{v} \right]$$Expanding the inner
+bracket derivative:$\frac{\partial}{\partial y} \left[
+(\alpha\overline{u}-\omega) \frac{\partial \hat{v}}{\partial y} \right] = \alpha
+\frac{\partial \overline{u}}{\partial y} \frac{\partial \hat{v}}{\partial y} +
+(\alpha\overline{u}-\omega) \frac{\partial^2 \hat{v}}{\partial
+y^2}$$\frac{\partial}{\partial y} \left[ \alpha \frac{\partial
+\overline{u}}{\partial y} \hat{v} \right] = \alpha \frac{\partial^2
+\overline{u}}{\partial y^2} \hat{v} + \alpha \frac{\partial
+\overline{u}}{\partial y} \frac{\partial \hat{v}}{\partial y}$When you subtract
+the second expansion from the first, the mixed first-derivative terms ($\alpha
+\frac{\partial \overline{u}}{\partial y} \frac{\partial \hat{v}}{\partial y}$)
+cleanly cancel out:$$\frac{\partial \hat{p}}{\partial y} = \frac{i
+\gamma_{\infty} M^{2}}{g \alpha^2} \left[ (\alpha\overline{u}-\omega)
+\frac{\partial^2 \hat{v}}{\partial y^2} - \alpha \frac{\partial^2
+\overline{u}}{\partial y^2} \hat{v} \right]$$(Note: This step assumes the
+compressibility parameter $g$ is constant or slowly varying with respect to $y$.
+If $g = g(y)$, you would need to apply the quotient rule to the leading
+$\frac{1}{g}$ term).Step 3: Substitute into the second equationYour second
+equation is:$$i \overline{\rho} \left( \alpha \overline{u} - \omega \right)
+\hat{v} = - \frac{1}{\gamma_{\infty} M^{2}} \frac{\partial \hat{p}}{\partial
+y}$$Substituting our newly found expression for $\frac{\partial
+\hat{p}}{\partial y}$ into the right-hand side yields:$$i \overline{\rho} \left(
+\alpha \overline{u} - \omega \right) \hat{v} = - \frac{1}{\gamma_{\infty} M^{2}}
+\left( \frac{i \gamma_{\infty} M^{2}}{g \alpha^2} \left[
+(\alpha\overline{u}-\omega) \frac{\partial^2 \hat{v}}{\partial y^2} - \alpha
+\frac{\partial^2 \overline{u}}{\partial y^2} \hat{v} \right] \right)$$Step 4:
+Simplify to the final ODEWe can cancel the common factor of $\gamma_{\infty}
+M^{2}$ on the right side:$$i \overline{\rho} \left( \alpha \overline{u} - \omega
+\right) \hat{v} = - \frac{i}{g \alpha^2} \left[ (\alpha\overline{u}-\omega)
+\frac{\partial^2 \hat{v}}{\partial y^2} - \alpha \frac{\partial^2
+\overline{u}}{\partial y^2} \hat{v} \right]$$Next, cancel the imaginary unit $i$
+from both sides, multiply the entire equation by $-g \alpha^2$, and move all
+terms to one side:$$(\alpha\overline{u}-\omega) \frac{\partial^2
+\hat{v}}{\partial y^2} - \alpha \frac{\partial^2 \overline{u}}{\partial y^2}
+\hat{v} + g \alpha^2 \overline{\rho} (\alpha \overline{u} - \omega) \hat{v} =
+0$$To clean it up into standard form, divide the entire equation by the leading
+coefficient $(\alpha\overline{u}-\omega)$:$$\frac{\partial^2 \hat{v}}{\partial
+y^2} + \left[ g \alpha^2 \overline{\rho} - \frac{\alpha \frac{\partial^2
+\overline{u}}{\partial y^2}}{\alpha\overline{u}-\omega} \right] \hat{v} =
+0$$This is the second-order stability equation for the velocity perturbation
+$\hat{v}$. If you set $\overline{\rho} = 1$ (incompressible) and $g = 1$, this
+simplifies directly into the classical inviscid Orr-Sommerfeld (Rayleigh)
+equation:$$\frac{\partial^2 \hat{v}}{\partial y^2} - \left[ \alpha^2 +
+\frac{\frac{\partial^2 \overline{u}}{\partial
+y^2}}{\overline{u}-\frac{\omega}{\alpha}} \right] \hat{v} = 0$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\color{red}tentei juntar nom mesmo operador}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{equation} 
+\begin{split}
+(\alpha\overline{u}-\omega)
+\frac{\partial \hat{v}}{\partial y}
+-
+\alpha
+\hat{v}
+\frac{\partial\overline{u}}{\partial y}
+=
+-
+i
+g\alpha^2
+\frac{1}{\gamma_{\infty} M^{2}}
+\hat{p}
+.
+\end{split}
+\end{equation} 
+
+\begin{equation*} 
+i
+\overline{\rho}
+\left(
+\alpha 
+\overline{u}
+-
+\omega 
+\right)
+\hat{v}
+=
+-
+\frac{1}{\gamma_{\infty} M^{2}}
+\frac{\partial \hat{p}}{\partial y}
+,
+\end{equation*} 
+
+
+
+
+
+
+
+
+
 \begin{equation*} 
 (\alpha\overline{u}-\omega)
 \frac{\partial \hat{v}}{\partial y}
