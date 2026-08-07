@@ -1,0 +1,601 @@
+The second order ordinary pressure equation  
+can be written in the for of a  eigenvalue boundary value
+problem for the waver number  $\alpha$. 
+
+\begin{equation} 
+\begin{split}
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \frac{1}{\overline{\rho}}
+    \frac{\partial \overline{\rho}}{\partial y}
+    +
+    2
+    \frac{\alpha }{\left(\alpha \overline{u}-\omega \right)}
+    \frac{\partial \overline{u}}{\partial y}
+\right]
++
+i
+g\alpha^2
+\overline{\rho}
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation} 
+
+with 
+
+%\begin{equation} 
+%    \chi
+%    =
+%    \frac{i\alpha \hat{p}}{\gamma M^2 \hat{v}}
+%    ,
+%\end{equation} 
+
+
+\begin{equation} 
+g\equiv
+\frac{(\alpha^2+\beta^2)}{\alpha^2\overline{\rho}}
+-
+M^{2}
+\frac{\gamma_\infty}{\gamma}
+\frac{(\alpha\overline{u}-\omega )^2}
+{\alpha^2}
+\end{equation} 
+
+Then: 
+
+\begin{equation*} 
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \frac{1}{\overline{\rho}}
+    \frac{\partial \overline{\rho}}{\partial y}
+    +
+    2
+    \frac{\alpha }{\left(\alpha \overline{u}-\omega \right)}
+    \frac{\partial \overline{u}}{\partial y}
+\right]
++
+i
+\alpha^2
+\left[
+    \frac{(\alpha^2+\beta^2)}{\alpha^2\overline{\rho}}
+    -
+    M^{2}
+    \frac{\gamma_\infty}{\gamma}
+    \frac{(\alpha\overline{u}-\omega )^2}
+    {\alpha^2}
+\right]
+\overline{\rho}
+\hat{p}
+=
+0
+.
+\end{equation*} 
+
+\begin{equation*} 
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+    \frac{\partial \hat{p}}{\partial y}
+\left[
+    \frac{1}{\overline{\rho}}
+    \frac{\partial \overline{\rho}}{\partial y}
+    +
+    2
+    \frac{\alpha }{\left(\alpha \overline{u}-\omega \right)}
+    \frac{\partial \overline{u}}{\partial y}
+\right]
++
+i
+\left[
+    (\alpha^2+\beta^2)
+    -
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+    \overline{\rho}
+    (\alpha\overline{u}-\omega )^2
+\right]
+\hat{p}
+=
+0
+.
+\end{equation*} 
+
+\begin{equation*} 
+\left(\alpha \overline{u}-\omega \right)
+\frac{\partial^2 \hat{p}}{\partial y^2}
+-
+\left(\alpha \overline{u}-\omega \right)
+\frac{1}{\overline{\rho}}
+\frac{\partial \overline{\rho}}{\partial y}
+\frac{\partial \hat{p}}{\partial y}
+-
+2
+\alpha 
+\frac{\partial \overline{u}}{\partial y}
+\frac{\partial \hat{p}}{\partial y}
++
+i
+\left(\alpha \overline{u}-\omega \right)
+(\alpha^2+\beta^2)
+\hat{p}
+-
+i
+\frac{\gamma_\infty}{\gamma}
+M^{2}
+\overline{\rho}
+(\alpha\overline{u}-\omega )^3
+\hat{p}
+=
+0
+.
+\end{equation*} 
+
+Defining the Derivative  operator $D$ as 
+
+\begin{equation}
+    D=
+    \frac{\partial }{\partial y}
+    \quad
+    \text{and}
+    \quad
+    D^2
+    =
+    \frac{\partial^2 }{\partial y^2}
+\end{equation}
+
+The pressure equation can be written as  
+
+\begin{equation*} 
+\left(\alpha \overline{u}-\omega \right)
+D^2\hat{p}
+-
+\left(\alpha \overline{u}-\omega \right)
+D (ln\overline{\rho})
+D\hat{p}
+-
+2
+\alpha 
+D\overline{u}
+D\hat{p}
++
+i
+\left(\alpha \overline{u}-\omega \right)
+(\alpha^2+\beta^2)
+\hat{p}
+-
+i
+\frac{\gamma_\infty}{\gamma}
+M^{2}
+\overline{\rho}
+(\alpha\overline{u}-\omega )^3
+\hat{p}
+=
+0
+.
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split}
+\alpha \overline{u}
+D^2\hat{p}
+-
+\omega 
+D^2\hat{p}
+-
+\alpha \overline{u}
+D (ln\overline{\rho})
+D\hat{p}
++
+\omega
+D (ln\overline{\rho})
+D\hat{p}
+-
+2
+\alpha 
+D\overline{u}
+D\hat{p}
++
+i
+\alpha \overline{u}
+(\alpha^2+\beta^2)
+\hat{p}
+-\omega
+(\alpha^2+\beta^2)
+\hat{p}
+-
+\\
+i
+\frac{\gamma_\infty}{\gamma}
+M^{2}
+\overline{\rho}
+\hat{p}
+%(\alpha\overline{u}-\omega )^3
+(
+\alpha^3\overline{u}^3-
+3\alpha^2\overline{u}^2\omega+
+3\alpha\overline{u}\omega^2-
+\omega^3)
+=
+0
+.
+\end{split}
+\end{equation*} 
+
+Defining:
+
+\begin{equation*}
+L_1
+\equiv
+i
+\frac{\gamma_\infty}{\gamma}
+M^{2}
+\overline{\rho}
+\end{equation*}
+
+\begin{equation*} 
+\begin{split}
+\alpha \overline{u}
+D^2\hat{p}
+-
+\omega 
+D^2\hat{p}
+-
+\alpha \overline{u}
+D (ln\overline{\rho})
+D\hat{p}
++
+\omega
+D (ln\overline{\rho})
+D\hat{p}
+-
+2
+\alpha 
+D\overline{u}
+D\hat{p}
++
+i
+\alpha \overline{u}
+(\alpha^2+\beta^2)
+\hat{p}
+-\omega
+(\alpha^2+\beta^2)
+\hat{p}
+-
+\\
+\alpha^3\overline{u}^3
+L_1
+\hat{p}
+-
+3\alpha^2\overline{u}^2\omega
+L_1
+\hat{p}
++
+3\alpha\overline{u}\omega^2
+L_1
+\hat{p}
+-
+\omega^3
+L_1
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split}
+\alpha \overline{u}
+D^2\hat{p}
+-
+\omega 
+D^2\hat{p}
+-
+\alpha \overline{u}
+D (ln\overline{\rho})
+D\hat{p}
++
+\omega
+D (ln\overline{\rho})
+D\hat{p}
+-
+2
+\alpha 
+D\overline{u}
+D\hat{p}
++
+i
+\alpha \overline{u}
+\alpha^2
+\hat{p}
++
+i
+\alpha \overline{u}
+\beta^2
+\hat{p}
+-
+\omega
+\alpha^2
+\hat{p}
+-
+\omega
+\beta^2
+\hat{p}
+-
+\\
+\alpha^3\overline{u}^3
+L_1
+\hat{p}
+-
+3\alpha^2\overline{u}^2\omega
+L_1
+\hat{p}
++
+3\alpha\overline{u}\omega^2
+L_1
+\hat{p}
+-
+\omega^3
+L_1
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split}
+\alpha^3
+\left(
+    i
+    \overline{u}
+    -
+    \overline{u}^3
+    L_1
+\right) \hat{p} 
++
+ \\ \alpha^2 \left[ \omega
+    \left(
+    3
+    \overline{u}^2
+    L_1
+    -
+    1
+    \right)
+\right]
+\hat{p}
++
+\\
+\alpha 
+\left(
+    \overline{u}
+    D^2
+    -
+     \overline{u}
+    D (ln\overline{\rho})
+    D
+    -
+    2
+    D\overline{u}
+    D
+    +
+    i
+    \overline{u}
+    \beta^2
+    +
+    3
+    \overline{u}\omega^2
+    L_1
+\right)
+\hat{p}
+-
+\\
+\left(
+\omega 
+D^2
++
+\omega
+D (ln\overline{\rho})
+D
+-
+\omega
+\beta^2
+-
+\omega^3
+L_1
+\right)
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation*} 
+
+\begin{equation*} 
+\begin{split}
+\alpha^3
+\left(
+    i
+    \overline{u}
+    -
+    \overline{u}^3
+    i
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+\right) \hat{p} 
++ 
+\\ 
+\alpha^2 
+\left[ 
+    \omega
+    \left(
+    3
+    \overline{u}^2
+    i
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+    -
+    1
+    \right)
+\right]
+\hat{p}
++
+\\
+\alpha 
+\left(
+    \overline{u}
+    D^2
+    -
+     \overline{u}
+    D (ln\overline{\rho})
+    D
+    -
+    2
+    D\overline{u}
+    D
+    +
+    i
+    \overline{u}
+    \beta^2
+    +
+    3
+    \overline{u}\omega^2
+    i
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+\right)
+\hat{p}
++
+\\
+\left(
+\omega
+\beta^2
++
+\omega^3
+i
+\frac{\gamma_\infty}{\gamma}
+M^{2}
+-
+\omega 
+D^2
+-
+\omega
+D (ln\overline{\rho})
+D
+\right)
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation*} 
+
+Defining:
+
+\begin{equation*} 
+    R_3
+    \equiv
+    i
+    \overline{u}
+    -
+    \overline{u}^3
+    i
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+\end{equation*} 
+
+\begin{equation*} 
+    R_2
+    \equiv
+    \omega
+    \left(
+    3
+    \overline{u}^2
+    i
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+    -
+    1
+    \right)
+\end{equation*} 
+
+\begin{equation*} 
+    R_1
+    \equiv
+    \overline{u}
+    D^2
+    -
+     \overline{u}
+    D (ln\overline{\rho})
+    D
+    -
+    2
+    D\overline{u}
+    D
+    +
+    i
+    \overline{u}
+    \beta^2
+    +
+    3
+    \overline{u}\omega^2
+    i
+    \frac{\gamma_\infty}{\gamma}
+    M^{2}
+\end{equation*} 
+
+
+\begin{equation*} 
+L_0
+\equiv
+\omega
+\beta^2
++
+\omega^3
+i
+\frac{\gamma_\infty}{\gamma}
+M^{2}
+-
+\omega 
+D^2
+-
+\omega
+D (ln\overline{\rho})
+D
+\end{equation*} 
+
+Then, this equation represent a polinomial eigenvalue problem for the wave
+number $\alpha$, with a define $w$. 
+This represent the spatial analysis for perturbation evolving  
+in the compressible mixing layer. 
+To solve it, we will use the Pseudo-spectral 
+
+
+\begin{equation*} 
+\begin{split}
+\alpha^3
+R_3
+\hat{p}
++ 
+\alpha^2 
+R_2
+\hat{p}
++
+\alpha 
+R_1
+\hat{p}
++
+L_0
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation*} 
