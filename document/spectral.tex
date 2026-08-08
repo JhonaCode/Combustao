@@ -499,7 +499,7 @@ D
 
 Defining:
 
-\begin{equation*} 
+\begin{equation} 
     R_3
     \equiv
     i
@@ -509,9 +509,9 @@ Defining:
     i
     \frac{\gamma_\infty}{\gamma}
     M^{2}
-\end{equation*} 
+\end{equation} 
 
-\begin{equation*} 
+\begin{equation} 
     R_2
     \equiv
     \omega
@@ -524,9 +524,9 @@ Defining:
     -
     1
     \right)
-\end{equation*} 
+\end{equation} 
 
-\begin{equation*} 
+\begin{equation} 
     R_1
     \equiv
     \overline{u}
@@ -549,10 +549,10 @@ Defining:
     i
     \frac{\gamma_\infty}{\gamma}
     M^{2}
-\end{equation*} 
+\end{equation} 
 
 
-\begin{equation*} 
+\begin{equation} 
 L_0
 \equiv
 \omega
@@ -569,7 +569,7 @@ D^2
 \omega
 D (ln\overline{\rho})
 D
-\end{equation*} 
+\end{equation} 
 
 Then, this equation represent a polinomial eigenvalue problem for the wave
 number $\alpha$, with a define $w$. 
@@ -577,8 +577,7 @@ This represent the spatial analysis for perturbation evolving
 in the compressible mixing layer. 
 To solve it, we will use the Pseudo-spectral 
 
-
-\begin{equation*} 
+\begin{equation} 
 \begin{split}
 \alpha^3
 R_3
@@ -598,4 +597,104 @@ L_0
 0
 .
 \end{split}
-\end{equation*} 
+\end{equation} 
+
+To resolve a polinomial eigenvalue problem is 
+necessary to transform it in a linear eigenvalue problem. 
+To this  define the the transfomation variables    
+
+\begin{equation} 
+    k_1=\alpha \hat{p} 
+    ,
+    \quad
+    k_2=\alpha k_1 
+    ,
+\end{equation} 
+
+\begin{equation} 
+\begin{split}
+R_3
+\alpha^2
+k_1
++ 
+\alpha 
+R_2
+k_1
++
+R_1
+k_1
++
+L_0
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation} 
+
+\begin{equation} 
+\begin{split}
+R_3
+\alpha^2
+k_1
++ 
+R_2
+k_2
++
+R_1
+k_1
++
+L_0
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation} 
+
+\begin{equation} 
+\begin{split}
+\alpha
+R_3
+k_2
++ 
+R_2
+k_2
++
+R_1
+k_1
++
+L_0
+\hat{p}
+=
+0
+.
+\end{split}
+\end{equation} 
+
+
+\begin{equation*}
+    \alpha 
+    \begin{bmatrix}
+    1  &0&0\\
+    0  &1&0\\
+    0  &0&R_3\\
+    \end{bmatrix}
+    \begin{bmatrix}
+    \hat{p}\\
+    k_1    \\
+    k_2    \\
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    0   &1&0\\
+    0   &0&1\\
+    L_0 &R_1&R_2\\
+    \end{bmatrix}
+    \begin{bmatrix}
+    \hat{p}\\
+    k_1    \\
+    k_2    \\
+    \end{bmatrix}
+\end{equation*}
+
