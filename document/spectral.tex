@@ -674,6 +674,17 @@ L_0
 
 
 \begin{equation*}
+    \begin{bmatrix}
+    0   &1&0\\
+    0   &0&1\\
+    L_0 &R_1&R_2\\
+    \end{bmatrix}
+    \begin{bmatrix}
+    \hat{p}\\
+    k_1    \\
+    k_2    \\
+    \end{bmatrix}
+    =
     \alpha 
     \begin{bmatrix}
     1  &0&0\\
@@ -685,16 +696,28 @@ L_0
     k_1    \\
     k_2    \\
     \end{bmatrix}
-    =
+\end{equation*}
+
+Which represente a linear boundary value problem for the wave number $\alpha$ of
+the form $\mathbf{A}\mathbf{x} = \lambda\mathbf{B}\mathbf{x}$ with 
+
+\begin{equation}
+\mathbf{A}=
     \begin{bmatrix}
     0   &1&0\\
     0   &0&1\\
     L_0 &R_1&R_2\\
     \end{bmatrix}
+    ,
+    \quad
+\mathbf{B}=
     \begin{bmatrix}
-    \hat{p}\\
-    k_1    \\
-    k_2    \\
+    1  &0&0\\
+    0  &1&0\\
+    0  &0&R_3\\
     \end{bmatrix}
-\end{equation*}
-
+    \quad
+    \text{and}
+    \quad
+    \lambda=\alpha
+\end{equation}
